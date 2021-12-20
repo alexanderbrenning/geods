@@ -3,8 +3,8 @@ title: Deutsch-englische Vokabelliste
 author: Alexander Brenning
 date: '2021-12-20'
 slug: deutsch-englische-vokabelliste
-categories: [teaching, statistics, machine learning]
-tags: []
+categories: ["teaching"]
+tags: ["vocabulary", "statistics", "machine learning"]
 subtitle: 'Statistik- und Data-Science-Fachbegriffe aus meiner Lehre'
 summary: 'Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein...'
 authors: []
@@ -23,6 +23,11 @@ projects: []
 
 
 
+
+
+Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein. Sie erhebt keinen Anspruch auf Vollständigkeit und ist naturgemäß auf das Kern-Vokabular meiner eigenen Kurse im [M.Sc.-Studiengang der Geoinformatik](https://www.uni-jena.de/msc_geoinformatik) und [B.Sc. Geographie](https://www.uni-jena.de/bsc_geographie) an der [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/) zugeschnitten.
+
+Die Vokabelliste (als Excel-Datei) und den RMarkdown-Code, der daraus HTML-Tabellen für einzelne Kurse erstellt, habe ich als [Github-Repo `stats-vocab`](https://github.com/alexanderbrenning/stats-vocab) veröffentlicht.
 
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
@@ -942,4 +947,5 @@ projects: []
 </tbody>
 </table>
 
+<img src="https://vg09.met.vgwort.de/na/5635e29f6b52409ebee33ab318cb3e1f" width="1" height="1" alt="">
 

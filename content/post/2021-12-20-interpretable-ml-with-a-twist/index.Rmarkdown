@@ -1,9 +1,9 @@
 ---
-title: "The `wiml` Package: Transforming Feature Space to Interpret Machine Learning Models"
+title: "The wiml Package: Transforming Feature Space to Interpret Machine Learning Models"
 date: '2021-12-20'
 slug: interpretable-ml-with-a-twist
-categories: [R, interpretable machine learning, model visualization, remote sensing, R package]
-tags: []
+categories: ["R", "machine learning", "remote sensing"]
+tags: ["model visualization", "interpretable machine learning", "R package"]
 subtitle: 'A Remote-Sensing Case Study Using the Random Forest Classifier'
 summary: 'Main effects plots (such as partial dependence and ALE plots) can be confusing and even misleading when interpreting black-box machine-learning models with large numbers of highly correlated features, as in remotely-sensed land cover classification. The `wiml` package implements a simple and pragmatic approach to dealing with this problem. This approach can be especially beneficial in situations where features tend to be linearly dependent, or in other words, where principal components analysis seems like a reasonable approach. This post is a package vignette that walks you through an application of the proposed approach in remote sensing.'
 lastmod: '2021-12-20T01:10:51+01:00'
@@ -15,7 +15,6 @@ image:
 projects: []
 bibliography: wiml.bib
 csl: chicago-author-date.csl
-math: true
 ---
 
 
