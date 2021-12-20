@@ -40,6 +40,6 @@ superuser: true
 title: Alexander Brenning
 ---
 
-I'm a full professor of geographic information science in the Department of Geography of Friedrich Schiller University Jena, Germany. My research interests include geospatial modeling of Earth surface processes, machine learning, natural hazards, and remote-sensing data analysis. I enjoy contributing to the open-source data analysis ecosystem of R with my geocomputing-related packages.
+I'm a full professor of geographic information science in the Department of Geography of Friedrich Schiller University Jena, Germany. My research interests include geospatial modeling of Earth surface processes, machine learning, natural hazards, and remote-sensing data analysis. I enjoy contributing to the open-source data analysis ecosystem of {{< icon name="r-project" pack="fab" >}} with my geocomputing-related packages.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/CV_Brenning_web.pdf" "newtab" >}}CV{{< /staticref >}}.

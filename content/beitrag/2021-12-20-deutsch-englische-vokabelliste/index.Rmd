@@ -56,7 +56,9 @@ rownames(d) <- NULL
 
 
 
-Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein. Sie erhebt keinen Anspruch auf Vollständigkeit und ist naturgemäß auf das Kern-Vokabular meiner eigenen Kurse im [M.Sc.-Studiengang der Geoinformatik](https://www.uni-jena.de/msc_geoinformatik) und [B.Sc. Geographie](https://www.uni-jena.de/bsc_geographie) an der [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/) zugeschnitten.
+Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein. Sie erhebt keinen Anspruch auf Vollständigkeit und ist naturgemäß auf das Kern-Vokabular meiner eigenen Kurse im [M.Sc.-Studiengang der Geoinformatik](https://www.uni-jena.de/msc_geoinformatik) und [B.Sc. Geographie](https://www.uni-jena.de/bsc_geographie) an der [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/) zugeschnitten. 
+
+Bitte beachte, dass das Fachvokabular teils auch zwischen unterschiedlichen Anwendungsbereichen der Datenwissenschaften variieren kann (z.B. Sozialempirie gegenüber der Geostatistik). Daher können auch einschlägige Fachbücher von der hier vorgeschlagenen Wortwahl abweichen.
 
 Die Vokabelliste (als Excel-Datei) und den RMarkdown-Code, der daraus HTML-Tabellen für einzelne Kurse erstellt, habe ich als [Github-Repo `stats-vocab`](https://github.com/alexanderbrenning/stats-vocab) veröffentlicht.
 

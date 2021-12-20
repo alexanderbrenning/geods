@@ -1,7 +1,7 @@
 ---
 commentable: false
-date: "2018-06-28T00:00:00+01:00"
-draft: true
+date: "2021-12-20"
+draft: false
 editable: false
 header:
   caption: ""
@@ -10,4 +10,11 @@ share: false
 title: Privacy Policy
 ---
 
-...
+
+Diese Website wird von [Netlify](https://www.netlify.com) gehostet ([Netlify-Datenschutzerklärung](https://www.netlify.com/privacy/)). Netlify nutzt Cookies und Log-Dateien, um Informationen von Nutzer:innen nachzuverfolgen. Die aus der EU erhaltenen Daten unterliegen den EU-U.S. Privacy Shield Principles.
+
+Weiterhin verwendet die Website Zählpixel der VG Wort zur Messung von Zugriffen auf Texte, wozu Session-Cookies eingesetzt werden, welche ein Ablaufdatum besitzen und keine personenbezogenen Daten speichern; dieses Verfahren dient der Durchsetzung gesetzlicher Ansprüche von Autoren. Die Datenverarbeitung erfolgt durch die Kantar Germany GmbH ([Details bei VG WORT](http://tom.vgwort.de/portal/showParticipationCondition)).
+
+Die Website kann Links zu Seiten von Drittanbietern enthalten. Der Anbieter dieser Website ist nicht verantwortlich für die Inhalte jener Angebote oder deren Datenschutzkonformität.
+
+Die Nutzung externer Dienste im Zusammenhang mit dieser Website geschieht in Abwägung von Aufwand und Nutzen für den Betreiber und die Nutzer:innen dieser Website.
