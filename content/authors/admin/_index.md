@@ -2,6 +2,9 @@
 bio: I'm a quantitative geographer and geographic data scientist. My research interests include geospatial modeling of Earth surface processes, machine learning, natural hazards, and remote-sensing data analysis.
 education:
   courses:
+  - course: Associate Professor of Geomatics
+    institution: University of Waterloo, Canada
+    year: "until 2014/15"
   - course: PhD in Physical Geography
     institution: Humboldt-Universität zu Berlin
     year: 2005
