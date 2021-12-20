@@ -1,0 +1,73 @@
+---
+title: Deutsch-englische Vokabelliste
+author: Alexander Brenning
+date: '2021-12-20'
+slug: deutsch-englische-vokabelliste
+categories: [teaching, statistics, machine learning]
+tags: []
+subtitle: 'Statistik- und Data-Science-Fachbegriffe aus meiner Lehre'
+summary: 'Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein...'
+authors: []
+lastmod: '2021-12-20T14:21:43+01:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+params <- list()
+params$courses <- c("Geog142", "Geog145",
+                    "Geo408A", "Geo408B")
+path <- here::here("../../Teaching/stats-vocab")
+
+library("kableExtra")
+library("readxl")
+fnm <- file.path(path, "Statistik-Vokabular.xlsx")
+d <- as.data.frame(readxl::read_excel(fnm))
+d$Course[!is.na(d$Geo408B)] <- "Geo408B"
+d$Course[!is.na(d$Geo408A)] <- "Geo408A"
+d$Course[!is.na(d$Geog145)] <- "Geog145"
+d$Course[!is.na(d$Geog142)] <- "Geog142"
+d <- d[!is.na(d$Course),]
+
+o <- order(paste0(gsub("Geo","",gsub("Geog","",d$Course)), "_",d[,d$Course],c(1:nrow(d))))
+d <- d[o,]
+
+if (length(params$courses) > 0) if (params$courses[1] != "") {
+  sel_rows <- d$Course %in% params$courses
+} else sel_rows <- rep(TRUE, nrow(d))
+
+sel_cols <- c("English","Deutsch")
+if (length(params$courses) > 1) 
+  sel_cols <- c("Course", sel_cols)
+
+d$Course[duplicated(d$Course)] <- ""
+d <- d[ sel_rows, sel_cols ]
+rownames(d) <- NULL
+
+```
+
+
+
+Vor allem Master-Studierende stehen zunehmend vor der Herausforderung, zwischen englischer und deutscher Fachsprache fließend wechseln zu müssen. Diese Vokabelliste aus meiner Lehre kann ihnen dabei behilflich sein. Sie erhebt keinen Anspruch auf Vollständigkeit und ist naturgemäß auf das Kern-Vokabular meiner eigenen Kurse im [M.Sc.-Studiengang der Geoinformatik](https://www.uni-jena.de/msc_geoinformatik) und [B.Sc. Geographie](https://www.uni-jena.de/bsc_geographie) an der [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/) zugeschnitten.
+
+Die Vokabelliste (als Excel-Datei) und den RMarkdown-Code, der daraus HTML-Tabellen für einzelne Kurse erstellt, habe ich als [Github-Repo `stats-vocab`](https://github.com/alexanderbrenning/stats-vocab) veröffentlicht.
+
+
+```{r table, results = "asis", echo = FALSE}
+kbl <- knitr::kable(d, align = "lll", format = "html")
+kbl <- kable_styling(kbl, bootstrap_options = "striped",
+  full_width = TRUE)
+kbl
+
+```
+
+<img src="https://vg09.met.vgwort.de/na/5635e29f6b52409ebee33ab318cb3e1f" width="1" height="1" alt="">
+
