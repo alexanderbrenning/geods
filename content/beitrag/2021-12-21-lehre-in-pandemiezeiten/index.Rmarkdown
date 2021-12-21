@@ -15,7 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 Anwendungsorientierte Übungsaufgaben, die gemeinsam mit den Studierenden bearbeitet und diskutiert werden, sind ein integraler Baustein der [Geoinformatik](https://www.uni-jena.de/msc_geoinformatik)- und Statistik-Ausbildung in den [geographischen Studiengängen](https://www.uni-jena.de/bsc_geographie) in Jena.

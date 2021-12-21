@@ -15,7 +15,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 Anwendungsorientierte Übungsaufgaben, die gemeinsam mit den Studierenden bearbeitet und diskutiert werden, sind ein integraler Baustein der [Geoinformatik](https://www.uni-jena.de/msc_geoinformatik)- und Statistik-Ausbildung in den [geographischen Studiengängen](https://www.uni-jena.de/bsc_geographie) in Jena.
@@ -45,7 +45,7 @@ In meiner Arbeitsgruppe erweitern nun auch meine Mitarbeiter [Florian Strohmaier
 
 ## Wie kannst Du selbst einsteigen?
 
-Auf der [R/exams-Website](http://www.r-exams.org/) und in Youtube gibt es hervorragende Ressourcen, die dir den Einstieg in die Erstellung von Fragen und ihren Import nach Moodle erleichtern.
+Auf der [R/exams-Website](http://www.r-exams.org/) und in Youtube gibt es hervorragende Ressourcen, die dir den Einstieg in die Erstellung von Fragen und ihren Import nach Moodle für die eigene Lehre erleichtern.
 
 *Welche Vorkenntnisse sind hilfreich, um komplexere Fragen mit R/exams zu erstellen?*
 
@@ -53,7 +53,6 @@ Auf der [R/exams-Website](http://www.r-exams.org/) und in Youtube gibt es hervor
 - **{{< icon name="r-project" pack="fab" >}}-Kenntnisse:** Das ist vor allem dann wichtig, wenn du anspruchsvolle Analysen in die Fragen einbauen möchtest - oben zum Beispiel eine gestatistische Semivariogramm-Analyse und Kriging-Interpolation mit dem `gstat`-Package. Leider kommen {{< icon name="r-project" pack="fab" >}}-Fehlermeldungen nicht in RStudio an, so dass die Fehlersuche sehr schwer sein kann. Am besten den Code vorher gut testen, oder die Ergebnisse abspeichern und sie in den R/exams-Frage dann nur `load()`en.
 
 Also: Der beste Zeitpunkt, in RMarkdown und R/exams einzusteigen, ist genau jetzt! 😄
-<img src="http://vg09.met.vgwort.de/na/8fa628beea99428491ed734413e72738" width="1" height="1" alt="">
 
 
 ### Bibliographie
@@ -62,3 +61,4 @@ Xie, Y., Allaire, J.J., Grolemund, G. (2018). *R Markdown: The Definitive Guide*
 
 Zeileis, A., Umlauf, N., Leisch, F. (2014). Flexible generation of e-learning exams in R: Moodle quizzes, OLAT assessments, and beyond. *Journal of Statistical Software*, 58(1), 1-36. <https://doi.org/10.18637/jss.v058.i01>
 
+<img src="http://vg09.met.vgwort.de/na/8fa628beea99428491ed734413e72738" width="1" height="1" alt="">
