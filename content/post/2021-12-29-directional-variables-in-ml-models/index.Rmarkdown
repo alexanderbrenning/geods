@@ -1,6 +1,5 @@
 ---
 title: "How to encode slope aspect (and other cyclic variables) in environmental ML models"
-author: Alexander Brenning
 date: '2021-12-29'
 slug: directional-variables-in-ml-models
 categories: ["R", "machine learning", "environmental modeling", "feature engineering"]
