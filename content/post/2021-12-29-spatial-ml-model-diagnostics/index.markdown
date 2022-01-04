@@ -122,7 +122,7 @@ They are therefore valuable additions to our diagnostic toolkit for spatial mode
 ### R Code
 
 The R code for this analysis is available in a [Github repository](https://github.com/alexanderbrenning/spdiag).
-I will be migrated into the `sperrorest` package (https://github.com/giscience-fsu/sperrorest), adding functions for computing and plotting spatial prediction error profiles (SPEPs) and spatial variable importance profiles (SVIPs).
+It will be migrated into the `sperrorest` package (https://github.com/giscience-fsu/sperrorest), adding functions for computing and plotting spatial prediction error profiles (SPEPs) and spatial variable importance profiles (SVIPs).
 
 ### References
 
@@ -141,3 +141,5 @@ Molnar, C. 2019. *Interpretable Machine Learning: A Guide for Making Black Box M
 </div>
 
 </div>
+
+<img src="https://vg09.met.vgwort.de/na/f0120719e7aa4011bde3d338f90a7c24" width="1" height="1" alt="">
