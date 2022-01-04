@@ -8,7 +8,7 @@ categories: ["teaching", "R", "literate programming"]
 tags: ["exams", "moodle", "geostatistics"]
 summary: 'Wie lässt sich das Literate Programming in R nutzen, um vielfältige Moodle-Quizze automatisiert aus Datenpools und Fragenschemata zu erzeugen?'
 authors: []
-lastmod: "2021-12-21"
+lastmod: '2021-12-21'
 featured: no
 image:
   caption: ''
@@ -61,4 +61,4 @@ Xie, Y., Allaire, J.J., Grolemund, G. (2018). *R Markdown: The Definitive Guide*
 
 Zeileis, A., Umlauf, N., Leisch, F. (2014). Flexible generation of e-learning exams in R: Moodle quizzes, OLAT assessments, and beyond. *Journal of Statistical Software*, 58(1), 1-36. <https://doi.org/10.18637/jss.v058.i01>
 
-<img src="http://vg09.met.vgwort.de/na/8fa628beea99428491ed734413e72738" width="1" height="1" alt="">
+<img src="https://vg09.met.vgwort.de/na/8fa628beea99428491ed734413e72738" width="1" height="1" alt="">
