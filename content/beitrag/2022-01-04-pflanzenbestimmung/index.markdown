@@ -28,13 +28,13 @@ Hast du schonmal eine dieser KI-Apps ausprobiert, die nur anhand eines Handy-Fot
 Nun ja, zum Glück habe ich es geschafft, Unfug damit zu machen, denn beim Wandern mit schwerem Rucksack habe ich nur zu selten die Geduld, das Handy zu zücken, überlebenswichtigen Akku zu verschwenden, und mich zum Fotografieren zu bücken während mein Mitwanderer steten Schrittes davontrottet...
 
 <div class="figure">
-<img src="figures/Enzian.jpg" alt="Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021." width="40%" />
+<img src="figures/Enzian.jpg" alt="Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021." width="50%" />
 <p class="caption">Figure 1: Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021.</p>
 </div>
 
 So blieb es also beim Unfug und den Lektionen, die man aus diesen über Maschinelles Lernen und Künstliche Intelligenz lernen kann.
 
-Das fing wohl damit an, dass ich als Allererstes die für etwa $5 erstandene App namens [Plant Identifier 1.4](https://play.google.com/store/apps/details?id=org.plantidentification.plantidentifier&hl=en_US&gl=US) an unserem Lehrstuhl-Weihnachtsbaum aus Plastik ausprobierte, mit goldenem und rotem Schmuck mitten im Bild. Im Handumdrehen spuckte die App aus, dass es sich wohl um einen [Gemeinen Wacholder](https://de.wikipedia.org/wiki/Gemeiner_Wacholder) handelt -- mit goldenen, faustgroßen Früchten, echt jetzt? Oder um eine [Douglasie](https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Douglasie). Oder dann doch eine [Eibe](https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe), jetzt aber wirklich, mit einer *accuracy* von 67,21%.
+Das fing wohl damit an, dass ich als Allererstes die für etwa $5 erstandene App namens [Plant Identifier 1.4](https://play.google.com/store/apps/details?id=org.plantidentification.plantidentifier&hl=en_US&gl=US) an unserem Lehrstuhl-Weihnachtsbaum aus Plastik ausprobierte, mit goldenem und rotem Schmuck mitten im Bild. Im Handumdrehen spuckte die App aus, dass es sich wohl um einen [Gemeinen Wacholder](https://de.wikipedia.org/wiki/Gemeiner_Wacholder) handeln muss -- mit goldenen, faustgroßen Früchten, echt jetzt? Oder um eine [Douglasie](https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Douglasie). Oder dann doch eine [Eibe](https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe), jetzt aber wirklich, mit einer *accuracy* von 67,21%.
 
 
 <div class="figure">
@@ -75,8 +75,8 @@ Hier eine Übersicht aller Ergebnisse für die dekorierte Nordmann-Tanne:
   <tr>
    <th style="text-align:left;"> Art laut App </th>
    <th style="text-align:right;"> Häufigkeit </th>
-   <th style="text-align:right;"> Mittlere *accuracy* </th>
-   <th style="text-align:right;"> Maximale *accuracy* </th>
+   <th style="text-align:right;"> Mittlere <i>accuracy</i> </th>
+   <th style="text-align:right;"> Maximale <i>accuracy</i> </th>
   </tr>
  </thead>
 <tbody>
@@ -203,7 +203,7 @@ Mit der Weihnachtsbaum-Bilddatenbank lassen sich diese Strategien vergleichen: W
 Mit nur fünf Fotos lassen sich somit beachtliche Verbesserungen erzielen. Wenn unsere App in der Lage wäre, aus einer Videosequenz eine Reihe unterschiedlicher Fotos der gleichen Pflanze zu extrahieren, könnte man mühelos 10 oder 20 Fotos von unterschiedlichen Pflanzenteilen aufnehmen und damit zumindest bei meinem Weihnachtsbaum eine Erfolgsquote von 90% erzielen.
 Gewichtete und ungewichtete Mehrheitsentscheide sind dabei vielversprechender als die Maximalselektion.
 
-Diese Strategien lassen noch weiter perfektionieren -- so fordern manche Apps Fotos bestimmter Pflanzenteile (Blätter, Stamm, Blüte) an, wodurch mit einer geringeren Anzahl Fotos (und größerer Sorgfalt) bessere Ergebnisse erzielt werden.
+Diese Strategien lassen noch weiter perfektionieren -- so fordern manche Apps Fotos bestimmter Pflanzenteile (z.B. Blätter, Stamm, Blüte) oder der Wuchsform an, wodurch mit einer geringeren Anzahl Fotos (und größerer Sorgfalt) bessere Ergebnisse erzielt werden.
 
 
 ## Was haben wir gelernt?
@@ -214,10 +214,11 @@ Diese Strategien lassen noch weiter perfektionieren -- so fordern manche Apps Fo
 - Die Einbeziehung von Kontextinformationen, z.B. Standortdaten, ist ein zweischneidiges Schwert: Vorwissen oder Vorurteil?
 
 
+<img src="https://vg09.met.vgwort.de/na/b9e5f50f04f94c6db5096da4e69d8546" width="1" height="1" alt="">
+
+
 ## Weiterführende Links und Literatur
 
 Über die von mir genutzte App [Plant Identifier](https://plantidentificationapp.wordpress.com/) gibt es leider nur wenige Hintergrundinfos, aber...:
 - [PlantNet](https://plantnet.org/en/2018/08/01/a-book-to-thank-you-and-to-advance-research/) ist eine hervorragende App und Web-Plattform für die Pflanzenbestimmung mit KI. Einen Überblick über die Architektur von PlantNet gibt ein Artikel von [Affouard et al. (2017) in ICLR](https://openreview.net/pdf?id=HJVJpENFg).
 - Aus PlantNet ist eine [Buchpublikation](https://link.springer.com/book/10.1007/978-3-319-76445-0#toc) hervorgegangen, die die wissenschaftlichen Hintergründe im Detail darstellt, etwa in [diesem Kapitel](https://link.springer.com/chapter/10.1007/978-3-319-76445-0_8).
-
-<img src="https://vg09.met.vgwort.de/na/b9e5f50f04f94c6db5096da4e69d8546" width="1" height="1" alt="">

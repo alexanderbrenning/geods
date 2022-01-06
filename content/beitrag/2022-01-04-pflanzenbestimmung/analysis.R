@@ -133,7 +133,7 @@ kbl <- data.frame(
 )
 kbl <- kbl[order(kbl$count, decreasing = TRUE),]
 # kableExtra::kbl(kbl, col.names = c("Art laut App", "Häufigkeit",
-#                                    "Mittlere *accuracy*", "Maximale *accuracy*"))
+#                                    "Mittlere <i>accuracy</i>", "Maximale <i>accuracy</i>"))
 
 # Save results for re-use by Markdown file:
 save(res, species, dat, k, acc, acc_wgt, acc_max, kbl, 
