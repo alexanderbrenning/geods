@@ -40,7 +40,7 @@ So blieb es also beim Unfug und den Lektionen, die man aus diesen über Maschine
 Das fing wohl damit an, dass ich als Allererstes die für etwa $5 erstandene App namens [Plant Identifier 1.4](https://play.google.com/store/apps/details?id=org.plantidentification.plantidentifier&hl=en_US&gl=US) an unserem Lehrstuhl-Weihnachtsbaum aus Plastik ausprobierte, mit goldenem und rotem Schmuck mitten im Bild. Im Handumdrehen spuckte die App aus, dass es sich wohl um einen [Gemeinen Wacholder](https://de.wikipedia.org/wiki/Gemeiner_Wacholder) handelt -- mit goldenen, faustgroßen Früchten, echt jetzt? Oder um eine [Douglasie](https://de.wikipedia.org/wiki/Gew%C3%B6hnliche_Douglasie). Oder dann doch eine [Eibe](https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe), jetzt aber wirklich, mit einer *accuracy* von 67,21%.
 
 
-```{r, echo=FALSE, out.width='40%', fig.cap='Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine Gemeine Eibe?'}
+```{r, echo=FALSE, out.width='40%', fig.cap='Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe">Gemeine Eibe</a>?'}
 knitr::include_graphics("figures/lehrstuhl/Gemeine_Eibe_reduced.png")
 ```
 
@@ -70,18 +70,21 @@ Hilfe! Mein Weihnachtsbaum ist ein Feder-Spargel!
 
 So nahm ich also unter den fragenden Blicken meiner Familie nach und nach `r nrow(dat)` Fotos dieser stolzen Nordmann-Tanne (Abies nordmanniana) auf, und sieh da: es handelt sich in Wirklichkeit um einen [Feder-Spargel](https://de.wikipedia.org/wiki/Feder-Spargel). Nein, [Granatapfel](https://de.wikipedia.org/wiki/Granatapfel). Oder doch eine peruanische [Cantuta](https://de.wikipedia.org/wiki/Cantua_buxifolia)? Vielleicht eine Japanische [Stechpalme](https://de.wikipedia.org/wiki/Stechpalmen) oder eine neukaledonische [Araukarien-Art](https://de.wikipedia.org/wiki/Araukarien)? All das wurde auch ausgespuckt, doch allen voran die Nordmann-Tanne (`r round(100*mean(dat$species == "Nordmann-Tanne"))`%) und die ähnliche (aber in Deutschland nur selten als Weihnachtsbaum genutzte) Edel-Tanne (`r round(100*mean(dat$species == "Edel-Tanne"))`%).
 
-```{r, echo=FALSE, out.width='40%'}
+```{r, echo=FALSE, out.width='70%'}
 knitr::include_graphics(
-  c("figures/Feder-Spargel_reduced.png", 
-    "figures/Granatapfel_reduced.png"))
+  c("figures/Federspargel-Granatapfel.png"))
 ```
 
 Hier eine Übersicht aller Ergebnisse für die dekorierte Nordmann-Tanne:
 
 ```{r, echo=FALSE, results='markup'}
 rownames(kbl) <- NULL
-kableExtra::kbl(kbl, col.names = c("Art laut App", "Häufigkeit",
-                                   "Mittlere *accuracy*", "Maximale *accuracy*"), decimal.mark = ",")
+kableExtra::kbl(kbl, 
+                col.names = c("Art laut App", "Häufigkeit",
+                              "Mittlere *accuracy*", 
+                              "Maximale *accuracy*"), 
+                decimal.mark = ",",
+                escape = FALSE)
 ```
 
 ### *Adversarial attacks*

@@ -121,8 +121,12 @@ species$mean_acc <- tapply(dat$accuracy, factor(dat$species), mean)[rownames(spe
 species$max_acc <- tapply(dat$accuracy, factor(dat$species), max)[rownames(species)]
 
 # Re-format table for use with kableExtra:
+# <a href="Link-Ziel">Link-Text</a>
 kbl <- data.frame(
-  name = paste0("[", species$german, " (*", species$scientific, "*)](", species$url, ")"),
+  name = paste0('<a href="', species$url, '">', 
+                species$german, " (<i>", species$scientific, "</i>)",
+                "</a>"),
+  # name = paste0("[", species$german, " (*", species$scientific, "*)](", species$url, ")"),
   count = species$count,
   mean_acc = round(species$mean_acc, 2),
   max_acc = species$max_acc

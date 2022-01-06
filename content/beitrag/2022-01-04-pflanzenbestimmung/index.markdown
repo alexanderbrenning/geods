@@ -38,8 +38,8 @@ Das fing wohl damit an, dass ich als Allererstes die für etwa $5 erstandene App
 
 
 <div class="figure">
-<img src="figures/lehrstuhl/Gemeine_Eibe_reduced.png" alt="Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine Gemeine Eibe?" width="40%" />
-<p class="caption">Figure 2: Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine Gemeine Eibe?</p>
+<img src="figures/lehrstuhl/Gemeine_Eibe_reduced.png" alt="Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine &lt;a href=&quot;https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe&quot;&gt;Gemeine Eibe&lt;/a&gt;?" width="40%" />
+<p class="caption">Figure 2: Der künstliche Lehrstuhl-Weihnachtsbaum ist also eine <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe">Gemeine Eibe</a>?</p>
 </div>
 
 
@@ -66,7 +66,7 @@ Hilfe! Mein Weihnachtsbaum ist ein Feder-Spargel!
 
 So nahm ich also unter den fragenden Blicken meiner Familie nach und nach 69 Fotos dieser stolzen Nordmann-Tanne (Abies nordmanniana) auf, und sieh da: es handelt sich in Wirklichkeit um einen [Feder-Spargel](https://de.wikipedia.org/wiki/Feder-Spargel). Nein, [Granatapfel](https://de.wikipedia.org/wiki/Granatapfel). Oder doch eine peruanische [Cantuta](https://de.wikipedia.org/wiki/Cantua_buxifolia)? Vielleicht eine Japanische [Stechpalme](https://de.wikipedia.org/wiki/Stechpalmen) oder eine neukaledonische [Araukarien-Art](https://de.wikipedia.org/wiki/Araukarien)? All das wurde auch ausgespuckt, doch allen voran die Nordmann-Tanne (48%) und die ähnliche (aber in Deutschland nur selten als Weihnachtsbaum genutzte) Edel-Tanne (25%).
 
-<img src="figures/Feder-Spargel_reduced.png" width="40%" /><img src="figures/Granatapfel_reduced.png" width="40%" />
+<img src="figures/Federspargel-Granatapfel.png" width="70%" />
 
 Hier eine Übersicht aller Ergebnisse für die dekorierte Nordmann-Tanne:
 
@@ -81,85 +81,85 @@ Hier eine Übersicht aller Ergebnisse für die dekorierte Nordmann-Tanne:
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> [Nordmann-Tanne (*Abies nordmanniana*)](https://de.wikipedia.org/wiki/Nordmann-Tanne) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Nordmann-Tanne">Nordmann-Tanne (<i>Abies nordmanniana</i>)</a> </td>
    <td style="text-align:right;"> 33 </td>
    <td style="text-align:right;"> 37.32 </td>
    <td style="text-align:right;"> 70.41 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Edel-Tanne (*Abies procera*)](https://de.wikipedia.org/wiki/Edel-Tanne) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Edel-Tanne">Edel-Tanne (<i>Abies procera</i>)</a> </td>
    <td style="text-align:right;"> 17 </td>
    <td style="text-align:right;"> 34.16 </td>
    <td style="text-align:right;"> 62.74 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Hinoki-Scheinzypresse (*Chamaecyparis obtusa*)](https://de.wikipedia.org/wiki/Hinoki-Scheinzypresse) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Hinoki-Scheinzypresse">Hinoki-Scheinzypresse (<i>Chamaecyparis obtusa</i>)</a> </td>
    <td style="text-align:right;"> 6 </td>
    <td style="text-align:right;"> 29.22 </td>
    <td style="text-align:right;"> 53.07 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Neuguinea-Araukarie (*Araucaria cunninghamii*)](https://de.wikipedia.org/wiki/Neuguinea-Araukarie) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Neuguinea-Araukarie">Neuguinea-Araukarie (<i>Araucaria cunninghamii</i>)</a> </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 34.42 </td>
    <td style="text-align:right;"> 41.32 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Araucaria columnaris (*Araucaria columnaris*)](https://de.wikipedia.org/wiki/Araucaria_columnaris) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Araucaria_columnaris">Araucaria columnaris (<i>Araucaria columnaris</i>)</a> </td>
    <td style="text-align:right;"> 2 </td>
    <td style="text-align:right;"> 13.62 </td>
    <td style="text-align:right;"> 25.65 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Feder-Spargel (*Asparagus setaceus*)](https://de.wikipedia.org/wiki/Feder-Spargel) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Feder-Spargel">Feder-Spargel (<i>Asparagus setaceus</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 32.44 </td>
    <td style="text-align:right;"> 32.44 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Pracht-Tanne (*Abies magnifica*)](https://de.wikipedia.org/wiki/Pracht-Tanne) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Pracht-Tanne">Pracht-Tanne (<i>Abies magnifica</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 35.77 </td>
    <td style="text-align:right;"> 35.77 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Granatalpfel (*Punica granatum*)](https://de.wikipedia.org/wiki/Granatapfel) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Granatapfel">Granatalpfel (<i>Punica granatum</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 40.28 </td>
    <td style="text-align:right;"> 40.28 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Cantua (*Cantua buxifolia*)](https://de.wikipedia.org/wiki/Cantua_buxifolia) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Cantua_buxifolia">Cantua (<i>Cantua buxifolia</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 41.97 </td>
    <td style="text-align:right;"> 41.97 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Norfolk-Tanne (*Araucaria heterophylla*)](https://de.wikipedia.org/wiki/Zimmertanne) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Zimmertanne">Norfolk-Tanne (<i>Araucaria heterophylla</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 13.84 </td>
    <td style="text-align:right;"> 13.84 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Beschuppter Wacholder (*Juniperus squamata*)](https://de.wikipedia.org/wiki/Beschuppter_Wacholder) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Beschuppter_Wacholder">Beschuppter Wacholder (<i>Juniperus squamata</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 17.17 </td>
    <td style="text-align:right;"> 17.17 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Japanische Stechpalme (*Ilex crenata*)](https://de.wikipedia.org/wiki/Stechpalmen) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Stechpalmen">Japanische Stechpalme (<i>Ilex crenata</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 21.46 </td>
    <td style="text-align:right;"> 21.46 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Purpur-Tanne (*Abies amabilis*)](https://de.wikipedia.org/wiki/Purpur-Tanne) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Purpur-Tanne">Purpur-Tanne (<i>Abies amabilis</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 56.42 </td>
    <td style="text-align:right;"> 56.42 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> [Gemeine Eibe (*Taxus baccata*)](https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe) </td>
+   <td style="text-align:left;"> <a href="https://de.wikipedia.org/wiki/Europ%C3%A4ische_Eibe">Gemeine Eibe (<i>Taxus baccata</i>)</a> </td>
    <td style="text-align:right;"> 1 </td>
    <td style="text-align:right;"> 24.40 </td>
    <td style="text-align:right;"> 24.40 </td>
