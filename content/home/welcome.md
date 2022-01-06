@@ -24,12 +24,8 @@ design:
     text_color_light: true
 ---
 
-Welcome to my geographic data science corner! I started this website recently to share thoughts related to my research and teaching activities on an irregular basis - for example, tips and tricks for improved geospatial analyses, updates on (my) R packages, etc. I hope you will find it useful. Please don't hesitate to provide feedback!
-
-Some of my contributions will be in German language, but I am not planning to post German and English versions of my texts.
+Welcome to my geographic data science corner! I started this website recently to share some thoughts related to my research and teaching from time to time - for example, tips and tricks for improved geospatial analyses, updates on my R packages, etc. I hope you will find it useful. Please don't hesitate to provide feedback!
 
 <hr>
 
-*Willkommen in meiner Grabbelkiste für die geographischen Datenwissenschaften! Ich habe diese Website erst vor Kurzem ins Leben gerufen, um Ideen aus meiner Forschung und Lehre in unregelmäßigen Abständen zu teilen - z.B. Tipps und Tricks für räumliche Analysen, Updates zu (meinen) R-Paketen etc. Ich hoffe Du findest sie nützlich. Über Feedback freue ich mich natürlich!*
-
-*Einige meiner Beiträge werden deutschsprachig sein, aber ich werde mir eher nicht die Mühe machen, Beiträge in die jeweils andere Sprache zu übersetzen.*
+*Willkommen in meiner Grabbelkiste für die geographischen Datenwissenschaften! Auf dieser neu eingereichteten Website teil ich ab und zu Ideen aus meiner Forschung und Lehre - z.B. Tipps und Tricks für räumliche Analysen, Updates zu meinen R-Paketen etc. Einige Beiträge werden deutschsprachig sein, andere nicht. Ich hoffe Du findest sie nützlich. Über Feedback freue ich mich natürlich!*
