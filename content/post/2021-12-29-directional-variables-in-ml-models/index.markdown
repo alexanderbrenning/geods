@@ -1,10 +1,9 @@
 ---
 title: "How to encode slope aspect (and other cyclic variables) in environmental ML models"
-author: Alexander Brenning
 date: '2021-12-29'
 slug: directional-variables-in-ml-models
-categories: ["R", "machine learning", "environmental modeling"]
-tags: ["landslide susceptibility modeling", "species distribution modeling", "permafrost distribution modeling", "digital soil mapping", "model visualization", "interpretable machine learning", "iml", "ALE plot", "partial dependence plot", "random forest", "support vector machine", "generalized additive model", "permutation variable importance"]
+categories: ["R", "machine learning", "environmental modeling", "feature engineering"]
+tags: ["geomorphometry", "slope aspect", "directional variables", "binning", "discretization", "encoding", "landslide susceptibility modeling", "species distribution modeling", "permafrost distribution modeling", "digital soil mapping", "model visualization", "interpretable machine learning", "iml", "ALE plot", "partial dependence plot", "permutation variable importance", "random forest", "support vector machine", "generalized additive model", "logistic regression"]
 summary: 'Slope aspect is a predictor in many environmental machine-learning models. Here I compare strategies for dealing with problems caused by the cyclic nature of this directional variable.'
 lastmod: '2021-12-29'
 featured: no
@@ -15,7 +14,7 @@ image:
 projects: []
 bibliography: encoding-slope-aspect.bib
 csl: chicago-author-date.csl
-draft: true
+draft: false
 ---
 
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
@@ -42,7 +41,7 @@ So, do we have a problem?
 Yes, we do. Or we might. Let’s take a closer look at it to see how bad it might get. We’ll apply four statistical and ML techniques to a simulated dataset to compare the following strategies:
 
 -   **Direct encoding**: Slope aspect as an ordinary, untransformed predictor (Meyer et al. 2019);
--   **Binning**: Slope aspect is discretized into (usually eight) sectors and treated as a categorical variable; this is the most popular approach in landslide modeling \[REF\];
+-   **Binning**: Slope aspect is discretized into (usually eight) sectors and treated as a categorical variable; this is the most popular approach in landslide modeling;
 -   **Cosine-sine encoding**: Cosine and sine of aspect as predictors, making use of the fact that angles can be uniquely represented by their cosine and sine values (Stage 1976; Brenning and Trombotto 2006; Brenning et al. 2015);
 -   And in the GAM, a **cyclic smoothing spline** (Wood 2017).
 
@@ -336,3 +335,5 @@ Wood, S. N. 2017. *Generalized Additive Models: An Introduction with R*. CRC Pre
 </div>
 
 </div>
+
+<img src="https://vg09.met.vgwort.de/na/c808060af5344007b8c22dfaa54d3117" width="1" height="1" alt="">

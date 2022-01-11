@@ -14,7 +14,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
 <link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
@@ -28,7 +28,7 @@ Hast du schonmal eine dieser KI-Apps ausprobiert, die nur anhand eines Handy-Fot
 Nun ja, zum Glück habe ich es geschafft, Unfug damit zu machen, denn beim Wandern mit schwerem Rucksack habe ich nur zu selten die Geduld, das Handy zu zücken, überlebenswichtigen Akku zu verschwenden, und mich zum Fotografieren zu bücken während mein Mitwanderer steten Schrittes davontrottet...
 
 <div class="figure">
-<img src="figures/Enzian.jpg" alt="Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021." width="50%" />
+<img src="figures/Enzian.jpg" alt="Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021." width="70%" />
 <p class="caption">Figure 1: Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021.</p>
 </div>
 

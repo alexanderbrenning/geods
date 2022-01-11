@@ -14,7 +14,7 @@ image:
 projects: []
 bibliography: encoding-slope-aspect.bib
 csl: chicago-author-date.csl
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}

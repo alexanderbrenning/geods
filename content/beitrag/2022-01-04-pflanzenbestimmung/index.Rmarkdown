@@ -14,7 +14,7 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -31,7 +31,7 @@ Hast du schonmal eine dieser KI-Apps ausprobiert, die nur anhand eines Handy-Fot
 
 Nun ja, zum Glück habe ich es geschafft, Unfug damit zu machen, denn beim Wandern mit schwerem Rucksack habe ich nur zu selten die Geduld, das Handy zu zücken, überlebenswichtigen Akku zu verschwenden, und mich zum Fotografieren zu bücken während mein Mitwanderer steten Schrittes davontrottet...
 
-```{r, echo=FALSE, out.width='50%', fig.cap='Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021.'}
+```{r, echo=FALSE, out.width='70%', fig.cap='Einem Enzian in den Pyrenäen auf der Spur. Foto (c) Stefan Lüdke 2021.'}
 knitr::include_graphics("figures/Enzian.jpg")
 ```
 
