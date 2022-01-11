@@ -1,13 +1,13 @@
 ---
 title: "Spatial machine-learning model diagnostics"
 author: Alexander Brenning
-date: '2021-12-29'
+date: '2022-01-11'
 slug: spatial-ml-model-diagnostics
 categories: ["machine learning", "geostatistics"]
 tags: ["interpretable machine learning", "spatial prediction", "interpolation", "permutation variable importance", "spatial cross-validation", "spatial autocorrelation", "kriging", "random forest", "spatial prediction error profile", "spatial variable importance profile"]
 subtitle: 'A model-agnostic distance-based approach'
 summary: 'How do the predictions of machine-learning and geostatistical models deteriorate with increasing distance to the training locations? Are different predictors instrumental in making predictions at greater versus shorter distances? A novel set of diagnostic tools allows us to answer these questions...'
-lastmod: '2021-12-29'
+lastmod: '2022-01-11'
 featured: no
 image:
   caption: ''
@@ -16,17 +16,17 @@ image:
 projects: []
 bibliography: spdiag.bib
 csl: "../chicago-author-date.csl"
-draft: true
+draft: false
 ---
 
 When applying machine-learning models to geospatial analysis problems, we still rely on non-spatial diagnostic tools for model assessment and interpretation.
 
 In model assessment, *spatial cross-validation* has been established as an estimation techniques that determines the transferability of a model to similar nearby areas.
 Nevertheless, it does express how a model’s predictive performance deteriorates with prediction distance.
-In model interpretation, permutation-based *variable importance* is an intuitive and widely used technique that estimates the contribution of individual predictors or groups of predictors to a model’s predictions (see, e.g., Molnar 2019).
+In model interpretation, permutation-based *variable importance* is an intuitive and widely used technique that estimates the contribution of individual predictors or groups of predictors to a model’s predictions [(see, e.g., Molnar 2019)](https://christophm.github.io/interpretable-ml-book/).
 However, it does not reveal if and how a variable is more relevant at shorter or longer distances.
 
-My recent contribution to the *International Journal of Geographical Information Science* (Brenning 2021) proposes novel spatial diagnostic tools that address these issues:
+My recent contribution (submitted to the *International Journal of Geographical Information Science*) [(Brenning 2021)](https://arxiv.org/abs/2111.08478) proposes novel spatial diagnostic tools that address these issues:
 
 {{% callout note %}}
 
@@ -40,11 +40,9 @@ When using SPEPs and SVIPs to compare difference machine-learning and geostatist
 
 ### How it works
 
-**TODO: create a visualization of spLOO with guard zone**
-
 SPEPs aim to find out how well a model predicts at a given prediction distance.
 To estimate this performance, we leave out one observation at a time from the training set.
-We can enforce a particular prediction distance by removing from the training sample all data that falls within that distance around the left-out data point.
+We can enforce a particular prediction distance by removing from the training sample all data that falls within that distance around the left-out data point (see buffer zone in the figure above).
 We train our model on the remaining data, and estimate its error on the left-out point.
 This is repeated for each observation in our dataset, and the prediction distance is furthermore varied from 0 to some upper limit that depends on the size of the study area.
 Aggregating these results gives us a distance-dependent curve, the spatial prediction error profile (SPEP).
@@ -56,7 +54,7 @@ We can do this also in the estimation of SPEPs, which will indicate how strongly
 I refer to this as the spatial variable importance profile (SVIP).
 
 SPEPs and SVIPs can be applied to interpolation, regression, and classification problems in the spatial domain.
-Here we will have a brief look at a well-known dataset that is often used to introduce geostatistics, but in the paper I also demonstrate their application to a classical remotely-sensed land cover classification problem (Brenning 2021).
+Here we will have a brief look at a well-known dataset that is often used to introduce geostatistics, but in the paper I also demonstrate their application to a classical remotely-sensed land cover classification problem [(Brenning 2021)](https://arxiv.org/abs/2111.08478).
 
 ### Case study: the Meuse dataset
 
@@ -122,7 +120,7 @@ They are therefore valuable additions to our diagnostic toolkit for spatial mode
 ### R Code
 
 The R code for this analysis is available in a [Github repository](https://github.com/alexanderbrenning/spdiag).
-It will be migrated into the `sperrorest` package (https://github.com/giscience-fsu/sperrorest), adding functions for computing and plotting spatial prediction error profiles (SPEPs) and spatial variable importance profiles (SVIPs).
+It will be migrated into the [`sperrorest` package](https://github.com/giscience-fsu/sperrorest), adding functions for computing and plotting spatial prediction error profiles (SPEPs) and spatial variable importance profiles (SVIPs).
 
 ### References
 
@@ -130,13 +128,13 @@ It will be migrated into the `sperrorest` package (https://github.com/giscience-
 
 <div id="ref-brenning.2021.spdiag.preprint" class="csl-entry">
 
-Brenning, A. 2021. “Spatial Machine-Learning Model Diagnostics: A Model-Agnostic Distance-Based Approach.” *arXiv*, 2111.08478.
+Brenning, A. 2021. “Spatial Machine-Learning Model Diagnostics: A Model-Agnostic Distance-Based Approach.” *arXiv*, 2111.08478. <https://arxiv.org/abs/2111.08478>.
 
 </div>
 
 <div id="ref-molnar.2019.iml.book" class="csl-entry">
 
-Molnar, C. 2019. *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable*.
+Molnar, C. 2019. *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable*. <https://christophm.github.io/interpretable-ml-book/>.
 
 </div>
 
