@@ -1,0 +1,296 @@
+---
+title: "Was geht denn hier ab?"
+subtitle: "Polizeiberichte in interaktiven Online-Karten darstellen"
+author: "Alexander Brenning"
+date: '2022-01-10'
+slug: polizeiberichte
+categories: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Jena"]
+tags: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Geoparsing", "Sicherheit", "ALKIS", "offene Geodaten Thüringen", "Verkehrsunfälle", "Einbrüche", "Crime mapping", "Kriminalitätskartierung", "Jena", "Erfurt", "Weimar", "Gera"]
+summary: 'Wie ärgerlich, dass Polizeiberichte nur als Text vorliegen -- wie soll ich da herausfinden, was um mich herum passiert?? Die Geoinformatik bietet eine Lösung: mit Geoparsing, Geocodierung und Web-Mapping, hier anhand des Beispiels Jena.'
+lastmod: '2022-01-10'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+---
+
+
+```{r setup, include=FALSE, echo=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+suppressMessages(library(tidyverse))
+suppressMessages(library(leaflet))
+
+streets <- readRDS("Jena_streets.rds")
+```
+
+Wo um mich herum wird eingebrochen, wo passieren Unfälle? Während es in Nordamerika üblich ist, die Antwort darauf zeitnah im Web aus interaktiven Online-Karten zu bekommen (z.B. in  [Toronto](https://torontops.maps.arcgis.com/apps/webappviewer/index.html?id=5f74f910b2ea4e85a370014921cdecbd)), muss man in Deutschland die [Berichte der Polizei](https://www.presseportal.de/blaulicht/r/Jena) aufmerksam lesen, um sich ein Bild davon zu machen.
+
+Oder kann das nicht der Computer für mich übernehmen?
+
+Die geographische Datenwissenschaft kann uns tatsächlich weiterhelfen. Was müssen wir tun, um Polizeiberichte auf eine Karte zu bekommen?
+
+1. **Web-Scraping**: Die von der Thüringer Polizei veröffentlichten Berichte einlesen und enthaltene Informationen extrahieren.
+2. **Geoparsing**: Straßennamen erkennen und herausfiltern.
+3. **Geocodierung**: Die Straßennamen in Koordinaten umwandeln.
+4. **Web-Mapping**: Ein interaktives Kartendisplay fürs Web erzeugen.
+
+Klingt kompliziert? Wer im [Geoinformatik-Studium bei uns in Jena](https://www.uni-jena.de/msc_geoinformatik) aufgepasst hat, wird keine Schwierigkeiten damit haben... ;-) Hier eine schnelle und einfache Lösung, die noch nicht das Letzte aus den Daten herausholt, aber für einen Samstagnachmittag doch recht ordentlich ist. 
+<!-- (In der repo auf Github gibt es eine noch etwas ausgefeiltere Lösung.) -->
+
+Ich verwende hierfür die [freie Statistik-Software R](https://www.r-project.org/) mit den Packages [`rvest`](https://rvest.tidyverse.org/) und [`leaflet`](https://rstudio.github.io/leaflet/) sowie [offene Thüringer Geodaten](https://www.geoportal-th.de/de-de/) der [ALKIS-Datenbank](https://tlbg.thueringen.de/liegenschaftskataster/alkis). (In vielen anderen Bundesländern sind diese Daten leider nicht frei zugänglich, aber es ließen sich auch andere offene Quellen anzapfen.)
+
+### Web-Scraping: Informationen aus dem Web ernten
+
+Nicht nur Menschen, sondern auch Computerprogramme -- sogenannte Bots -- können Webseiten lesen und die Inhalte verarbeiten. Das ist unter bestimmten Voraussetzungen völlig legal und wird tagtäglich für alle möglichen Zwecke eingesetzt, aber ich empfehle, stets vorher die rechtlichen Rahmenbedingungen zu prüfen und rücksichtsvoll von den technischen Möglichkeiten Gebrauch zu machen.
+
+Die Thüringer Polizei stellt ihre Berichte direkt in [presseportal.de](https://www.presseportal.de/blaulicht/r/Jena) ein, wo sie auf Seiten wie dieser übersichtsartig dargestellt sind:
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/presseportal_de.png")
+```
+
+Die Inhalte und Formatierungen der Webseiten liegen dabei im HTML-Format vor -- hier ein kleiner Ausschnitt:
+
+```{r, echo=FALSE, out.width='100%'}
+knitr::include_graphics("figures/html.png")
+```
+
+Das lässt sich wiederum mit [`rvest`](https://rvest.tidyverse.org/)-Funktionen in R analysieren. In einfachster Form sieht das so aus, wobei uns sehr gelegen kommt, dass die Polizeiberichte selbst einfach in Links der Form `/blaulicht/pm/` eingebettet sind.
+
+```{r scraping, echo=TRUE, warning=FALSE}
+suppressMessages(library(tidyverse))
+suppressMessages(library(rvest))
+# Webseite lesen:
+html <- read_html(url("https://www.presseportal.de/blaulicht/r/Jena"))
+
+# HTML-Abschnitte mit Polizeiberichten filtern:
+x <- html %>% html_nodes("a") # handelt sich um HTML-Links
+sel <- x %>% html_attr("class") %>% is.na()
+x <- x[sel] # nur Links ohne Klassenattribut
+sel <- x %>% html_attr("href") %>% str_detect("/blaulicht/pm/")
+x <- x[sel] # mit bestimmtem URL-Muster
+unsel <- x %>% html_node("i") %>% is.na()
+x <- x[!unsel] # und es gibt immer was mit <i>...</i>
+sel <- x %>% html_attr("title") %>% str_detect("^LPI-")
+x <- x[sel] # nur Landespolizeiinspektion
+
+# Ergebnisse extrahieren und bündeln:
+d <- data.frame(
+  url = html_attr(x, "href"),
+  title = html_attr(x, "title"),
+  town = html_text(x) %>% 
+    str_extract("^.* \\(ots\\)") %>%
+    str_remove(" \\(ots\\)"),
+  text = html_text(x)
+)
+
+# Nur Polizeiberichte aus Jena:
+sel <- !is.na(d$town) & str_starts(d$town, "Jena")
+d <- d[sel,]
+```
+
+Damit haben wir schon eine Tabelle mit den Meldungen (Titel und Text), ihrem Ort (nur Jena), und jeweils einer weiterführenden URL. Insgesamt sind es `r nrow(d)` Berichte, hier nur die ersten drei (ohne die ausführlichen Berichtstexte selbst):
+
+```{r reports}
+d[1:3, 1:3]
+```
+
+### Geoparsing: Toponyme in Texten entdecken
+
+Die Berichte enthalten zwar keine genauen Koordinaten der Vorfälle, wohl aber in den meisten Fällen Straßennamen, also spezielle Toponyme. Das Auffinden von Toponymen in Texten, also das sogenannte **Geoparsing**, kann eine ganz schöne Herausforderung sein, weil es wahnsinnig viele Toponyme gibt und diese auch noch "normalen" Wörtern ähneln können -- erst kürzlich betreute ich mit [Dr. Xuke Hu](https://scholar.google.de/citations?user=xCj17L0AAAAJ&hl=en) vom [DLR-institut Jena](https://www.dlr.de/dw/de/desktopdefault.aspx/tabid-12200/21397_read-49437/) die [Abschlussarbeit von Tim Grünemay](https://elib.dlr.de/146332/) zum Geoparsen von Social-Media-Nachrichten, wo es dickere Bretter zu bohren gab.
+
+Zum Glück haben wir es hier etwas leichter als Tim: Die Polizeiberichte sind (meist) sehr präzise in den Ortsbezeichnungen, Rechtschreibfehler sind eine Rarität, und in Jena gibt es nur eine begrenzte Anzahl Straßennamen -- genau genommen `r nrow(streets)` Stück. (Dafür fehlen uns Hausnummern, so dass die Lagegenauigkeit leider nicht optimal sein wird.)
+
+Aus [ALKIS-Daten](https://tlbg.thueringen.de/liegenschaftskataster/alkis), die eigentlich auf sogar Gebäudeebene vorliegen, habe ich daher zunächst einen Straßendatensatz erzeugt ([hier verfügbar](Jena_streets.rds))...
+
+```{r, echo=TRUE, eval=FALSE}
+streets <- readRDS("Jena_streets.rds")
+```
+
+... der so aussieht:
+
+```{r, echo=FALSE}
+kbl <- streets[1:5, c("STN", "lat", "lon")]
+rownames(kbl) <- NULL
+kableExtra::kbl(kbl, decimal.mark = ",")
+rm(kbl)
+```
+
+Mit einfachen Textvergleichen können wir nun die im Polizeibericht vorkommenden Jenaer Straßennamen auffinden; nur für den Markt habe ich mir eine Sonderregel ausgedacht, um nicht auf jeden Super*markt* im Text hereinzufallen:
+
+```{r}
+# Geoparsing-Funktion:
+geoparse <- function(x, streets) {
+  sel <- sapply(streets$STN, function(y) any(grepl(y, x, ignore.case = TRUE)))
+  sel <- streets$STN[sel]
+  if ((length(sel) > 1) & any(sel == "Markt"))
+    sel <- sel[ sel != "Markt" ] # "Markt" weg, wenn auch Straße angegeben
+  sel
+}
+# Probier's aus:
+geoparse(d$text[1], streets = streets)
+```
+
+Jetzt müssen wir nur noch die Koordinaten der Straßen finden und diese auf die Karte bringen!
+
+### Geocodierung: Toponyme in Koordinaten umwandeln
+
+Da der ALKIS-Datensatz (bzw. mein abgeleiteter Straßendatensatz) auch Koordinaten enthält, können wir diese nun anhand der Straßennamen nachschlagen -- das ist die **Geocodierung**, eine essentielle Operation in vielen Geoinformatik-Anwendungen vom Geomarketing bis zur Routenfindung.
+
+Wenn mehr als ein Straßenname vorliegt, nehme ich die mittlere Koordinate. (Den Kreuzungspunkt zu finden wäre Fleißarbeit, die ich dir überlasse!)
+So sieht das aus:
+
+```{r geocode}
+# Funktion zum Geocodieren von Straßennamen:
+geocode <- function(x, streets) {
+  sel <- streets$STN %in% x
+  data.frame( # Median, falls es mehrere sind:
+    lat = median(streets$lat[sel]),
+    lon = median(streets$lon[sel]),
+    streets = paste(x, collapse = ", ")
+  )
+}
+# Probier's aus:
+geocode("Stadtrodaer Straße", streets = streets)
+geocode(c("Löbdergraben", "Sonnenhof"), streets = streets)
+```
+
+Damit sind wir bereit, das Geoparsing und die Geocodierung nacheinander auf alle Texte loszulassen:
+
+```{r, echo=FALSE}
+N_total <- nrow(d)
+```
+
+```{r workflow, echo=TRUE}
+xy <- d$text %>% map(geoparse, streets = streets) %>% 
+  map(geocode, streets = streets) %>% bind_rows()
+d <- cbind(d, xy)
+d <- d[!is.na(d$lat), ] # nur Berichte mit Koordinaten
+```
+
+Von den `r N_total` gefundenen Berichten konnten wir immerhin `r nrow(d)` Exemplare geocodieren. Es gibt auch zahlreiche Geocodierdienste im Internet, aber es ist schon sehr praktisch, dass wir in Thüringen direkt auf freie ALKIS-Daten zugreifen können!
+
+### Web-Mapping: interaktive Karten im Web erstellen
+
+Jetzt auf die Karte damit! Die Darstellung übernimmt für uns ein Package namens [`leaflet`](https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/), welches wiederum offene Geodaten z.B. von [OpenStreetMap](https://www.openstreetmap.de/) im Hintergrund einblendet.
+
+```{r plainmap, eval=TRUE, echo=TRUE, out.width='100%'}
+library(leaflet)
+d$popup <- paste0('<a href="https://www.presseportal.de', d$url, '">', 
+                  '<strong>', d$title, '</strong></a><p>',
+                  d$streets, '<p>"', d$text, '"<p>', 
+                  'Quelle: Polizei Jena via presseportal.de')
+leaflet() %>% addTiles() %>%
+  addCircleMarkers(lat = d$lat, lng = d$lon, popup = d$popup, radius = 5)
+```
+
+
+Ich habe die obige Analyse noch ein bisschen ausgedehnt und verfeinert und damit etwa ein Jahr an Polizeiberichten geocodiert. Das Ergebnis sieht so aus:
+
+{{% callout warning %}}
+
+Die Lage der Ereignisse stimmt bestenfalls(!) auf Straßenebene und kann in Einzelfall ganz falsch sein! Ich gebe keine Gewähr für die Richtigkeit der Informationen! Maßgeblich sind die vollständigen Original-Berichte, die jeweils in den Popup-Blasen verlinkt sind.
+
+{{% /callout %}}
+
+
+```{r map, echo=FALSE, out.width='100%'}
+dat <- readRDS("Jena_geocoded_reports.rds")
+dat$lat <- dat$lat + rnorm(nrow(dat), sd = 15)/110000
+dat$lon <- dat$lon + rnorm(nrow(dat), sd = 13)/110000
+
+reference <- "Quelle: Polizeidienststellen via www.presseportal.de"
+
+dat$popup <- paste0('<a href="https://www.presseportal.de', dat$url, '">',
+                  '<strong>', dat$title, '</strong></a><p>',
+                  dat$datetime, "<br>",
+                  dat$streets, '<p>"',
+                  dat$text, '"<p>', 
+                  reference)
+leaflet(data = dat) %>% addTiles() %>%
+  addCircleMarkers(lat = dat$lat, lng = dat$lon, popup = dat$popup, radius = 5)
+```
+
+Und schon sind wir fertig!
+
+Bei genauerer Betrachtung fallen uns zwar noch ein paar Fehler auf, mit denen sich vielleicht noch jemand in einer Abschlussarbeit auseinandersetzen möchte! 
+Ich habe das gleich für alle größeren Städte in Thüringen gemacht -- unten die Ergebnisse für Erfurt, Weimar und Gera.
+
+<!--
+Der zugehörige Code ist in einer Github-Repo unter einer Open-Source-Lizenz verügbar.
+-->
+
+
+### Relevante Links
+
+- Landespolizeiinspektion Jena <https://polizei.thueringen.de/landespolizeiinspektionen/lpijena/pressestelle>
+- Newsroom der Landespolizeiinspektion Jena <https://www.presseportal.de/blaulicht/nr/126722>
+- Neue Datenanalyse-Software für die Thüringer Polizei <http://www.geobranchen.de/mediathek/geonews/item/neue-datenanalyse-software-f%C3%BCr-die-th%C3%BCringer-polizei>
+- Aktuelle Toronto Crime Map <https://torontops.maps.arcgis.com/apps/webappviewer/index.html?id=5f74f910b2ea4e85a370014921cdecbd>
+
+## Weitere Thüringer Städte
+
+### Erfurt
+
+```{r maperfurt, echo=FALSE, out.width='100%'}
+dat <- readRDS("Erfurt_geocoded_reports.rds")
+dat$lat <- dat$lat + rnorm(nrow(dat), sd = 15)/110000
+dat$lon <- dat$lon + rnorm(nrow(dat), sd = 13)/110000
+
+reference <- "Quelle: Polizeidienststellen via www.presseportal.de"
+
+dat$popup <- paste0('<a href="https://www.presseportal.de', dat$url, '">',
+                  '<strong>', dat$title, '</strong></a><p>',
+                  dat$datetime, "<br>",
+                  dat$streets, '<p>"',
+                  dat$text, '"<p>', 
+                  reference)
+leaflet(data = dat) %>% addTiles() %>%
+  addCircleMarkers(lat = dat$lat, lng = dat$lon, popup = dat$popup, radius = 5)
+```
+
+
+### Weimar
+
+```{r mapweimar, echo=FALSE, out.width='100%'}
+dat <- readRDS("Weimar_geocoded_reports.rds")
+dat$lat <- dat$lat + rnorm(nrow(dat), sd = 15)/110000
+dat$lon <- dat$lon + rnorm(nrow(dat), sd = 13)/110000
+
+reference <- "Quelle: Polizeidienststellen via www.presseportal.de"
+
+dat$popup <- paste0('<a href="https://www.presseportal.de', dat$url, '">',
+                  '<strong>', dat$title, '</strong></a><p>',
+                  dat$datetime, "<br>",
+                  dat$streets, '<p>"',
+                  dat$text, '"<p>', 
+                  reference)
+leaflet(data = dat) %>% addTiles() %>%
+  addCircleMarkers(lat = dat$lat, lng = dat$lon, popup = dat$popup, radius = 5)
+```
+
+
+### Gera
+
+```{r mapgera, echo=FALSE, out.width='100%'}
+dat <- readRDS("Gera_geocoded_reports.rds")
+dat$lat <- dat$lat + rnorm(nrow(dat), sd = 15)/110000
+dat$lon <- dat$lon + rnorm(nrow(dat), sd = 13)/110000
+
+reference <- "Quelle: Polizeidienststellen via www.presseportal.de"
+
+dat$popup <- paste0('<a href="https://www.presseportal.de', dat$url, '">',
+                  '<strong>', dat$title, '</strong></a><p>',
+                  dat$datetime, "<br>",
+                  dat$streets, '<p>"',
+                  dat$text, '"<p>', 
+                  reference)
+leaflet(data = dat) %>% addTiles() %>%
+  addCircleMarkers(lat = dat$lat, lng = dat$lon, popup = dat$popup, radius = 5)
+```
+
+<img src="https://vg09.met.vgwort.de/na/01a98cfecbe747b99c159140105d3219" width="1" height="1" alt="">
