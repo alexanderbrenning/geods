@@ -6,7 +6,7 @@ theme: "starter-hugo-academic"
 
 title: GeoDS # Website name
 baseurl: 'https://geods.netlify.app/' # Website URL
-copyright: '© 2021 Alexander Brenning' # Footer text, e.g. '© {year} Me'
+copyright: '© 2021-2022 Alexander Brenning' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
