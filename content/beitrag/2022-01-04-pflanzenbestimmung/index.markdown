@@ -1,7 +1,8 @@
 ---
 title: "Pflanzenbestimmung mit Künstlicher Intelligenz"
 subtitle: "Von Spargel-Weihnachtsbäumen und den Vorzügen von Ensemble-Vorhersagen im Maschinellen Lernen"
-author: Alexander Brenning
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
 date: '2022-01-04'
 slug: plant-id
 categories: ["Maschinelles Lernen", "Künstliche Intelligenz"]

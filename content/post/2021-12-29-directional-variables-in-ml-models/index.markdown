@@ -2,6 +2,8 @@
 title: "How to encode slope aspect (and other cyclic variables) in environmental ML models"
 date: '2021-12-29'
 slug: directional-variables-in-ml-models
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
 categories: ["R", "machine learning", "environmental modeling", "feature engineering"]
 tags: ["geomorphometry", "slope aspect", "directional variables", "binning", "discretization", "encoding", "landslide susceptibility modeling", "species distribution modeling", "permafrost distribution modeling", "digital soil mapping", "model visualization", "interpretable machine learning", "iml", "ALE plot", "partial dependence plot", "permutation variable importance", "random forest", "support vector machine", "generalized additive model", "logistic regression"]
 summary: 'Slope aspect is a predictor in many environmental machine-learning models. Here I compare strategies for dealing with problems caused by the cyclic nature of this directional variable.'

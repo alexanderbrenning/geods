@@ -1,6 +1,8 @@
 ---
 title: "The wiml Package: Transforming Feature Space to Interpret Machine Learning Models"
 date: '2021-12-20'
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
 slug: interpretable-ml-with-a-twist
 categories: ["R", "machine learning", "remote sensing"]
 tags: ["model visualization", "interpretable machine learning", "R package", "iml", "wiml", "ALE plot", "partial dependence plot", "random forest", "permutation variable importance", "land cover classification"]

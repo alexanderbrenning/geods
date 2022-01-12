@@ -7,7 +7,7 @@ slug: lehre-in-pandemiezeiten
 categories: ["teaching", "R", "literate programming"]
 tags: ["exams", "moodle", "geostatistics"]
 summary: 'Wie lässt sich das Literate Programming in R nutzen, um vielfältige Moodle-Quizze automatisiert aus Datenpools und Fragenschemata zu erzeugen?'
-authors: []
+authors: ["Alexander Brenning"]
 lastmod: '2021-12-21'
 featured: no
 image:

@@ -1,6 +1,7 @@
 ---
 title: "Spatial machine-learning model diagnostics"
-author: Alexander Brenning
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
 date: '2022-01-11'
 slug: spatial-ml-model-diagnostics
 categories: ["machine learning", "geostatistics"]

@@ -2,6 +2,7 @@
 title: "Was geht denn hier ab?"
 subtitle: "Polizeiberichte in interaktiven Online-Karten darstellen"
 author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
 date: '2022-01-10'
 slug: polizeiberichte
 categories: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Jena"]
