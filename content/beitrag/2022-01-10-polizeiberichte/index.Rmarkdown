@@ -7,7 +7,7 @@ slug: polizeiberichte
 categories: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Jena"]
 tags: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Geoparsing", "Sicherheit", "ALKIS", "offene Geodaten Thüringen", "Verkehrsunfälle", "Einbrüche", "Crime mapping", "Kriminalitätskartierung", "Jena", "Erfurt", "Weimar", "Gera"]
 summary: 'Wie ärgerlich, dass Polizeiberichte nur als Text vorliegen -- wie soll ich da herausfinden, was um mich herum passiert?? Die Geoinformatik bietet eine Lösung: mit Geoparsing, Geocodierung und Web-Mapping, hier anhand des Beispiels Jena.'
-lastmod: '2022-01-10'
+lastmod: '2022-01-12'
 featured: no
 image:
   caption: ''
@@ -39,7 +39,6 @@ Die geographische Datenwissenschaft kann uns tatsächlich weiterhelfen. Was müs
 4. **Web-Mapping**: Ein interaktives Kartendisplay fürs Web erzeugen.
 
 Klingt kompliziert? Wer im [Geoinformatik-Studium bei uns in Jena](https://www.uni-jena.de/msc_geoinformatik) aufgepasst hat, wird keine Schwierigkeiten damit haben... ;-) Hier eine schnelle und einfache Lösung, die noch nicht das Letzte aus den Daten herausholt, aber für einen Samstagnachmittag doch recht ordentlich ist. 
-<!-- (In der repo auf Github gibt es eine noch etwas ausgefeiltere Lösung.) -->
 
 Ich verwende hierfür die [freie Statistik-Software R](https://www.r-project.org/) mit den Packages [`rvest`](https://rvest.tidyverse.org/) und [`leaflet`](https://rstudio.github.io/leaflet/) sowie [offene Thüringer Geodaten](https://www.geoportal-th.de/de-de/) der [ALKIS-Datenbank](https://tlbg.thueringen.de/liegenschaftskataster/alkis). (In vielen anderen Bundesländern sind diese Daten leider nicht frei zugänglich, aber es ließen sich auch andere offene Quellen anzapfen.)
 
@@ -215,14 +214,23 @@ leaflet(data = dat) %>% addTiles() %>%
   addCircleMarkers(lat = dat$lat, lng = dat$lon, popup = dat$popup, radius = 5)
 ```
 
-Und schon sind wir fertig!
-
 Bei genauerer Betrachtung fallen uns zwar noch ein paar Fehler auf, mit denen sich vielleicht noch jemand in einer Abschlussarbeit auseinandersetzen möchte! 
 Ich habe das gleich für alle größeren Städte in Thüringen gemacht -- unten die Ergebnisse für Erfurt, Weimar und Gera.
 
-<!--
-Der zugehörige Code ist in einer Github-Repo unter einer Open-Source-Lizenz verügbar.
--->
+### Web-Mapping und die Reproduktion von Verzerrungen
+
+War's das? Gerade die kartographische Darstellung der scheinbar objektiven polizeilichen Informationen verleitet dazu, denn darin erkennbaren räumlichen Mustern blind zu vertrauen. Das ist jedoch nicht unproblematisch:
+
+- Nicht alle potenziell berichtenswerten Vorfälle werden der Polizei mitgeteilt (Underreporting). Das kann verschiedenste Gründe haben... (Ich könnte da noch einen Fahrradsturz beitragen, denn ich vielleicht hätte melden sollen... siehst du den Punkt, der auf dem Radweg hinter Kunitz *nicht* zu sehen ist?)
+- Polizeiliche Handlungspraktiken können verstärkt bestimmte Bevölkerungsgruppen oder vermeintliche oder tatsächliche Gefahrengebiete innerhalb von Städten in den Fokus nehmen, was eine weitere Quelle von Verzerrungen darstellt (vgl. [dieser Beitrag](https://www.bpb.de/apuz/antirassismus-2020/316766/rassismus-und-polizei-zum-stand-der-forschung) der Bundeszentrale für politische Bildung).
+
+{{% callout warning %}}
+
+Die hier dargestellten Punktmuster reproduzieren die in den zugrundeliegenden Daten enthaltenen Verzerrungen.
+
+{{% /callout %}}
+
+Wir müssen mit diesen Informationen also kritisch umgehen und uns darüber im Klaren sein, dass die in den Karten erkennbaren Muster nunmal alle Verzerrungen reproduzieren, die in der Entstehung der Daten angelegt sind! Bei der Nutzung dieser Informationen ist dies unbedingt zu berücksichtigen -- sei es in der Polizeiarbeit ([Geopolicing](https://www.beltz.de/fachmedien/erziehungswissenschaft/zeitschriften/kriminologisches_journal/artikel/12767-geopolicing-und-kriminalitaetskartierungen.html), Predictive Policing), der sozialgeographischen Sicherheitsforschung, oder wenn wir uns in diesen Karten einfach nur in unserem Wohnumfeld umschauen wollen, was mir jedenfalls für heute ausreichen soll.
 
 
 ### Relevante Links
@@ -231,6 +239,9 @@ Der zugehörige Code ist in einer Github-Repo unter einer Open-Source-Lizenz ver
 - Newsroom der Landespolizeiinspektion Jena <https://www.presseportal.de/blaulicht/nr/126722>
 - Neue Datenanalyse-Software für die Thüringer Polizei <http://www.geobranchen.de/mediathek/geonews/item/neue-datenanalyse-software-f%C3%BCr-die-th%C3%BCringer-polizei>
 - Aktuelle Toronto Crime Map <https://torontops.maps.arcgis.com/apps/webappviewer/index.html?id=5f74f910b2ea4e85a370014921cdecbd>
+- Rassismus und Polizei: Zum Stand der Forschung <https://www.bpb.de/apuz/antirassismus-2020/316766/rassismus-und-polizei-zum-stand-der-forschung>
+- Geopolicing und Kriminalitätskartierungen <https://www.beltz.de/fachmedien/erziehungswissenschaft/zeitschriften/kriminologisches_journal/artikel/12767-geopolicing-und-kriminalitaetskartierungen.html>
+
 
 ## Weitere Thüringer Städte
 
