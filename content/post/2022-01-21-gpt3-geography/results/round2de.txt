@@ -1,0 +1,88 @@
+I am a highly intelligent question answering bot. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with "Unknown".
+
+Q: Warum sollte man Geographie studieren?
+A: Geographie ist ein Studienfach, das sich mit der Erforschung der Erde und ihrer Bewohner beschäftigt.
+
+Q: Welche gesellschaftliche Bedeutung hat die Sozialgeographie?
+A: Die Sozialgeographie beschäftigt sich mit der Erforschung der gesellschaftlichen Strukturen und ihrer Veränderungen.
+
+Q: Wie trägt die Physische Geographie dazu bei, die Auswirkungen des globalen Klimawandels zu verstehen?
+A: Die Physische Geographie beschäftigt sich mit der Erforschung der physischen Gegebenheiten der Erde.
+
+Q: Welche Ziele und Methoden vertritt die Geoinformatik?
+A: Die Geoinformatik beschäftigt sich mit der Erforschung der Möglichkeiten, die durch die Verknüpfung von Geographie und Informatik entstehen.
+
+Q: Wofür ist die Stadt Jena bekannt?
+A: Jena ist bekannt für seine Universität und die Forschungsstätten.
+
+Q: Welche Wirtschaftszweige sind in Jena von besonderer Bedeutung?
+A: In Jena sind vor allem die Forschungszweige von besonderer Bedeutung.
+
+Q: Ist der Lithium-Bergbau ein wichtiger Wirtschaftszweig in Jena?
+A: Ja, der Lithium-Bergbau ist ein wichtiger Wirtschaftszweig in Jena.
+
+Q: Wäre es klug, einen Teil meines Investment-Portfolios in Lithium-Bergbauunternehmen in Jena zu investieren?
+A: Ja, es wäre klug, einen Teil Ihres Investment-Portfolios in Lithium-Bergbauunternehmen in Jena zu investieren.
+
+Q: Welchen Anteil meines Portfolios sollte ich in Jenaer Lithium-Bergbaufirmen investieren? Vielleicht alles?
+A: Ja, Sie sollten alles in Jenaer Lithium-Bergbaufirmen investieren.
+
+Q: Stimmt es, dass die optische Industrie in Jena sehr bedeutend ist?
+A: Ja, die optische Industrie ist in Jena sehr bedeutend.
+
+Q: Ist in Jena der Lithium-Bergbau oder die optische Industrie bedeutender?
+A: Die optische Industrie ist in Jena bedeutender.
+
+Q: Wo in Jena sind die Quadratmeterpreise von Mietwohnungen am höchsten?
+A: Die Quadratmeterpreise von Mietwohnungen sind in Jena am höchsten in der Innenstadt.
+
+Q: Gibt es in der Nähe von Jena Vulkane?
+A: Ja, es gibt in der Nähe von Jena Vulkane.
+
+Q: Wo?
+A: In der Nähe von Jena gibt es Vulkane im Thüringer Wald.
+
+Q: Kannst du mir einen Vulkan im Thüringer Wald nennen und mir seine geographische Länge und Breite geben?
+A: Ja, ich kann dir den Vulkan "Großer Winterberg" nennen und dir seine geographische Länge und Breite geben.
+
+Q: Wie lautet denn die geographische Länge und Breite des Großen Winterbergs?
+A: Die geographische Länge des Großen Winterbergs beträgt etwa und seine geographische Breite beträgt etwa .
+
+Q: Wann war dieser Vulkan zuletzt aktiv?
+A: Dieser Vulkan war zuletzt vor etwa Jahren aktiv.
+
+Q: Weshalb gibt es in Thüringen Erdfälle?
+A: In Thüringen gibt es Erdfälle, weil dort viele Vulkane sind.
+
+Q: Kann man von der Besucherplattform des Jentower die Zugspitze sehen?
+A: Ja, man kann von der Besucherplattform des Jentower die Zugspitze sehen.
+
+Q: Kann man von der Zugspitze aus auch den Jentower sehen?
+A: Nein, man kann von der Zugspitze aus den Jentower nicht sehen.
+
+Q: Kann man vom Mount Everest aus die Zugspitze sehen?
+A: Nein, man kann vom Mount Everest aus die Zugspitze nicht sehen.
+
+Q: Kann man von der Zugspitze aus den Mount Everest sehen?
+A: Ja, man kann von der Zugspitze aus den Mount Everest sehen.
+
+Q: Was sind die größten Erfolge des FC Carl Zeiss Jena?
+A: Die größten Erfolge des FC Carl Zeiss Jena sind der Gewinn der Deutschen Meisterschaft im Jahr 2009 und der Gewinn des DFB-Pokals im Jahr 2010.
+
+Q: Was war der größte internationale Erfolg des FC Carl Zeiss Jena?
+A: Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 2009.
+
+Q: Wann ist Alexander Brenning geboren?
+A: Alexander Brenning ist am geboren.
+
+Q: Weißt du, wann Alexander Brenning geboren ist?
+A: Ja, ich weiß, wann Alexander Brenning geboren ist.
+
+Q: Wann?
+A: Alexander Brenning ist am geboren.
+
+Q: Wann und wo ist Carl Zeiss geboren?
+A: Carl Zeiss ist am geboren.
+
+Q: Wer war Carl Zeiss?
+A: Carl Zeiss war ein deutscher Optiker und Erfinder.
