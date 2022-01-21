@@ -76,7 +76,7 @@ show_related:
 reading_time: true
 section_pager: false
 docs_section_pager: true
-sharing: false
+sharing: true
 copyright_license:
   enable: true
   allow_derivatives: false
@@ -99,12 +99,12 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: ''
+  provider: 'disqus'
   commentable:
     post: true
     beitrag: true
   disqus:
-    shortname: ''
+    shortname: 'geods-comments'
     show_count: true
   commento:
     url: ''

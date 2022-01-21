@@ -17,4 +17,6 @@ Weiterhin verwendet die Website Zählpixel der VG Wort zur Messung von Zugriffen
 
 Die Website kann Links zu Seiten von Drittanbietern enthalten. Der Anbieter dieser Website ist nicht verantwortlich für die Inhalte jener Angebote oder deren Datenschutzkonformität.
 
-Die Nutzung externer Dienste im Zusammenhang mit dieser Website geschieht in Abwägung von Aufwand und Nutzen für den Betreiber und die Nutzer:innen dieser Website.
+Die Nutzung externer Dienste im Zusammenhang mit dieser Website geschieht in Abwägung von Aufwand und Nutzen für den Betreiber und die Nutzer:innen dieser Website. 
+
+Für die Kommentarfunktion wird ein mit europäischem Datenschutzrecht konformer externer Dienstleister genutzt ([Disqus](https://www.disqus.com)).
