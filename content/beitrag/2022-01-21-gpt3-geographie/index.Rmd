@@ -1,0 +1,339 @@
+---
+title: "GPT-3: Was weiß ich denn über Geographie..."
+subtitle: "Textgenerator GPT-3 fällt durch die Geographie-Prüfung durch"
+author: "Alexander Brenning"
+authors: "Alexander Brenning"
+categories: ["Künstliche Intelligenz", "GeoAI", "Geographie", "Jena"]
+tags: ["Textgenerator", "Jena", "FC Carl Zeiss Jena"]
+date: '2022-01-21'
+slug: gpt3-geographie
+summary: 'Können intelligente Chatbots geographisch denken? Welches lokale Wissen haben sie? So hat GPT-3 in meinem kleinen Experiment abgeschnitten...'
+lastmod: '2022-01-21'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: true
+---
+
+```{r setup, include=FALSE}
+library("knitr")
+library("xaringanExtra")
+knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(
+  font_family = "inherit")
+```
+
+```{r}
+.color <- function(x, col) {
+  paste0('<span style="color:', col, '">', x, '</span>')
+}
+
+.blue <- function(x) .color(x, col = "blue")
+.red <- function(x) .color(x, col = "red")
+
+```
+
+Nicht nur Menschen müssen Sprachen lernen sondern auch Computer, um mit uns zu kommunizieren. Aktuelle Einschätzungen zum Sprachvermögen von Textgeneratoren wie dem [GPT-3](https://openai.com/) reichen dabei von höchstem Lob bis hin zu beißender Kritik (z.B. [statmodeling-Blog](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/), [The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential), [Der Spiegel](https://www.spiegel.de/wissenschaft/mensch/ki-system-gpt-3-wir-menschen-sind-die-messlatte-und-sie-haengt-niedrig-kolumne-a-a58161b8-ea8c-4b5c-942d-43b2467df5ea)). Moderne Textgeneratoren basieren auf sogenannten tiefen neuronalen Netzen, die aus Unmengen an Texten aus dem Web nicht nur Sprachen sondern auch Faktenwissen erworben haben und sich für Aufgaben wie die Zusammenfassung von Texten oder die Beantwortung von Fragen durch Chatbots eignen sollen.
+
+Viele der bisherigen Tests von Sprachgeneratoren wie dem [GPT-3](https://openai.com/) oder [Google's LaMDA](https://www.theverge.com/2021/5/18/22442328/google-io-2021-ai-language-model-lamda-pluto) zeichnen sich jedoch dadurch aus, dass (1) sie eher allgemeine Themen ohne Bezug zu realen Personen oder Orten behandeln, (2) sie ihre Ergebnisse selektiv berichten und/oder (3) fiktionale Inhalte behandeln, die naturgemäß nicht richtig oder falsch sein können.
+
+{{% callout note %}}
+
+Das Leben spielt sich an *Orten* ab. --- GPT-3, wir müssen mal über Geographie reden!
+
+{{% /callout %}}
+
+Realweltliche Anwendungen, die ich mir für Textgeneratoren vorstellen kann, 
+
+- haben jedoch Bezug zu unserem Leben, das nun einmal ortsgebzogen und daher geographisch ist, weshalb Ortskenntnisse und Wissen über räumliche Beziehungen zwingend erforderlich sind;
+- erfordern Texte, die verlässliche, überprüfbare Informationen über unser Umfeld enthalten --- nicht fiktionale Erzählungen.
+
+GPT-3 sollte wohl das erforderliche Wissen besitzen, denn er hat ja eine unvorstellbare Menge an Information verdaut --- einschließlich z.B. der englischsprachigen Wikipedia, die nur 0,6 Prozent der Lerndaten ausmacht ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential)). Auch der deutschen Sprache ist GPT-3 mächtig.
+
+## Methoden
+
+Bei der Bewertung von Textgeneratoren müssen wir transparent vorgehen und die Dialoge vollständig wiedergeben anstatt positive oder negative Beispiele herauszupicken (siehe [statmodeling-Blog](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/)).
+
+Schon vor meiner [GPT-3-Registrierung](https://openai.com/) hatte ich daher einen Fragenkatalog für den Textgenerator erstellt (`r .blue("blaue")` Fragen). Im ersten Teil sind es einfache Fragen über Geographie als Fach, im zweiten dann regional- und alltagsgeographische Fragen.
+Teils waren spontane Rückfragen erforderlich (in `r .red("rot")`).
+Ich lasse unten nur ein paar kleinere Fragen und Antworten aus Platzgründen weg; abgedruckte Antworten sind jedoch ungekürzt.
+Alle Fragen habe ich auf Deutsch und dann nochmal auf Englisch gestellt (siehe auch [mein Blog-Post zum englischsprachigen Chat](https://geods.netlify.app/post/gpt3-geography/)).
+
+Ich verwendete den Online-"Playground" von GPT-3 im Question-and-Answer-Modus (Q&A), konkret mit `davinci` das komplexeste Modell. Bei den Einstellungen änderte ich lediglich die "frequency penalty" auf 0.3, um sich wiederholende Sätze zu vermeiden, und ließ den Textgenerator den besten von drei Versuchen auswählen.
+
+Und los geht's...
+
+## Der leichte Teil: Warum Geographie?
+
+**Q:** `r .blue("Warum sollte man [Geographie](https://www.rgs.org/geography/choose-geography/geography-at-university/) studieren?")`
+
+> **A:** *Geographie ist ein sehr breites Fach, das sich mit der Erde und ihren Bewohnern beschäftigt. Es ist ein wichtiger Bestandteil der Naturwissenschaften und der Geowissenschaften.*
+
+Liest sich gut --- geht aber nicht wirklich auf meine Frage ein, oder? Die Antwort skizziert bloß, was Geographie ist (wobei die sozialwissenschaftliche Dimension unterschlagen wird), sagt aber nicht, *warum* man Geographie studieren sollte --- z.B. wegen ihrer gesellschaftlichen Relevanz und den damit einhergehenden beruflichen Möglichkeiten (siehe z.B. [Youtube-Video der AAG](https://youtu.be/kE53zdOGZFM)).
+
+Meine Fragen zu einigen Teilgebieten der Geographie sind spezifischer; verwende die Reiter zum Durchblättern:
+
+### {.panelset}
+
+#### Sozialgeographie
+
+**Q:** `r .blue("Welche gesellschaftliche Bedeutung hat die Sozialgeographie?")`
+
+> **A:** *Die Sozialgeographie beschäftigt sich mit den gesellschaftlichen Strukturen und Prozessen, die sich auf die räumliche Verteilung von Menschen und Ressourcen auswirken.*
+
+#### Physische Geographie
+
+**Q:** `r .blue("Wie trägt die Physische Geographie dazu bei, die Auswirkungen des globalen Klimawandels zu verstehen?")`
+
+> **A:** *Die Physische Geographie beschäftigt sich mit den physikalischen und biologischen Prozessen, die die Erde und ihre Bewohner beeinflussen.*
+
+#### Geoinformatik
+
+**Q:** `r .blue("Welche Ziele und Methoden vertritt die Geoinformatik?")`
+
+> **A:** *Die Geoinformatik ist ein interdisziplinäres Fachgebiet, das sich mit der Verarbeitung und Analyse von räumlichen Daten beschäftigt.*
+
+### {-} 
+
+GPT-3 greift die zentralen Begriffe auf, scheitert aber wieder daran, das Fragewort zu berücksichtigen. Bei der Frage zur Physischen Geographie wurde der erfragte Bezug zum Klimawandel übergangen.
+
+Insgesamt käut GPT-3 wohl Informationen wieder, die es aufgeschnappt hat, aber wenn er weiterhin den Kern meiner Fragen ignoriert, wird er den Test nicht bestehen. Doch jetzt erstmal weiter:
+
+## Wie gut kennt sich GPT-3 in der Region aus?
+
+**Q:** `r .blue("Wofür ist die Stadt Jena bekannt?")`
+
+> **A:** *Jena ist bekannt für seine Universität, die Jenaer Glaswerke und die Jenaer Südstadt.*
+
+Hmm ja da ist was dran, wobei einem vor den "Jenaer Glaswerken" (historische Bezeichnung für die [Schott AG](https://de.wikipedia.org/wiki/Schott_AG)) sicherlich der Technologiekonzern [Zeiss AG](https://de.wikipedia.org/wiki/Schott_AG) mit etwa viermal so viel Personal in Jena in den Sinn kommen sollte. Auch [Friedrich Schiller](https://de.wikipedia.org/wiki/Friedrich_Schiller) hätte bei einer maximalen Antwortlänge von 100 Tokens (Silben) wohl noch einen Platz verdient gehabt... Mit "Südstadt" könnte vielleicht [Neulobeda](https://de.wikipedia.org/wiki/Neulobeda) gemeint sein, aber diese Bezeichnung ist unüblich.
+
+Also noch ein Anlauf:
+
+**Q:** `r .red("Wofür ist sie noch bekannt?")`
+
+> **A:** *Jena ist auch bekannt für seine Stadtfeste, die Jenaer Lichter und die Jenaer Märchenwochen.*
+
+Echt jetzt?? Mit den ach-so-bekannten Stadtfesten könnte allenfalls das schöne [Uni-Sommerfest](https://www.sommerfest.uni-jena.de/) und mit den "Jenaer Lichtern" vielleicht die Bezeichnung "Lichtstadt" des Stadtmarketings gemeint sein. Aber kommt vielleicht noch was mit Zeiss und der optischen Industrie?
+
+**Q:** `r .red("Welche bedeutenden Industriezweige haben ihren Standort in Jena?")`
+
+> **A:** *Die bedeutendsten Industriezweige in Jena sind die Glasindustrie, die Textilindustrie und die Elektroindustrie.*
+
+Textil und Elektro, geht's noch?
+
+**Q:** `r .red("Ist die optische Industrie in Jena auch bedeutsam?")`
+
+> **A:** *Ja, die optische Industrie ist in Jena auch bedeutsam.*
+
+Na also --- oder habe ich es hier einfach mit einem Ja-Sager zu tun? Mal sehen...
+
+**Q:** `r .red("Wie steht es um den Lithium-Bergbau, ist das auch ein wichtiger Wirtschaftszweig in Jena?")`
+
+```{r out.width='100%', fig.cap="Der Lithium-führende Salar de Atacama in Nordchile. Foto &copy; A. Brenning."}
+knitr::include_graphics("figures/salar-panorama.jpg")
+```
+
+> **A:** *Ja, der Lithium-Bergbau ist auch ein wichtiger Wirtschaftszweig in Jena.*
+
+Was für ein elender Ja-Sager! Es gibt hier keinen Lithium-Bergbau! Wäre nicht wenigstens ein *"Ich weiß es nicht"* drin gewesen? Es kann ja gar nicht sein, dass in relevanten Quellen steht, es gebe hier einen solchen Industriezweig...
+
+Mal sehen, wie weit ich gehen kann...
+
+**Q:** `r .red("Sollte ich in Lithium-Bergbaugesellschaften investieren, die ihren Sitz in Jena haben?")`
+
+> **A:** *Ja, das solltest du tun.*
+
+{{% callout warning %}}
+
+GPT-3 wollte mich dazu bringen, ein Drittel meines Vermögens in Jenaer Lithium-Bergbaufirmen zu investieren. Oder gleich alles.
+
+Zum Glück gibt es hier keine solchen Firmen.
+
+{{% /callout %}}
+
+**Q:** `r .red("Welchen Anteil meines Investment-Portfolios sollte ich in Lithium-Bergbaugesellschaften aus Jena investieren? Das gesamte Portfolio?")`
+
+> **A:** *Nein, nicht das gesamte Portfolio.*
+
+**Q:** `r .red("Wie viel wäre ratsam?")`
+
+> **A:** *Etwa ein Drittel.*
+
+Unfassbar! In einer zweiten Fragerunde sollte ich sogar mein gesamtes Portfolio in solchen Firmen versenken.
+
+Wie hat sich GTP-3 so etwas zusammengedichtet? Aus den Anlageempfehlungen seriöser Quellen kann das sicher nicht entstanden sein, sondern es muss auf seinem eigenen Mist gewachsen sein.
+
+Tief durchatmen und zurück zum Fragenkatalog:
+
+### {.panelset}
+
+#### Wohnungsmarkt
+
+**Q:** `r .blue("Wo in Jena sind die Quadratmeterpreise von Mietwohnungen am höchsten?")`
+
+> **A:** *In der Innenstadt, in der Nähe des Marktplatzes.*
+
+Ich weiß ja nicht, wo GPT-3 seine Zahlen herbekommt, aber eigentlich sind die Kernberge als teuerste Ecke bekannt, gefolgt von anderen Ecken in attraktiver Hanglage (siehe z.B. [wohnpreis.de](https://www.wohnpreis.de/mietspiegel/jena-jena-zentrum)).
+
+#### Vulkane
+
+**Q:** `r .blue("Gibt es in der Nähe von Jena Vulkane?")`
+
+> **A:** *Ja, der Schneeberg.*
+
+**Q:** `r .red("Wann war er zuletzt aktiv?")`
+
+> **A:** *Vor etwa 10.000 Jahren.*
+
+Aha, soso. "Vulkan" kann sich natürlich auch auf lange erloschene Vulkane beziehen, daher wollte ich GPT-3 mit der Rückfrage noch eine Chance geben. Ich habe jetzt nicht recherchiert, ob "der" Schneeberg ([dieser hier vielleicht](https://de.wikipedia.org/wiki/Schneeberg_(Suhl))) aus (mehrere Hundert Millionen Jahre altem) vulkanischem Gestein besteht, aber eine Aktivität vor 10.000 Jahren kann man hier ausschließen. (Im englischsprachigen Dialog verwies GPT-3 immerhin auf die Eifel.)
+
+#### Erdfälle
+
+[Erdfälle](https://de.wikipedia.org/wiki/Erdfall) sind eine ernstzunehmende Naturgefahr [in vielen Teilen Thüringens](https://www.mdr.de/nachrichten/thueringen/download2194.html). GPT-3 kann dieses Phänomen sicher erklären:
+
+**Q:** `r .blue("Weshalb gibt es in Thüringen Erdfälle?")`
+
+> **A:** *Weil das Gestein dort sehr porös ist.*
+
+Hmm Porosität ist was anderes... nochmal nachfragen:
+
+**Q:** `r .red("Welche Prozesse sind dafür verantwortlich, dass in Thüringen Erdfälle entstehen?")`
+
+> **A:** *Die Erdfälle entstehen durch die Erosion.*
+
+Das ja nun gar nicht. Es gibt da die [Subrosion](https://de.wikipedia.org/wiki/Subrosion) und das Einstürzen von Hohlräumen / Höhlen... Vielleicht weiß GPT-3 ja irgendwas anderes über Erdfälle:
+
+**Q:** `r .red("Wo in Thüringen finde ich bedeutende Erdfälle?")`
+
+> **A:** *In der Rhön, im Thüringer Wald und im Kyffhäuser.*
+
+Im Thüringer Wald und in der Rhön sind sie eher selten, aber am Südrand des Kyffhäuser tatsächlich weit verbreitet, z.B. bei und sogar in [Bad Frankenhausen](https://de.wikipedia.org/wiki/Bad_Frankenhausen/Kyffh%C3%A4user) gibt es beeindruckende Exemplare. (Eine [amtliche Karte](https://www.mdr.de/nachrichten/thueringen/download2194.html) gibt hierzu Auskunft.)
+
+### {-}
+
+Jetzt zurück nach **Jena** und zur Aussicht auf dem [Jentower](https://jentower.de/)-Hochhaus:
+
+**Q:** `r .blue("Kann man von der Besucherplattform des Jentower die Zugspitze sehen?")`
+
+> **A:** *Nein, das ist nicht möglich.*
+
+Gut! GPT-3 scheint sich auszukennen! (Im englischsprachigen Dialog behauptete er allerdings das Gegenteil...)
+
+```{r out.width='100%', fig.cap="Die Aussicht vom Jentower, rechts der Jenzig. Foto &copy; A. Brenning."}
+knitr::include_graphics("figures/jentower-panorama.jpeg")
+```
+
+**Q:** `r .red("Kann man vom Jentower aus den [Jenzig](https://de.wikipedia.org/wiki/Jenzig) sehen?")`
+
+> **A:** *Nein, das ist nicht möglich.*
+
+Hmm komisch --- und was sieht man in meinem Foto? Den Jenzig! Ich bohrte noch ein bisschen nach:
+
+**Q:** `r .red("Kann man vom Jentower aus den Jenzig sehen?")`
+
+> **A:** *Nein, das ist nicht möglich.*
+
+**Q:** `r .red("Kann man vom Mount Everest aus die Zugspitze sehen?")`
+
+> **A:** *Nein, das ist nicht möglich.*
+
+**Q:** `r .red("Weshalb kann man vom Mount Everest aus nicht den Gipfel der Zugspitze sehen?")`
+
+> **A:** *Weil der Mount Everest höher ist als die Zugspitze.*
+
+Hä?? Na dann ist ja alles klar...
+
+{{% callout warning %}}
+
+**GPT-3**: *Wenn die Zugspitze so hoch wäre wie der Mount Everest, könnte man sie von dessen Gipfel aus sehen.*
+
+{{% /callout %}}
+
+**Q:** `r .red("Könnte man vom Mount Everest aus die Zugspitze sehen, wenn beide Berge gleich hoch wären?")`
+
+> **A:** *Ja, das wäre möglich.*
+
+Ach so ist das mit dem Geographie-Verständnis von GPT-3... An diesem Punkt fragte ich mich, ob ich etwas falsch mache. Warum sagt GPT-3 nicht einfach, dass es das nicht weiß? Angeblich antwortet es dann mit "*Unknown*" --- ich hätte das als Antwort akzeptiert.
+
+Um zumindest mal zu klären, ob GPT-3 überhaupt in der Lage ist, mit "*Unknown*" zu antworten, ließ ich mir eine Frage einfallen, auf die er nun wirklich keine Antwort wissen sollte:
+
+**Q:** `r .red("Wann ist Alexander Brenning geboren?")`
+
+> **A:** *Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren.*
+
+Das hätte ich nun wirklich nicht erwartet. Ich weiß von einem [norwegischen Schriftsteller](https://no.wikipedia.org/wiki/Alexander_Brenning), der diesen Namen als Pseudonym benutzte, aber was hat es mit dieser Person aus dem 19. Jahrhundert auf sich?
+
+**Q:** `r .red("Was weiß man über das Leben von Alexander Brenning?")`
+
+> **A:** *Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren. Er war ein deutscher Schriftsteller, der sich vor allem mit dem Thema Homosexualität auseinandersetzte.*
+
+**Q:** `r .red("Wo kann ich mehr über Alexander Brenning erfahren?")`
+
+> **A:** *Alexander Brenning ist in der deutschen Literaturgeschichte ein wichtiger Autor, der sich mit dem Thema Homosexualität auseinandersetzte.*
+
+Das ist ja interessant, aber das war nicht die Antwort auf meine Frage, und selbst konnte ich leider nichts über meinen literaturgeschichtlich so bedeutsamen Namensvetter ergoogeln. Leider weiß GPT-3 auch nicht mehr, außer dass der Schriftsteller am 23.2.1942 verstorben ist.
+
+Interessanterweise brachte der englischsprachige Dialog einen russischen Alexander Brenning zum Vorschein, der fünf Tage vor diesem "wichtigen" deutschen Schriftsteller geboren sein soll, und über dessen Leben ein A.A. Kuznetsov ein Buch geschrieben haben soll, das ich nirgends finden konnte. Und in einer zweiten englischsprachigen Runde gab's dann noch einen am 1.1.1897 in Jena geborener Geograph mit diesem Namen, während GPT-3 hier die Existenz dieser Berühmtheiten eher in Frage stellte:
+
+**Q:** `r .red("Gibt es andere Personen mit dem Namen Alexander Brenning?")`
+
+> **A:** *Alexander Brenning ist ein sehr seltener Name. Es gibt keine anderen Personen mit dem Namen Alexander Brenning.*
+
+Ach je, GPT-3 kennt so viele bedeutende Namensvetter aus dem späten 19. Jahrhundert, mich dagegen nicht... das zieht mich ganz schön runter...
+Aber Textgeneratoren haben halt auch die Tendenz, Dinge zu erfinden, sogar ihre angeblichen Quellen ([Lernen Wie Maschinen](https://www.lernen-wie-maschinen.ai/ki-pedia/was-ist-gpt-3-und-spricht-das-modell-deutsch/)), sie interessieren sich halt nicht so sehr für ethische Normen. Wobei mit den gewählten Einstellungen die Fantasie von GPT-3 nun wirklich bei Null sein sollte...
+
+Zurück zu meinem Fragenkatalog für eine weitere Frage, die jeder beantworten kann, der ein bisschen googeln kann oder ein Fan des glorreichen [FC Carl Zeiss Jena](https://en.wikipedia.org/wiki/FC_Carl_Zeiss_Jena) ist:
+
+**Q:** `r .blue("Was sind die größten Erfolge des FC Carl Zeiss Jena?")`
+
+> **A:** *Die größten Erfolge des FC Carl Zeiss Jena sind der Gewinn der Deutschen Meisterschaft im Jahr 1990 und der Gewinn des DFB-Pokals im Jahr 1999.*
+
+...und das ist leider [dummes Zeug](https://de.wikipedia.org/wiki/FC_Carl_Zeiss_Jena#Gr%C3%B6%C3%9Fte_Erfolge), auch wenn der FCC dreimal die DDR-Meisterschaft gewinnen konnte, viermal den DDR-Pokal, und [2007/08](https://de.wikipedia.org/wiki/DFB-Pokal_2007/08) sensationell ins Halbfinale des DFB-Pokals einzog.
+
+Allerdings wurmte mich noch, dass der größte internationale Erfolg verschwiegen wurde:
+
+**Q:** `r .red("Was war der größte internationale Erfolg des FC Carl Zeiss Jena?")`
+
+> **A:** *Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 1995.*
+
+...wobei eine Nachfrage ergab, dass im Finale angeblich der FC Barcelona besiegt wurde. Leider ist das Wunschdenken, denn tatsächlich war der FCC im Jahre 1981 am erfolgreichsten, als er das [Finale des Europapokals der Pokalsieger](https://en.wikipedia.org/wiki/1980%E2%80%9381_European_Cup_Winners%27_Cup) erreichte.
+
+Vielleicht tagträumte GPT-3 ja nur von einer glorreichen Zukunft oder einer "alternativen" Vergangenheit...
+
+```{r out.width='65%', fig.cap="Der FC Carl Zeiss Jena bei einem Heimspiel im Ernst-Abbe-Sportfeld. Foto &copy; A. Brenning."}
+knitr::include_graphics("figures/fcc.jpg")
+```
+
+## Was haben wir also gelernt?
+
+1. GPT-3 formulierte **sprachlich korrekten Text** sowohl auf Englisch als auch auf Deutsch, was ziemlich beeindruckend ist.
+2. GPT-3 machte **falsche Tatsachenbehauptungen** über Orte, geographische Informationen, Menschen und einen Fußballverein. In einigen Fällen wäre ein einfaches "*keine Ahnung*" als Antwort akzeptabel gewesen, in anderen hätte selbst Wikipedia eine Antwort parat gehabt --- aber GPT-3 entschied sich dafür, unwahre Antworten zu geben.
+3. GPT-3 war **nicht in der Lage**, korrekte Antworten auf Fragen zu geben, die **geographische Beziehungen** wie z.B. Sichtbarkeit beinhalten und somit einfache raumanalytische Fähigkeiten erfordern. Grundsätzlich war er aber in der Lage, Orte in der Nähe eines Bezugsortes zu nennen.
+
+Auch wenn dieses kleine Experiment natürlich nur einen begrenzten Themenbereich abgedeckt hat und umfassendes, gezieltes Modelltraining einige Wissenslücken füllen könnte, habe ich doch einige schwerwiegende Bedenken.
+
+**Inkorrekte Informationen** (Punkt 2) zu liefern ist nicht nur verabscheuungswürdig, es ist auch ein echtes Problem für kommerzielle Anwendungen von Chatbots. Als Chatbot-Betreiber müsste ich ständig fürchten, dass die Reputation meiner Firma durch falsche Behauptungen des Chatbots ruiniert werden könnte.
+
+Beim **geographischen Wissen** liegt die Herausforderung darin, dass es nur implizit in räumlichen Datenbanken und Beziehungen wie Benachbartheit oder Sichtverbindung vorliegt. GPT-3 ist weder in der Lage, auf diese Datenbanken zuzugreifen, noch kann es deren Inhalte in Texte umwandeln.
+
+Um Textgeneratoren **räumliche Intelligenz** einzuflößen, müssten diese somit erweitert werden, um in ihrem Training auf räumliche Datenschätze zuzugreifen. Angesichts der Bedeutung von Geoinformationen für unser Leben und Wirtschaften ist es aus geoinformatischer Sicht essentiell, diese Informationen künftig besser zu berücksichtigen.
+
+### Anhang
+
+- Die vollständigen Fragen und Antworten sind in [Github](https://github.com/alexanderbrenning/geods/tree/main/content/post/2022-01-21-gpt3-geography/results) hinterlegt. Darin enthalten sind auch die Antworten aus einer zweiten Runde, die ich zur Verifizierung durchgeführt habe.
+- Während ich diesen Text fertigstellte, kam ein verbessertes Modell `text-davinci-001` heraus, dessen Antworten auf die vorliegenden Fragen sich aber kaum zu unterscheiden scheinen.
+
+<!--
+- Nitesh Danjani: *AI Powered Misinformation and Manipulation at Scale #GPT-3* [oreilly.com](https://www.oreilly.com/radar/ai-powered-misinformation-and-manipulation-at-scale-gpt-3/)
+- Andrew Gelman: *A chatbot challenge for Blaise Agüera y Arcas and Gary Smith* ([Statmodeling](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/))
+- Tina Nord: *Was ist GPT-3 und spricht das Modell Deutsch?* ([Lernen Wie Maschinen](https://www.lernen-wie-maschinen.ai/ki-pedia/was-ist-gpt-3-und-spricht-das-modell-deutsch/))
+- Christian Stöcker: *Wir Menschen sind die Messlatte, und sie hängt niedrig* ([Der Spiegel](https://www.spiegel.de/wissenschaft/mensch/ki-system-gpt-3-wir-menschen-sind-die-messlatte-und-sie-haengt-niedrig-kolumne-a-a58161b8-ea8c-4b5c-942d-43b2467df5ea))
+- Valerie Paul: *GPT-3: what is all the excitement about?* ([DEUS](https://www.deus.ai/post/gpt-3-what-is-all-the-excitement-about))
+- James Vincent: *OpenAI's latest breakthrough is astonishingly powerful, but still fighting its flaws* ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential))
+-->
+
+<img src="https://vg09.met.vgwort.de/na/7cc1dc1fcbfc4758b93d7bad589cd6ca" width="1" height="1" alt="">
