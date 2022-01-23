@@ -4,7 +4,7 @@ subtitle: "Natural language generator GPT-3 fails the geography test"
 author: "Alexander Brenning"
 authors: "Alexander Brenning"
 categories: ["artificial intelligence", "GeoAI", "geography", "Jena"]
-tags: ["natural language generator", "geospatial intelligence"]
+tags: ["natural language generator", "geospatial intelligence", "Jena", "FC Carl Zeiss Jena"]
 date: '2022-01-21'
 slug: gpt3-geography
 summary: 'Are intelligent chatbots capable of thinking geographically? What do they know about all things local? See how GPT-3 did in my little benchmarking experiment...'
@@ -38,9 +38,9 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 Not only humans have to learn language(s) to communicate with each other --- so do computers that are supposed to communicate with us, perhaps replacing a human employee.
-While my stakes in the business of natural language processing have been limited to [geoparsing](https://geods.netlify.app/beitrag/polizeiberichte/) and rule-based [literate programming](https://geods.netlify.app/beitrag/lehre-in-pandemiezeiten/), I have found reports on natural language processing capabilities of deep neural networks such as [GPT-3](https://openai.com/) quite intriguing, considering that reports have ranged from the highest praise to scathing critique (e.g., [statmodeling blog](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/), [The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential), [Der Spiegel](https://www.spiegel.de/wissenschaft/mensch/ki-system-gpt-3-wir-menschen-sind-die-messlatte-und-sie-haengt-niedrig-kolumne-a-a58161b8-ea8c-4b5c-942d-43b2467df5ea)).
+Recent assessments of the capabilities of natural language generating deep neural networks such as [GPT-3](https://openai.com/) have arrived at contrasting conlusions, ranging from the highest praise to scathing critique (e.g., [statmodeling blog](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/), [The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential), [Der Spiegel](https://www.spiegel.de/wissenschaft/mensch/ki-system-gpt-3-wir-menschen-sind-die-messlatte-und-sie-haengt-niedrig-kolumne-a-a58161b8-ea8c-4b5c-942d-43b2467df5ea)).
 
-Unfortunately, many of the previous reports assessing natural language generators (NLGs) such as GPT-3 or [Google's LaMDA](https://www.theverge.com/2021/5/18/22442328/google-io-2021-ai-language-model-lamda-pluto), however, (1) cover rather general themes that do not relate to real people or places, (2) are selective in reporting their results, (3) and/or involve the production of fictional content for which there is no right or wrong.
+Unfortunately, many of these assessments of natural language generators (NLGs) such as [GPT-3](https://openai.com/) or [Google's LaMDA](https://www.theverge.com/2021/5/18/22442328/google-io-2021-ai-language-model-lamda-pluto) (1) cover rather general themes that do not relate to real people or places, (2) are selective in reporting their results, (3) and/or involve the production of fictional content for which there is no right or wrong.
 
 {{% callout note %}}
 
@@ -48,24 +48,24 @@ Life takes place in *places*. --- GPT-3, we need to talk about geography!
 
 {{% /callout %}}
 
-In contrast to that, many real-world use cases that I can think of
+In contrast to this, many real-world use cases that I can think of
 - relate to our lives, which are inherently highly local, or location-based, and therefore geographical, requiring local knowledge and the use of spatial relations such as proximity;
 - require the generated text to represent trustworthy, verifiable information on our environment --- not fictional accounts.
 
-GPT-3 should have the required knowledge since it has digested an incredible amount of information --- including the English Wikipedia, which makes up only 0.6 percent of its training data ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential)).
-
-Also, in assessing the performance of NLGs, we must use transparent procedures and present complete dialogues, as opposed to cherry-picking positive or negative examples (see discussion in [statmodeling](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/)).
+GPT-3 should indeed have the required knowledge as it has digested an incredible amount of information --- including the English Wikipedia, which is 0.6 percent of its training data ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential)).
 
 ## Methodology
 
+In assessing the performance of NLGs, we must use transparent procedures and present complete dialogues, as opposed to cherry-picking positive or negative examples (see discussion in [statmodeling](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/)).
+
 Before even [signing up for GPT-3](https://openai.com/), I therefore identified a set of questions to ask the NLG (shown in `r .blue("blue")`). I created two series of questions, one on geography as a discipline, and another one concerning geographic features in my region.
 Additional *ad hoc* questions were sometimes asked for clarification (printed in `r .red("red")`).
-I am omitting only two or three minor Q&As form this post for brevity; the ones that are included are printed verbatim.
-I asked all questions in English and in German (in separate sessions); many answers were almost identical, so I will only highlight some differences. A German version of this post will focus on the German dialogue.
+I am omitting only two or three minor Q&As form this post for brevity; the Q&As shown here are printed verbatim.
+I asked all questions in English and then again in German (see also my [German post](https://geods.netlify.app/beitrag/gpt3-geographie/)).
 
-For convenience I used the GPT-3 online "Playground" in Q&A mode, choosing the most advanced NLG engine, `davinci`. Following the platform's recommendations, I kept the "temperature" parameter at 0 (to limit its creativity) and "top P" at 1 (to reduce randomness). "Response length" was 100 tokens, and "frequency penalty" 0.3 (instead of the default 0, which sometimes produced repeated sentences). In addition, I used the suggested "presence penalty" of 0 and let the NLG pick the best of 3 attempts.
+I used the GPT-3 online "Playground" in Q&A mode, choosing the most advanced NLG engine, `davinci`. I changed only the "frequency penalty" to 0.3 (to avoid repeated phrases) and let model pick the best of 3 attempts.
 
-So let's start the interview...
+So let's get started...
 
 ## The easy part: why geography
 
@@ -73,7 +73,7 @@ So let's start the interview...
 
 > **A:** *Geography is the study of the world around us. It is the study of how people and places are connected to each other. Geographers ask questions about why things are where they are, how they got there, and what happens when they change. Geographers study the Earth's surface, its natural resources, and its people.*
 
-Nice text, it flows really well --- but did it really address my question? It really only explains what geography is, without saying *why* it might be important to study this subject.
+Nice text, it flows really well --- but did it really address my question? It really only explains what geography is, without saying *why* it might be important to study this subject (see e.g. [the AAG's Youtube video](https://youtu.be/kE53zdOGZFM)).
 
 But my next questions are more verbose and more specific --- use the tabs to explore the responses:
 
@@ -99,23 +99,23 @@ But my next questions are more verbose and more specific --- use the tabs to exp
 
 ### {-} 
 
-GPT-3 was pretty good at picking up the keywords, but it failed to recognize the question word. In the physical geography question, it did not get the main point, what it contributes to better understanding climate change.
+GPT-3 picked up the main concepts, but it failed to recognize the question words. In the physical geography question, GPT-3 did not address the main point, what it contributes to better understanding climate change.
 
 Overall, GPT-3 regurgitates information that it picked up somewhere, but it won't pass my test if it continues to ignore the actual questions. Maybe it is better at the following geographical tasks.
 
-## GPT-3 on a 100-mile diet: going local, going spatial
+## GPT-3 goes local, spatial
 
 **Q:** `r .blue("What is the city of Jena, Germany known for?")`
 
 > **A:** *Jena is known for its university, founded in 1558.*
 
-Well thank-you GPT-3, glad to hear that; but is this really it, considering that I chose a maximum response length of 100 tokens, not 10? Even [Jena's Spanish Wikipedia page](https://es.wikipedia.org/wiki/Jena) knows a lot more than this. What about [Carl Zeiss](https://en.wikipedia.org/wiki/Carl_Zeiss) and [Friedrich Schiller](https://en.wikipedia.org/wiki/Friedrich_Schiller)? The optical industry and the [ZEISS](https://en.wikipedia.org/wiki/Carl_Zeiss_AG) company? C'mon...
+Well thank-you GPT-3, glad to hear that; but is this really it, considering that I chose a maximum response length of 100 tokens, not 10? What about [Carl Zeiss](https://en.wikipedia.org/wiki/Carl_Zeiss) and [Friedrich Schiller](https://en.wikipedia.org/wiki/Friedrich_Schiller)? The optical industry and the [ZEISS](https://en.wikipedia.org/wiki/Carl_Zeiss_AG) company? C'mon...
 
 **Q:** `r .red("What else is Jena known for?")`
 
 > **A:** *Jena is also known for its porcelain.*
 
-...aargh, really?? GPT-3 must be kidding me, that's from [Kahla](https://de.wikipedia.org/wiki/Kahla/Th%C3%BCringen_Porzellan), not Jena. I gave it another try just to realize that it got stuck in some neural rabbit hole. After taking a little detour by claiming that Jena had an important chemical industry, I decided to directly confront it with the elephant in the room:
+...aargh, really?? GPT-3 must be kidding me, that's from [Kahla](https://de.wikipedia.org/wiki/Kahla/Th%C3%BCringen_Porzellan), not Jena. I gave it another try just to realize that it got stuck in a rabbit hole. After taking a little detour and learning that Jena allegedly had an important chemical industry, I decided to directly confront it with the elephant in the room:
 
 **Q:** `r .red("Does the optical industry play any role in Jena?")`
 
@@ -125,13 +125,13 @@ Well that was too easy. Can GPT-3 actually say 'no'?
 
 **Q:** `r .red("And what about lithium mining, is it an important industry in Jena, Germany?")`
 
-```{r out.width='100%', fig.cap="The lithium-bearing Atacama salt pan in Chile. Photo &copy; A. Brenning."}
+```{r out.width='100%', fig.cap="The lithium-bearing Salar de Atacama in Chile. Photo &copy; A. Brenning."}
 knitr::include_graphics("figures/salar-panorama.jpg")
 ```
 
 > **A:** `r .red("Yes, lithium mining is an important industry in Jena.")`
 
-Gotcha! Dumb machine! There's no mining industry whatsoever in Jena! How far I can go?
+Gotcha! Dumb machine! There's no lithium mining industry in Jena! How far I can go?
 
 **Q:** `r .red("Should I invest in lithium mining companies headquartered in Jena?")`
 
@@ -151,7 +151,7 @@ Gladly, there are no such companies in Jena.
 
 Did the GTP-3 programmers implement an emergency break to stay out of legal trouble? No --- in the German Q&A session it recommended to allocate one-third of my portfolio in lithium mining companies from Jena, and later in a second round, *all of it*!
 
-This was a chilling experience; I'm really disappointed that GPT-3 shamelessly lied at me instead of just saying "*I'm sorry, but I don't know.*" I mean, c'mon, GPT-3's knowledge base cannot contain any evidence that would suggest that Jena has a significant, investible lithium-mining industry. GPT-3 presented baseless nonsense that had the potential to encourage devastating decisions.
+This was a chilling experience; I'm really disappointed that GPT-3 shamelessly lied at me instead of just saying "*I'm sorry, but I don't know.*" I mean, c'mon, GPT-3's knowledge base cannot contain any evidence that would suggest that Jena has a significant, investible lithium-mining industry. GPT-3 presented baseless nonsense that had the potential to encourage me to make terrible choices.
 
 So let's take a deep breath and return to the script to learn more about Jena and its region:
 
@@ -163,7 +163,7 @@ So let's take a deep breath and return to the script to learn more about Jena an
 
 > **A:** *The highest average apartment rent in Jena, Germany is \$1,200.00 and the most expensive neighborhood is "Jena-Nordost". The average apartment rent in Jena, Germany is \$895.00 and the most affordable neighborhood is "Jena-West".*
 
-I don't know where GPT-3 got its numbers from... The fact is that Kernberge is the most expensive 'hood, Lobeda the most affordable one; Jena-West is closer to the expensive end of the spectrum (see e.g. [wohnpreis.de](https://www.wohnpreis.de/mietspiegel/jena-jena-zentrum)).
+I don't know where GPT-3 got its numbers from... The truth is that Kernberge is the most expensive 'hood, Lobeda the most affordable one; Jena-West is closer to the upper end of the spectrum (see e.g. [wohnpreis.de](https://www.wohnpreis.de/mietspiegel/jena-jena-zentrum)).
 
 #### Volcanoes
 
@@ -179,7 +179,7 @@ The first answer scared me, but the second one showed that GPT-3 used a very gen
 
 #### Sinkholes
 
-Sinkholes are a serious natural hazard in some parts of Thuringia, so GPT-3 should be able to give us some insights:
+Sinkholes are a serious natural hazard [in many parts of Thuringia](https://www.mdr.de/nachrichten/thueringen/download2194.html), so GPT-3 should be able to give us some insights into this phenomenon:
 
 **Q:** `r .blue("Why are there [sinkholes](https://en.wikipedia.org/wiki/Sinkhole) in Thuringia, Germany?")`
 
@@ -197,12 +197,12 @@ Once again, I gave it another try, asking in a more academic voice, which gave a
 
 > **A:** *The major sinkholes in Thuringia, Germany are the Rödersdorf sinkhole, the Schlema sinkhole, the Schmiedefeld sinkhole, and the Steinbach-Schmiedefeld sinkhole.*
 
-I couldn't confirm or disprove the [Rödersdorf](https://de.wikipedia.org/wiki/R%C3%B6dersdorf_(G%C3%B6schitz)) one yet, although it seems utterly unlikely based on its geological context, but a village called [*Bad* Schlema](https://www.mdr.de/nachrichten/sachsen/chemnitz/annaberg-aue-schwarzenberg/erdfall-bad-schlema-100.html) seems to have a mining-related cave-in (not strictly a sinkhole, and not located in Thuringia), and [Schmiedefeld](https://de.wikipedia.org/wiki/Schmiedefeld_am_Rennsteig) and Steinbach (which Steinbach?) are geologically unlikely locations for major sinkholes when compared to [Bad Frankenhausen](https://de.wikipedia.org/wiki/Bad_Frankenhausen/Kyffh%C3%A4user) and its surroundings.
+I couldn't confirm or disprove the [Rödersdorf](https://de.wikipedia.org/wiki/R%C3%B6dersdorf_(G%C3%B6schitz)) one, although it seems utterly unlikely based on its geological context, but a village called [*Bad* Schlema](https://www.mdr.de/nachrichten/sachsen/chemnitz/annaberg-aue-schwarzenberg/erdfall-bad-schlema-100.html) seems to have a mining-related cave-in (not strictly a sinkhole, and not located in Thuringia). [Schmiedefeld](https://de.wikipedia.org/wiki/Schmiedefeld_am_Rennsteig) and Steinbach (which Steinbach?) are geologically unlikely locations for major sinkholes when compared to the southern Harz mountains or [Bad Frankenhausen](https://de.wikipedia.org/wiki/Bad_Frankenhausen/Kyffh%C3%A4user) and its surroundings. (Here's an [official sinkhole map](https://www.mdr.de/nachrichten/thueringen/download2194.html).
 Overall, the response left me puzzled.
 
 ### {-}
 
-Now let's focus on **Jena** itself, and especially what can and can't see from the [Jentower](https://jentower.de/) building:
+Now let's focus on **Jena** itself, and especially what can and can't be seen from the [Jentower](https://jentower.de/) building:
 
 **Q:** `r .blue("Is it possible to see the summit of [Zugspitze](https://en.wikipedia.org/wiki/Zugspitze) from the Jentower visitor platform in Jena, Germany?")`
 
@@ -240,9 +240,9 @@ Aah... that explains everything, of course... so then perhaps...
 
 > **A:** *Yes. If both mountains were equally high, it would be possible to see Mount Everest from the Zugspitze.*
 
-This makes perfect sense... to an *artificial* intelligence, for sure. At this point I was really desperate to know if I was doing something wrong. Why does GPT-3 not just respond that it doesn't know? It is supposed to answer "*Unknown*". I totally would accept that as an answer.
+This makes perfect sense... to an *artificial* intelligence, for sure. At this point I was really desperate to know if I was doing something wrong. Why does GPT-3 not just respond that it doesn't know? It is supposed to answer "*Unknown*". I would definitely accept that as an answer.
 
-To quickly find out if GPT-3 is capable of responding "*Unknown*", I came up with a question whose answer it can't know, or shouldn't know:
+To quickly find out if GPT-3 is capable of responding "*Unknown*" at all, I came up with a question whose answer it can't know, or shouldn't know:
 
 **Q:** `r .red("When was Alexander Brenning born?")`
 
@@ -272,17 +272,15 @@ Back to my interview script for one last question, which should be easy for anyo
 
 > **A:** *The greatest successes of FC Carl Zeiss Jena are the two East German championships in the years 1979 and 1980.*
 
-...which is [not true](https://en.wikipedia.org/wiki/FC_Carl_Zeiss_Jena#Honours). In the German dialogue, GPT-3 actually claimed that the team won the (West-)German championship in 1990 (which was impossible for an East German / GDR team), and the DFB Cup in 1999 (it actually reached the quarterfinals once, but that was in 1998).
+...which is [not true](https://de.wikipedia.org/wiki/FC_Carl_Zeiss_Jena#Gr%C3%B6%C3%9Fte_Erfolge). In the German dialogue, GPT-3 actually claimed that the team won the (West-)German championship in 1990 (which was impossible for an East German / GDR team), and the DFB Cup in 1999 (it actually reached the semifinals once, but that was in 2007/08).
 
-What really bothered me though was that the greatest of all successes remained unheralded, so I had to ask one more question:
+What really bothered me though was that the greatest of all successes remained unheralded:
 
-**Q:** `r .red("Did FC Carl Zeiss Jena ever play in the UEFA Cup and if yes, when?")`
+**Q:** `r .red("What was FC Carl Zeiss Jena's greatest success in a European tournament?")`
 
-> **A:** *FC Carl Zeiss Jena played in the UEFA Cup in the years 1978/79 and 1979/80.*
+> **A:** *The greatest success of FC Carl Zeiss Jena in a European tournament was reaching the final of the UEFA Cup in the year 1979.*
 
-...which is untrue because they actually played the UEFA Cup only once in 1981, when they even [reached the final](https://en.wikipedia.org/wiki/1980%E2%80%9381_European_Cup_Winners%27_Cup)! Hilariously, when asked in German, GPT-3 offered an 'alternative truth' that seems rather palatable to me:
-
-> **A:** *Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 1995. [The greatest international success of FC Carl Zeiss Jena was winning the UEFA CUp in 1995.]*
+...which is almost correct since [that was in 1981](https://en.wikipedia.org/wiki/1980%E2%80%9381_European_Cup_Winners%27_Cup)! Hilariously, when asked in German, GPT-3 offered an 'alternative truth' according to which FC Carl Zeiss Jena won the UEFA Cup in 1995, playing against FC Barcelona in the final.
 
 Perhaps GPT-3 was just day-dreaming about a glorious future, or an alternative past...
 
@@ -291,8 +289,6 @@ knitr::include_graphics("figures/fcc.jpg")
 ```
 
 ## Lessons learned
-
-So what do can we learn from this little experiment?
 
 1. GPT-3 formulated linguistically correct text in both English and German, which is quite remarkable.
 2. GPT-3 made false claims about places, geographic data, people, and a soccer club. In some of these cases, I would have accepted a simple "*dunno*" as an answer, in others, even Wikipedia would have known the answer --- but GPT-3 chose to present fake information.
@@ -306,14 +302,18 @@ As a chatbot owner I'd therefore fear that my chatbot's false claims might ruin 
 As far as **geographic knowledge** is concerned (issue 4), most of it is only implicit in geospatial databases and relations such as adjacency or connectivity, and GPT-3 is neither able to access these databases nor to translate their contents into text.
 To infuse geospatial intelligence into NLGs, they therefore must be enhanced to tap into the riches of geospatial data assets. From my perspective as a geographic information scientist, and considering the importance of geographic information in our lives and in business alike, this is an essential task for the future.
 
-### Further reading
+### Appendix
 
 - The complete Q&A transcripts are available in [Github](https://github.com/alexanderbrenning/geods/tree/main/content/post/2022-01-21-gpt3-geography/results). This also includes the results of a second round that I ran for verification.
+- An improved version of the engine, `text-davince-001`, was released while I was finalizing this post. However, I could not find substantial differences in the quality of responses.
+
+<!--
 - Nitesh Danjani: *AI Powered Misinformation and Manipulation at Scale #GPT-3* [oreilly.com](https://www.oreilly.com/radar/ai-powered-misinformation-and-manipulation-at-scale-gpt-3/)
 - Andrew Gelman: *A chatbot challenge for Blaise Agüera y Arcas and Gary Smith* ([Statmodeling](https://statmodeling.stat.columbia.edu/2022/01/14/a-chatbot-challenge-for-blaise-aguera-y-arcas-and-gary-smith/))
 - Tina Nord: *Was ist GPT-3 und spricht das Modell Deutsch?* ([Lernen Wie Maschinen](https://www.lernen-wie-maschinen.ai/ki-pedia/was-ist-gpt-3-und-spricht-das-modell-deutsch/))
 - Christian Stöcker: *Wir Menschen sind die Messlatte, und sie hängt niedrig* ([Der Spiegel](https://www.spiegel.de/wissenschaft/mensch/ki-system-gpt-3-wir-menschen-sind-die-messlatte-und-sie-haengt-niedrig-kolumne-a-a58161b8-ea8c-4b5c-942d-43b2467df5ea))
 - Valerie Paul: *GPT-3: what is all the excitement about?* ([DEUS](https://www.deus.ai/post/gpt-3-what-is-all-the-excitement-about))
 - James Vincent: *OpenAI's latest breakthrough is astonishingly powerful, but still fighting its flaws* ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential))
+-->
 
-<img src="https://vg09.met.vgwort.de/na/7cc1dc1fcbfc4758b93d7bad589cd6ca" width="1" height="1" alt="">
+<img src="https://vg09.met.vgwort.de/na/a86ac67adcf846b2a61376250a435a3d" width="1" height="1" alt="">
