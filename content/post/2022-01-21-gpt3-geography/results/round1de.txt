@@ -38,47 +38,6 @@ A: Etwa ein Drittel.
 
 --
 
-Q: Wann ist Alexander Brenning geboren?
-A: Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren.
-
-Q: Was weiß man über das Leben von Alexander Brenning?
-A: Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren. Er war ein deutscher Schriftsteller, der sich vor allem mit dem Thema Homosexualität auseinandersetzte.
-
-Q: Wo kann ich mehr über Alexander Brenning erfahren?
-A: Alexander Brenning ist in der deutschen Literaturgeschichte ein wichtiger Autor, der sich mit dem Thema Homosexualität auseinandersetzte.
-
-Q: Wie heißen die wichtigsten Werke von Alexander Brenning?
-A: Die wichtigsten Werke von Alexander Brenning sind:
-
-Q: Wann und wo ist Alexander Brenning gestorben?
-A: Alexander Brenning ist am 23. Februar 1942 in Berlin gestorben.
-
-Q: Gibt es andere Personen mit dem Namen Alexander Brenning?
-A: Alexander Brenning ist ein sehr seltener Name. Es gibt keine anderen Personen mit dem Namen Alexander Brenning.
-
---
-
-Q: Wo in Jena sind die Quadratmeterpreise von Mietwohnungen am höchsten?
-A: In der Innenstadt, in der Nähe des Marktplatzes.
-
-Q: Gibt es in der Nähe von Jena Vulkane?
-A: Ja, der Schneeberg.
-
-Q: Wann war er zuletzt aktiv?
-A: Vor etwa 10.000 Jahren.
-
-Q: Weshalb gibt es in Thüringen Erdfälle?
-A: Weil das Gestein dort sehr porös ist.
-
-Q: Welche Prozesse sind dafür verantwortlich, dass in Thüringen Erdfälle entstehen?
-A: Die Erdfälle entstehen durch die Erosion.
-
-Q: Wo in Thüringen finde ich bedeutende Erdfälle?
-A: In der Rhön, im Thüringer Wald und im Kyffhäuser.
-
-
---
-
 Q: Wo in Jena sind die Quadratmeterpreise von Mietwohnungen am höchsten?
 A: In der Innenstadt, in der Nähe des Marktplatzes.
 
@@ -118,12 +77,28 @@ A: Weil der Mount Everest höher ist als die Zugspitze.
 Q: Könnte man vom Mount Everest aus die Zugspitze sehen, wenn beide Berge gleich hoch wären?
 A: Ja, das wäre möglich.
 
+--
+
+Q: Wann ist Alexander Brenning geboren?
+A: Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren.
+
+Q: Was weiß man über das Leben von Alexander Brenning?
+A: Alexander Brenning wurde am 23. Februar 1887 in Berlin geboren. Er war ein deutscher Schriftsteller, der sich vor allem mit dem Thema Homosexualität auseinandersetzte.
+
+Q: Wo kann ich mehr über Alexander Brenning erfahren?
+A: Alexander Brenning ist in der deutschen Literaturgeschichte ein wichtiger Autor, der sich mit dem Thema Homosexualität auseinandersetzte.
+
+Q: Wie heißen die wichtigsten Werke von Alexander Brenning?
+A: Die wichtigsten Werke von Alexander Brenning sind:
+
+Q: Wann und wo ist Alexander Brenning gestorben?
+A: Alexander Brenning ist am 23. Februar 1942 in Berlin gestorben.
+
+Q: Gibt es andere Personen mit dem Namen Alexander Brenning?
+A: Alexander Brenning ist ein sehr seltener Name. Es gibt keine anderen Personen mit dem Namen Alexander Brenning.
+
 Q: Was sind die größten Erfolge des FC Carl Zeiss Jena?
 A: Die größten Erfolge des FC Carl Zeiss Jena sind der Gewinn der Deutschen Meisterschaft im Jahr 1990 und der Gewinn des DFB-Pokals im Jahr 1999.
 
-Q: Was war der größte internationale Erfolg des FC Carl Zeiss Jena?
-A: Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 1995.
-
-Q: Gegen welche Mannschaft hat der FC Carl Zeiss Jena im Finale des UEFA-Pokals 1995 gespielt?
-A: Gegen den FC Barcelona.
-
+A: Was war der größte internationale Erfolg des FC Carl Zeiss Jena?
+Q: Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 1995.

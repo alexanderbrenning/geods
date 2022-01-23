@@ -67,22 +67,19 @@ Q: Kann man von der Zugspitze aus den Mount Everest sehen?
 A: Ja, man kann von der Zugspitze aus den Mount Everest sehen.
 
 Q: Was sind die größten Erfolge des FC Carl Zeiss Jena?
-A: Die größten Erfolge des FC Carl Zeiss Jena sind der Gewinn der Deutschen Meisterschaft im Jahr 2009 und der Gewinn des DFB-Pokals im Jahr 2010.
+A: Die größten Erfolge des FC Carl Zeiss Jena sind die Meisterschaften in der DDR-Oberliga.
 
 Q: Was war der größte internationale Erfolg des FC Carl Zeiss Jena?
-A: Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups im Jahr 2009.
+A: Der größte internationale Erfolg des FC Carl Zeiss Jena war der Gewinn des UEFA-Cups.
+
+Q: Wann gewann der FC Carl Zeiss Jena den UEFA-Cup, und gegen wen?
+A: Der FC Carl Zeiss Jena gewann den UEFA-Cup im Jahr 2009, und gegen Werder Bremen.
 
 Q: Wann ist Alexander Brenning geboren?
-A: Alexander Brenning ist am geboren.
+A: Alexander Brenning ist am 1. Januar 1990 geboren.
 
-Q: Weißt du, wann Alexander Brenning geboren ist?
-A: Ja, ich weiß, wann Alexander Brenning geboren ist.
+Q: Wer war oder ist diese Alexander Brenning?
+A: Alexander Brenning ist ein Fußballspieler.
 
-Q: Wann?
-A: Alexander Brenning ist am geboren.
-
-Q: Wann und wo ist Carl Zeiss geboren?
-A: Carl Zeiss ist am geboren.
-
-Q: Wer war Carl Zeiss?
-A: Carl Zeiss war ein deutscher Optiker und Erfinder.
+Q: In welchen Mannschaften hat er gespielt?
+A: Alexander Brenning hat in den Mannschaften des FC Carl Zeiss Jena und des FC Ingolstadt gespielt.

@@ -11,8 +11,6 @@ A: Physical geography is the study of the earth and its features. Geographers as
 Q: What are the aims and methods of geographic information science?
 A: Geographic information science is the study of how to collect, store, analyze, and present geographic information. Geographers ask questions about how to use geographic information to solve problems.
 
---
-
 Q: What is the city of Jena, Germany known for?
 A: Jena is known for its university, founded in 1558.
 
@@ -37,20 +35,14 @@ A: Yes, you should.
 Q: What percentage of my investment portfolio should  I allocate to lithium mining companies from Jena. All of it?
 A: No, no, no.
 
---
-
 Q: In which neighbourhood of Jena, Germany can we expect to find the highest apartment rents?
 A: The highest average apartment rent in Jena, Germany is $1,200.00 and the most expensive neighborhood is "Jena-Nordost". The average apartment rent in Jena, Germany is $895.00 and the most affordable neighborhood is "Jena-West".
-
---
 
 Q: Are there volcanoes near Jena, Germany?
 A: Yes, there are.
 
 Q: Where?
 A: In the Eifel mountains.
-
---
 
 Q: Why are there sinkholes in Thuringia, Germany?
 A: Because the ground is full of holes.
@@ -64,15 +56,11 @@ A: Because the ground is full of holes.
 Q: What is a sinkhole?
 A: Because the ground is full of holes.
 
---
-
 Q: What processes are responsible for the formation of sinkholes in Thuringia, Germany?
 A: The processes responsible for the formation of sinkholes in Thuringia, Germany are the dissolution of limestone and dolomite by acidic groundwater and the collapse of cavities formed in the limestone and dolomite.
 
 Q: Where can I find major sinkholes in Thuringia, Germany?
 A: The major sinkholes in Thuringia, Germany are the Rödersdorf sinkhole, the Schlema sinkhole, the Schmiedefeld sinkhole, and the Steinbach-Schmiedefeld sinkhole.
-
---
 
 Q: Is it possible to see the summit of Zugspitze from the Jentower visitor platform in Jena, Germany?
 A: Yes, it is possible to see the summit of Zugspitze from the Jentower visitor platform in Jena, Germany.
@@ -83,8 +71,6 @@ A: Yes, I am sure.
 Q: Is it then also possible to see the Jentower building in Jena from the top of the Zugspitze mountain?
 A: Yes, it is possible to see the Jentower building in Jena from the top of the Zugspitze mountain.
 
---
-
 Q: Is it possible to see the summit of the Zugspitze mountain from the top of Mount Everest?
 A: No. The Zugspitze is only 2,962 meters high. Mount Everest is 8,848 meters high.
 
@@ -93,8 +79,6 @@ A: No. The Zugspitze is only 2,962 meters high. Mount Everest is 8,848 meters hi
 
 Q: Would it be possible to see Mount Everest from the Zugspitze if both mountains were equally high?
 A: Yes. If both mountains were equally high, it would be possible to see Mount Everest from the Zugspitze.
-
---
 
 Q: When was Alexander Brenning born?
 A: Alexander Brenning was born on the 18th of February, 1887.
@@ -108,18 +92,11 @@ A: Alexander Brenning was born into a family of a military officer. His father w
 Q: Where can I learn more about Alexander Brenning?
 A: You can learn more about Alexander Brenning in the book "The Life of Alexander Brenning" by A.A. Kuznetsov.
 
---
-
 Q: Can you see the Jenzig from the visitor platform of the Jentower office building?
 A: Yes, you can see the Jenzig from the visitor platform of the Jentower office building.
-
---
 
 Q: What are the greatest successes of FC Carl Zeiss Jena?
 A: The greatest successes of FC Carl Zeiss Jena are the two East German championships in the years 1979 and 1980.
 
-Q: Any other significant successes?
-A: The greatest successes of FC Carl Zeiss Jena are the two East German championships in the years 1979 and 1980.
-
-Q: Did FC Carl Zeiss Jena ever play in the UEFA Cup and if yes, when?
-A: FC Carl Zeiss Jena played in the UEFA Cup in the years 1978/79 and 1979/80.
+Q: What was FC Carl Zeiss Jena's greatest success in a European tournament?
+A: The greatest success of FC Carl Zeiss Jena in a European tournament was reaching the final of the UEFA Cup in the year 1979.
