@@ -49,7 +49,7 @@ Das Leben spielt sich an *Orten* ab. --- GPT-3, wir müssen mal über Geographie
 
 Realweltliche Anwendungen, die ich mir für Textgeneratoren vorstellen kann, 
 
-- haben jedoch Bezug zu unserem Leben, das nun einmal ortsgebzogen und daher geographisch ist, weshalb Ortskenntnisse und Wissen über räumliche Beziehungen zwingend erforderlich sind;
+- haben jedoch Bezug zu unserem Leben, das nun einmal ortsbezogen und daher geographisch ist, weshalb Ortskenntnisse und Wissen über räumliche Beziehungen zwingend erforderlich sind;
 - erfordern Texte, die verlässliche, überprüfbare Informationen über unser Umfeld enthalten --- nicht fiktionale Erzählungen.
 
 GPT-3 sollte wohl das erforderliche Wissen besitzen, denn er hat ja eine unvorstellbare Menge an Information verdaut --- einschließlich z.B. der englischsprachigen Wikipedia, die nur 0,6 Prozent der Lerndaten ausmacht ([The Verge](https://www.theverge.com/21346343/gpt-3-explainer-openai-examples-errors-agi-potential)). Auch der deutschen Sprache ist GPT-3 mächtig.
