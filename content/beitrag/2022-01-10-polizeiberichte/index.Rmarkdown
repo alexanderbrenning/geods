@@ -132,7 +132,8 @@ geoparse <- function(x, streets) {
   sel
 }
 # Probier's aus:
-geoparse(d$text[1], streets = streets)
+geoparse(d$text[1], streets = streets) # ohne Jenaer Straßennamen
+geoparse(d$text[2], streets = streets)
 ```
 
 Jetzt müssen wir nur noch die Koordinaten der Straßen finden und diese auf die Karte bringen!
