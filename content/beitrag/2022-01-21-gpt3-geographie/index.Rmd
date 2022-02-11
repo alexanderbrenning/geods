@@ -1,21 +1,21 @@
 ---
 title: "GPT-3: Was weiß ich denn über Geographie..."
-subtitle: "Textgenerator GPT-3 fällt durch die Geographie-Prüfung durch"
+subtitle: "Textgenerator GPT-3 fällt durch die Geographie-Prüfung"
 author: "Alexander Brenning"
 authors: "Alexander Brenning"
 categories: ["Künstliche Intelligenz", "GeoAI", "Geographie", "Jena"]
 tags: ["Textgenerator", "Jena", "FC Carl Zeiss Jena"]
-date: '2022-01-21'
+date: '2022-02-11'
 slug: gpt3-geographie
 summary: 'Können intelligente Chatbots geographisch denken? Welches lokale Wissen haben sie? So hat GPT-3 in meinem kleinen Experiment abgeschnitten...'
-lastmod: '2022-01-21'
+lastmod: '2022-02-11'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -233,7 +233,7 @@ knitr::include_graphics("figures/jentower-panorama.jpeg")
 
 Hmm komisch --- und was sieht man in meinem Foto? Den Jenzig! Ich bohrte noch ein bisschen nach:
 
-**Q:** `r .red("Kann man vom Jentower aus den Jenzig sehen?")`
+**Q:** `r .red("Kann man vom Jenzig aus den Jentower sehen?")`
 
 > **A:** *Nein, das ist nicht möglich.*
 

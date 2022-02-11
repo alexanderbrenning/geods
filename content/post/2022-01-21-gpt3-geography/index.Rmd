@@ -5,17 +5,17 @@ author: "Alexander Brenning"
 authors: "Alexander Brenning"
 categories: ["artificial intelligence", "GeoAI", "geography", "Jena"]
 tags: ["natural language generator", "geospatial intelligence", "Jena", "FC Carl Zeiss Jena"]
-date: '2022-01-21'
+date: '2022-02-11'
 slug: gpt3-geography
 summary: 'Are intelligent chatbots capable of thinking geographically? What do they know about all things local? See how GPT-3 did in my little benchmarking experiment...'
-lastmod: '2022-01-21'
+lastmod: '2022-02-11'
 featured: no
 image:
   caption: ''
   focal_point: ''
   preview_only: no
 projects: []
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
@@ -161,7 +161,7 @@ So let's take a deep breath and return to the script to learn more about Jena an
 
 **Q:** `r .blue("In which neighbourhood of Jena, Germany can we expect to find the highest apartment rents?")`
 
-> **A:** *The highest average apartment rent in Jena, Germany is \$1,200.00 and the most expensive neighborhood is "Jena-Nordost". The average apartment rent in Jena, Germany is \$895.00 and the most affordable neighborhood is "Jena-West".*
+> **A:** *The highest average apartment rent in Jena, Germany is 1,200.00 dollars and the most expensive neighborhood is "Jena-Nordost". The average apartment rent in Jena, Germany is 895.00 dollars and the most affordable neighborhood is "Jena-West".*
 
 I don't know where GPT-3 got its numbers from... The truth is that Kernberge is the most expensive 'hood, Lobeda the most affordable one; Jena-West is closer to the upper end of the spectrum (see e.g. [wohnpreis.de](https://www.wohnpreis.de/mietspiegel/jena-jena-zentrum)).
 
@@ -296,7 +296,7 @@ knitr::include_graphics("figures/fcc.jpg")
 
 Overall, although this little experiment was rather limited in scope, and comprehensive training efforts might remedy some of the issues, it raises major concerns.
 
-Providing *fake information** (issue 2) is not only ethically reproachable, it is also an absolute no-go in business applications of chatbots.
+Providing **fake information** (issue 2) is not only ethically reproachable, it is also an absolute no-go in business applications of chatbots.
 As a chatbot owner I'd therefore fear that my chatbot's false claims might ruin my company's reputation, and I doubt that this unacceptable behaviour can be fully eliminated even with costly domain-specific training efforts.
 
 As far as **geographic knowledge** is concerned (issue 4), most of it is only implicit in geospatial databases and relations such as adjacency or connectivity, and GPT-3 is neither able to access these databases nor to translate their contents into text.
