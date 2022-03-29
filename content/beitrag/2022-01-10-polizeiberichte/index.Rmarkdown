@@ -7,8 +7,8 @@ date: '2022-01-10'
 slug: polizeiberichte
 categories: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Jena"]
 tags: ["Web-Mapping", "Web-Scraping", "Geocodierung", "Geoparsing", "Sicherheit", "ALKIS", "offene Geodaten Thüringen", "Verkehrsunfälle", "Einbrüche", "Crime mapping", "Kriminalitätskartierung", "Jena", "Erfurt", "Weimar", "Gera"]
-summary: 'Wie ärgerlich, dass Polizeiberichte nur als Text vorliegen -- wie soll ich da herausfinden, was um mich herum passiert?? Die Geoinformatik bietet eine Lösung: mit Geoparsing, Geocodierung und Web-Mapping, hier anhand des Beispiels Jena.'
-lastmod: '2022-01-12'
+summary: 'Wie ärgerlich, dass Polizeiberichte nur als Text vorliegen -- wie soll ich da herausfinden, was um mich herum passiert?? Die Geoinformatik bietet eine Lösung: mit Geoparsing, Geocodierung und Web-Mapping, hier anhand des Beispiels Jena. (Code aktualisiert am 29.3.2022.)'
+lastmod: '2022-03-29'
 featured: no
 image:
   caption: ''
@@ -68,24 +68,33 @@ suppressMessages(library(rvest))
 html <- read_html(url("https://www.presseportal.de/blaulicht/r/Jena"))
 
 # HTML-Abschnitte mit Polizeiberichten filtern:
-x <- html %>% html_nodes("a") # handelt sich um HTML-Links
-sel <- x %>% html_attr("class") %>% is.na()
-x <- x[sel] # nur Links ohne Klassenattribut
-sel <- x %>% html_attr("href") %>% str_detect("/blaulicht/pm/")
-x <- x[sel] # mit bestimmtem URL-Muster
-unsel <- x %>% html_node("i") %>% is.na()
-x <- x[!unsel] # und es gibt immer was mit <i>...</i>
-sel <- x %>% html_attr("title") %>% str_detect("^LPI-")
-x <- x[sel] # nur Landespolizeiinspektion
+x <- html %>% html_nodes("ul")
+sel <- str_starts(html_attr(x, "class"), "article-list row")
+sel[is.na(sel)] <- FALSE
+x <- x[sel] %>% html_nodes("article")
 
-# Ergebnisse extrahieren und bündeln:
+# URLs extrahieren:
+urls <- x %>% map_chr(function(y) html_attr(html_nodes(y, "a")[2], "href"))
+sel <- str_detect(urls, "/blaulicht/pm/")
+urls <- urls[sel]
+
+# Nur die 'article'-Abschnitte mit Polizeiberichten:
+x <- x[sel]
+
+# Inhalte:
+titles <- x %>% map_chr(function(y) html_text(html_nodes(y, "a")[2]))
+reports <- x %>% map_chr(function(y) html_text(html_nodes(y, "p")[2]))
+towns <- reports %>% str_extract("^.* \\(ots\\)") %>%
+  str_remove(" \\(ots\\)")
+dates <- x %>% html_node("div .date") %>% html_text()
+
+# Ergebnisse sammeln:
 d <- data.frame(
-  url = html_attr(x, "href"),
-  title = html_attr(x, "title"),
-  town = html_text(x) %>% 
-    str_extract("^.* \\(ots\\)") %>%
-    str_remove(" \\(ots\\)"),
-  text = html_text(x)
+  url = urls,
+  title = titles,
+  town = towns,
+  text = reports,
+  date = dates
 )
 
 # Nur Polizeiberichte aus Jena:
@@ -183,8 +192,9 @@ Jetzt auf die Karte damit! Die Darstellung übernimmt für uns ein Package namen
 library(leaflet)
 d$popup <- paste0('<a href="https://www.presseportal.de', d$url, '">', 
                   '<strong>', d$title, '</strong></a><p>',
+                  d$date, "<br>",
                   d$streets, '<p>"', d$text, '"<p>', 
-                  'Quelle: Polizei Jena via presseportal.de')
+                  'Quelle: Polizei via presseportal.de')
 leaflet() %>% addTiles() %>%
   addCircleMarkers(lat = d$lat, lng = d$lon, popup = d$popup, radius = 5)
 ```
