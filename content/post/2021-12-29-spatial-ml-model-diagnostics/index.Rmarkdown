@@ -8,7 +8,7 @@ categories: ["machine learning", "geostatistics"]
 tags: ["interpretable machine learning", "spatial prediction", "interpolation", "permutation variable importance", "spatial cross-validation", "spatial autocorrelation", "kriging", "random forest", "spatial prediction error profile", "spatial variable importance profile"]
 subtitle: 'A model-agnostic distance-based approach'
 summary: 'How do the predictions of machine-learning and geostatistical models deteriorate with increasing distance to the training locations? Are different predictors instrumental in making predictions at greater versus shorter distances? A novel set of diagnostic tools allows us to answer these questions...'
-lastmod: '2022-01-11'
+lastmod: '2022-10-26'
 featured: no
 image:
   caption: ''
@@ -50,7 +50,7 @@ Nevertheless, it does express how a model's predictive performance deteriorates 
 In model interpretation, permutation-based *variable importance* is an intuitive and widely used technique that estimates the contribution of individual predictors or groups of predictors to a model's predictions [[see, e.g., @molnar.2019.iml.book]](https://christophm.github.io/interpretable-ml-book/).
 However, it does not reveal if and how a variable is more relevant at shorter or longer distances.
 
-My recent contribution (submitted to the *International Journal of Geographical Information Science*) [[@brenning.2021.spdiag.preprint]](https://arxiv.org/abs/2111.08478) proposes novel spatial diagnostic tools that address these issues:
+My recent contribution [[@brenning.2022.spdiag]](https://doi.org/10.1080/13658816.2022.2131789) proposes novel spatial diagnostic tools that address these issues:
 
 {{% callout note %}}
 
@@ -78,7 +78,7 @@ We can do this also in the estimation of SPEPs, which will indicate how strongly
 I refer to this as the spatial variable importance profile (SVIP).
 
 SPEPs and SVIPs can be applied to interpolation, regression, and classification problems in the spatial domain.
-Here we will have a brief look at a well-known dataset that is often used to introduce geostatistics, but in the paper I also demonstrate their application to a classical remotely-sensed land cover classification problem [[@brenning.2021.spdiag.preprint]](https://arxiv.org/abs/2111.08478).
+Here we will have a brief look at a well-known dataset that is often used to introduce geostatistics, but in the paper I also demonstrate their application to a classical remotely-sensed land cover classification problem [[@brenning.2022.spdiag]](https://doi.org/10.1080/13658816.2022.2131789).
 
 
 ### Case study: the Meuse dataset
