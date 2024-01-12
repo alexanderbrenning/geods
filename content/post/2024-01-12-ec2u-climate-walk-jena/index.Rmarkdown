@@ -1,13 +1,13 @@
 ---
 title: "EC2U Climate Walk Jena"
 author: "Svenja Hoffmann"
-authors: ["Pascal Schlechtweg", "Svenja Hoffmann", "Alexander Brenning"]
+authors: ["Svenja Hoffmann", "Pascal Schlechtweg"]
 date: '2024-01-12'
 slug: climate-walk
 categories: ["EC2U", "outreach"]
 tags: ["EC2U", "climate change", "urban heat island", "sustainable cities and communities", "GPS", "field trip"]
 subtitle: 'A self-guided walking tour on urban heat islands and climate adaptation'
-summary: 'The Climate Walk is a guided tour through the city of Jena, offering insights into urban climate and adaptation strategies...'
+summary: 'The Climate Walk is a self-guided tour through the city of Jena, offering insights into urban climate and adaptation strategies...'
 lastmod: "`r Sys.Date()`"
 featured: no
 image:
@@ -40,7 +40,7 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
-Welcome to the Climate Walk, a guided tour through the city of [Jena](https://en.wikipedia.org/wiki/Jena), offering insights into urban climate and adaptation strategies. The walk was developed in 2023 by Pascal Schlechtweg, a PhD Candidate, and Svenja Hoffmann, a Master’s student, both from the [Department of Geography](https://www.geographie.uni-jena.de/) at [Friedrich Schiller University Jena](https://www.uni-jena.de/). The project is part of the [European University Alliance (EC2U)](https://ec2u.eu/) and its [Virtual Institute for Sustainable Cities and Communities](https://ec2u.eu/virtual-institutes-students/virtual-institute-for-sustainable-cities-and-communities/). Daniel Knopf, Jena’s [Climate Adaptation Coordinator](https://umwelt.jena.de/de/klimaanpassungsstrategie), supported the Climate Walk with his valuable expertise.
+Welcome to the Climate Walk, a guided tour through the city of [Jena](https://en.wikipedia.org/wiki/Jena), offering insights into urban climate and adaptation strategies. The walk was developed in 2023 by Pascal Schlechtweg, a PhD Candidate, and Svenja Hoffmann, a Master’s student, both from the [Department of Geography](https://www.geographie.uni-jena.de/) at [Friedrich Schiller University Jena](https://www.uni-jena.de/). The project is part of the European university alliance [EC2U](https://ec2u.eu/) and its [Virtual Institute for Sustainable Cities and Communities](https://ec2u.eu/virtual-institutes-students/virtual-institute-for-sustainable-cities-and-communities/). Daniel Knopf, Jena’s [Climate Adaptation Coordinator](https://umwelt.jena.de/de/klimaanpassungsstrategie), supported the Climate Walk with his valuable expertise. The tour is also available [in German](https://geods.netlify.app/beitrag/klimawandern/).
 
 This walking tour is available in [Komoot, where you can also download it](https://www.komoot.de/tour/1132986536?ref=wtd&share_token=axibD4gM9P4rjrpTbM3jUlYfcUMy2FB3c378tpQo4UInnSrY0F) to your smartphone...
 
@@ -153,7 +153,7 @@ knitr::include_graphics("figures/EC2U_CW_Fig6b_Saale2.jpg")
 
 At the final stop of our [EC2U](https://ec2u.eu/) Climate Walk, we find ourselves in Paradies Park, which is the largest continuous urban green space in Jena. Parks and water areas play a crucial role in combating the urban heat island effect. In densely built areas of Jena, where green and blue spaces are limited, intrinsic cold air formation is scarce, apart from areas along the Saale River and larger inner-city green spaces like the [Botanical Garden](https://www.botanischergarten.uni-jena.de/). During the daytime, vegetation and water areas exert a cooling effect on the urban climate through evaporation and shade, effectively lowering the ambient temperature and mitigating the urban heat island effect. The phenomenon of the "urban park breeze" facilitates the exchange of air and contributes to cooling in adjacent residential areas, resulting in temperature reductions ranging from 1.5 to 4.5°C.
 
-However, the extent of this cooling effect heavily relies on the size of the green space and the surrounding building structure. The benefits for the surrounding buildings in terms of relief are relatively limited due to structural barriers, such as railway embankments next to Paradies park. As a result, cold air tends to accumulate within the park area, forming locally cooler zones and being trapped there.The local climatic benefits of these green spaces are particularly enjoyed by park users, making Paradies Park one of the most popular areas in Jena for recreational activities, especially during hot days.
+However, the extent of this cooling effect heavily depends on the size of the green space and the surrounding building structure. The benefits for the surrounding buildings in terms of relief are relatively limited due to structural barriers, such as railway embankments next to Paradies park. As a result, cold air tends to accumulate within the park area, forming locally cooler zones and being trapped there.The local climatic benefits of these green spaces are particularly enjoyed by park users, making Paradies Park one of the most popular areas in Jena for recreational activities, especially during hot days.
 
 ## Wrap-up
 
