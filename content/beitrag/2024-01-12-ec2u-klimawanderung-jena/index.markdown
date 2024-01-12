@@ -1,0 +1,171 @@
+---
+title: "EC2U-Klimaspaziergang Jena"
+author: "Svenja Hoffmann"
+authors: ["Svenja Hoffmann", "Pascal Schlechtweg"]
+date: '2024-01-12'
+slug: klimawandern
+categories: ["EC2U", "Outreach"]
+tags: ["EC2U", "Klimawandel", "städtische Wärmeinsel", "nachhaltige Städte und Gemeinden", "GPS", "Exkursion"]
+subtitle: 'Ein Spaziergang über städtische Wärmeinseln und Klimaanpassung'
+summary: 'Der EC2U-Klimaspaziergang ist eine selbständig durchgeführte Stadttour durch Jena, die Einblicke in Stadtklima und Klimaanpassung gibt...'
+lastmod: "2024-01-12"
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+---
+<link href="{{< blogdown/postref >}}index_files/panelset/panelset.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/panelset/panelset.js"></script>
+
+
+
+
+
+
+
+
+Willkommen beim Klimaspaziergang, einer Stadtführung durch die Stadt [Jena](https://en.wikipedia.org/wiki/Jena), die Einblicke in das Stadtklima und Anpassungsstrategien bietet. Der Spaziergang wurde von Pascal Schlechtweg, Doktorand, und Svenja Hoffmann, Masterstudentin, beide vom [Institut für Geographie](https://www.geographie.uni-jena.de/) der [Friedrich-Schiller-Universität Jena](https://www.uni-jena.de/) entwickelt. Das Projekt ist Teil der Europäischen Universitätsallianz [EC2U](https://ec2u.eu/), insbesondere ihres [Virtuellen Instituts für nachhaltige Städte und Gemeinden](https://ec2u.eu/virtual-institutes-students/virtual-institute-for-sustainable-cities-and-communities/). Daniel Knopf, Jenas [Koordinator für Klimaanpassung](https://umwelt.jena.de/de/klimaanpassungsstrategie), unterstützte den Klimaspaziergang mit seiner wertvollen Expertise. Der Text ist [im Original englischsprachig](https://geods.netlify.app/post/climate-walk/) und wurde von Google ins Deutsche übersetzt.
+
+Dieser Spaziergang steht auch in [Komoot](https://www.komoot.de/tour/1132986536?ref=wtd&share_token=axibD4gM9P4rjrpTbM3jUlYfcUMy2FB3c378tpQo4UInnSrY0F) zur Verfügung. Dort kannst du sie auch auf dein Smartphone herunterladen...
+
+Das Verständnis des städtischen Klimas ist von entscheidender Bedeutung, da die Weltbevölkerung bis zum Jahr 2100 Schätzungen zufolge 11 Milliarden Menschen erreichen wird, von denen mehr als die Hälfte in städtischen Gebieten lebt. Diese rasche Urbanisierung führt zu lokalen Veränderungen der Landbedeckung und der Energiebilanz, was zu einem einzigartigen Stadtklima führt. Hitzebedingte Todesfälle geben zunehmend Anlass zur Sorge. Im vergangenen Jahr wurden in Europa 15.000 Todesfälle gemeldet. Städte, darunter auch Jena, sind einer höheren Anfälligkeit für Hitzewellen ausgesetzt, was sich negativ auf die öffentliche Gesundheit auswirkt. Jena, eine Universitätsstadt, liegt im Saaletal in der Mitte Deutschlands. Seine Höhe von 140 Metern unterscheidet das Stadtzentrum von den umliegenden Hügeln, die eine Höhe von 400 Metern erreichen. Mit einem warmen, gemäßigten Klima und kontinentalen Bedingungen herrschen in Jena mildere Temperaturen (durchschnittlich 10,3°C) und geringere Niederschläge (587 mm) als im Landesdurchschnitt. Dieses einzigartige Klima hat Jena den Beinamen „Toskana des Ostens“ eingebracht. Jena steht vor der Herausforderung, sich an den Klimawandel anzupassen und gleichzeitig der wachsenden Nachfrage nach Wohnraum gerecht zu werden. Der begrenzte Platz im Tal erfordert eine sorgfältige Stadtplanung und innovative Lösungen, um den Bewohnern eine nachhaltige Zukunft zu sichern.
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig1_EAP.jpg" alt="Der Ernst-Abbe-Campus der Friedrich-Schiller-Universität Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-2"></span>Figure 1: Der Ernst-Abbe-Campus der Friedrich-Schiller-Universität Jena. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+## Ernst-Abbe-Campus -- städtische Wärmeinsel
+
+Auf dem Ernst-Abbe-Campus erforschen Sie die Entstehung einer städtischen Wärmeinsel (*urban heat island*, UHI). UHI bezieht sich auf das Phänomen, dass städtische Gebiete im Vergleich zu den umliegenden ländlichen Gebieten höhere Temperaturen aufweisen. Abbildung 2 zeigt die durchschnittliche Anzahl der Sommertage (Höchsttemperatur über 25°C) pro Jahr in Jena. Die Innenstadt und das Industriegebiet im Norden erleben mehr Sommertage (bis zu 60 Tage pro Jahr). Im Umland hingegen herrscht ein gemäßigteres Klima (bis zu 20 Sommertage/Jahr).
+
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig2a_summerdays.jpg" alt="Durchschnittliche Anzahl der Sommertage (Höchsttemperatur über 25°C) pro Jahr in Jena. Map &amp;copy; 2012 ThINK GmbH / Kurmutz et al." width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 2: Durchschnittliche Anzahl der Sommertage (Höchsttemperatur über 25°C) pro Jahr in Jena. Map &copy; 2012 ThINK GmbH / Kurmutz et al.</p>
+</div>
+
+
+
+Schlüsselfaktoren, die zum UHI beitragen:
+- **Geografische Faktoren:** Geografische Lage, Topografie und Relief.
+- **Meteorologische Bedingungen:** Bei autochthonen Wetterbedingungen (Sonnentage ohne Wind, in Jena etwa 1 von 5 Tagen) ist der UHI aufgrund der hohen Strahlung und des begrenzten Austauschs warmer Luftmassen besonders stark. Das Mikroklima spielt eine noch wichtigere Rolle.
+- **Städtische/morphologische Faktoren:** Die Landbedeckung in städtischen Gebieten (Undurchlässigkeit, Mangel an Vegetation) verringert die Evapotranspiration und den damit verbundenen Kühleffekt. Undurchlässige Oberflächen, wie zum Beispiel gepflasterte Straßen, absorbieren und speichern Wärme. Die oberflächliche Sonneneinstrahlung von Dächern, Fassaden und Böden beeinflusst die Absorption und Reflexion der Strahlung. Die physikalischen und thermischen Eigenschaften von Materialien (Albedo, Emissionsgrad, Wärmekapazität usw.) wirken sich auf das Stadtklima aus. Aerodynamische Eigenschaften (Rauigkeit) beeinflussen die Windströmung.
+- **Anthropogene Wärme:** Quellen wie Verkehr, Abwärme von Klimaanlagen und industrielle Aktivitäten tragen zum UHI bei.
+
+Abbildung 3 zeigt die Physiologisch Äquivalente Temperatur (PET) am 20. Juli 2022, dem heißesten Tag in diesem Jahr, um 14 Uhr (16% Luftfeuchtigkeit, 2,1 m/s Windgeschwindigkeit, 39°C gemessene Lufttemperatur). PET beschreibt den thermischen Komfort im Freien unter Berücksichtigung von Faktoren wie Lufttemperatur, Luftfeuchtigkeit, Windgeschwindigkeit und Verschattung.
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig2b_PET.jpg" alt="Physiologisch Äquivalente Temperatur (PET) am 20. Juli 2022, dem heißesten Tag des Jahres, um 14 Uhr, (16% Luftfeuchte, 2.1 m/s Windgeschwindigkeit, 39°C gemessene Lufttemperatur). Karte &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 3: Physiologisch Äquivalente Temperatur (PET) am 20. Juli 2022, dem heißesten Tag des Jahres, um 14 Uhr, (16% Luftfeuchte, 2.1 m/s Windgeschwindigkeit, 39°C gemessene Lufttemperatur). Karte &copy; Svenja Hoffmann</p>
+</div>
+
+Wenn wir uns auf den Ernst-Abbe-Campus konzentrieren, können wir PET-Werte um die 55 Grad beobachten. Eine Umfrage des Instituts für Geographie unter der Leitung von [Dr. Susann Schäfer](https://www.geographie.uni-jena.de/schaefer) ergab, dass dieser Ort an Sommertagen der am zweithäufigsten gemiedene Ort ist. Mehrere Faktoren tragen zu den hier herrschenden hohen Temperaturen bei:
+
+1. **Mangelnde Vegetation:** Nur einige kleine Bäume, was zu minimaler Evapotranspiration und unzureichendem Schatten führt.
+2. **Undurchlässiger Boden:** Das Vorherrschen von Asphalt- und Steinmaterialien führt zur Wärmeabsorption.
+3. **Hohe Gebäude:** Beeinträchtigen die Windströmung und behindern den Austausch warmer Luftmassen.
+4. **Begrenzter Schatten:** Nur morgens und nachmittags durch Gebäude. In anderen Teilen der Stadt sind ähnliche Merkmale wie hier zu beobachten, die zu einer verstärkten Erwärmung beitragen.
+
+Nachts bleibt der UHI bestehen, da Gebäude und künstliche Materialien die tagsüber angesammelte Wärme speichern und nachts wieder abgeben. Dieses Phänomen kann zu "tropischen" Nächten führen, in denen die Temperaturen nicht unter 20°C fallen, was insbesondere für gefährdete Gruppen (ältere Menschen, Kleinkinder und sozioökonomisch benachteiligte Personen) Gesundheitsrisiken birgt.
+
+Allerdings profitiert Jena aufgrund der Topographie von Kaltluftströmungen in der Nacht (Abbildung 4). Über Freiflächen kühlt sich die Luft ab und strömt nach unten, wobei sie dem natürlichen Gefälle in Richtung Stadt folgt. Leider ist der Einfluss dieser kalten Luft in städtischen Gebieten nahe der Oberfläche aufgrund des hohen Widerstands, der durch Gebäude und andere städtische Strukturen verursacht wird, minimal. Obwohl der Kaltluftstrom für eine gewisse Abkühlung sorgt, herrschen in der Stadt im Vergleich zu den umliegenden Gebieten immer noch höhere Temperaturen.
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig2c_coolair.jpg" alt="Kaltluftsituation in Jena. Karte &amp;copy; 2012 ThINK GmbH / Kurmutz et al." width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 4: Kaltluftsituation in Jena. Karte &copy; 2012 ThINK GmbH / Kurmutz et al.</p>
+</div>
+
+Zusammenfassend lässt sich sagen, dass der UHI-Effekt durch regionale Klima- und Wetterbedingungen beeinflusst wird, die außerhalb unserer Kontrolle liegen. Durch effektive Stadtplanung und Bemühungen zur Emissionsminimierung können wir jedoch Stadtstrukturen, Landbedeckung und anthropogene Wärmeemissionen positiv beeinflussen.
+
+
+## Eichplatz --- Bauen und Wohnen
+
+Nun fragen Sie sich vielleicht: Wie bereitet man eine Stadt auf den Klimawandel vor? Es beginnt mit der Bewertung der Gefährdung der Stadt, um die am stärksten gefährdeten Gebiete und Sektoren zu identifizieren. Der nächste Schritt besteht darin, in Zusammenarbeit mit der lokalen Regierung, der Gemeinde, Interessenvertretern und Experten einen Klimaschutz-/Anpassungsplan zu entwickeln. In diesem Plan werden Ziele und Strategien zur Anpassung und Eindämmung dargelegt. In diesem Plan gibt die Stadt unter anderem Leitlinien zur Erhöhung des thermischen Komforts ihrer Bewohner vor. Dazu gehören Maßnahmen wie der Erhalt und die Förderung grüner und blauer Infrastruktur in der gesamten Stadt, die Einbindung von Grünflächen auf Dächern und Fassaden, die Schaffung von Luftaustauschwegen für kalte und frische Luft, die Implementierung von Beschattungssystemen, die Verwendung von Materialien mit geringer Albedo im Bauwesen und die Verbesserung der Isolierung von Gebäuden Besserer thermischer Innenraumkomfort und geringere Abhängigkeit von der Klimaanlage. 
+
+Jena hat einen solchen Plan entwickelt, der uns zu unserem jetzigen Standort führt. Direkt vor Ihnen liegt der Eichplatz, ein Gebiet, das seit vielen Jahren Gegenstand politischer und ökologischer Konflikte ist. Umfragen im Rahmen der Entwicklung des städtischen Klimaschutzplans ergaben, dass der Eichplatz an heißen Sommertagen der am häufigsten gemiedene Ort in Jena war. Der Eichplatz, ein bedeutender Bereich in Jena, befindet sich im Umbruch. Durch umfangreiche Planungen unter Beteiligung der Öffentlichkeit wurde ein umfassender Sanierungsplan erstellt. Die Bauarbeiten sollen bis Ende 2023 beginnen und der Plan sieht zahlreiche Maßnahmen zur Klimaanpassung vor:
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig3b_Eichplatz2.jpg" alt="Eichplatz in 2023. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 5: Eichplatz in 2023. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+Herzstück des [neuen Eichplatzes](https://www.eichplatzareal.de/) werden drei Hochhäuser sein. Der Bau höherer Gebäude ermöglicht eine effiziente Flächennutzung, was insbesondere im räumlich begrenzten Saaletal von Vorteil ist. Darüber hinaus spenden die hohen Strukturen ausreichend Schatten und entlasten so die Hitze der Sonne. Neben den Hochhäusern entstehen mehrere Gebäude mit vier bis fünf Stockwerken, einige davon mit Gründächern. Diese Grünflächen werden als angenehme Abwechslung inmitten der bebauten Umgebung dienen. Darüber hinaus bleibt der bestehende kleine Grünpark neben dem Eichplatz erhalten. Dieser Plan befindet sich noch in der Diskussion und Entwicklung. Ein mitten durch den Ort verlaufender Wasserlauf wäre zwar eine wünschenswerte Ergänzung gewesen, wurde jedoch als wirtschaftlich nicht realisierbar erachtet und wird nicht umgesetzt. Da der derzeitige Parkplatz nicht mehr vorhanden sein wird, wird eine Tiefgarage gebaut, um den Parkbedarf in der Umgebung zu decken.
+
+Insgesamt stellt die Revitalisierung des Eichplatzes einen Plan dar, der Klimaanpassungsmaßnahmen zu integrieren versucht, architektonische Vielfalt bietet und einige Grünflächen im Stadtbild erhält. Es ist jedoch wichtig zu beachten, dass die Raumplanung häufig mit Konflikten verbunden ist, wenn es um die Anpassung an den Klimawandel und die wachsenden Bedürfnisse einer Stadt wie Wohnraum, Dienstleistungen, Büros, Einzelhandel und Hotels geht. In diesem Zusammenhang wurde das Projekt eingehend auf Klimaverträglichkeit geprüft. Der Bau befindet sich noch in der Diskussion und Entwicklung.
+
+
+## Marktplatz
+
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig4_Marktplatz.jpg" alt="Jenas Markplatz. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 6: Jenas Markplatz. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+Willkommen auf dem Marktplatz, wo wir die Stadtbaumstrategie vorstellen. Dieser innovative Leitfaden gibt Empfehlungen für die Auswahl der idealen Bäume, die an verschiedenen Standorten gepflanzt werden sollen. Als erste Stadt Deutschlands übernahm Jena die Vorreiterrolle, indem es Klimaaspekte in seine Stadtbaumstrategie einbezog. Die Forschung umfasste Baumarten, die in Jena bereits vorkommen, sowie Baumarten aus nordamerikanischen und asiatischen Städten, in denen bereits wärmere klimatische Bedingungen herrschen. Der Auswahlprozess konzentrierte sich darauf, Bäume zu identifizieren, die seit etwa 50 Jahren den größten Schatten spenden würden. Es ist jedoch wichtig zu beachten, dass das Klima allein nicht das alleinige Kriterium dafür ist, welche Bäume gepflanzt werden sollen. Auch der Pflegebedarf jedes Baumes, die Größe seiner Wurzeln und andere Faktoren wurden berücksichtigt. Im Bereich der Straßen- und Tiefgaragenlage (gilt allerdings nicht für den Marktplatz, sondern z. B. am Ernst-Abbe-Campus) könnten Bäume mit zu großen Wurzeln Schäden verursachen. Die Früchte dieser Bäume waren ein weiterer Aspekt, der sorgfältig untersucht wurde. Obwohl Früchte einen ästhetischen und ökologischen Wert haben können, war es wichtig, die Praktikabilität des Umgangs mit abgefallenen Früchten zu berücksichtigen und sicherzustellen, dass der Boden sauber bleibt.
+
+Bei den Bäumen rund um den Marktplatz handelt es sich um eine besondere Kastanienart namens *Aesculus carnea*. Im Frühling zeigen sie atemberaubende Farben, im Sommer müssen sie jedoch künstlich bewässert werden.
+
+
+## Ein Pocket-Park
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig5a_Pocketpark.jpg" alt="Ein Pocket-Park im Jenaer Stadtzentrum. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-8"></span>Figure 7: Ein Pocket-Park im Jenaer Stadtzentrum. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+Das Konzept der **Klimakomfortinseln** wurde im Rahmen des Modellprojekts "Grüne Klimaoasen im Jenaer Stadtraum" entwickelt. Die Grundidee besteht darin, ein zusammenhängendes Netzwerk dieser Inseln zu schaffen und die bestehende grüne Infrastruktur in der gesamten Stadt zu verbinden. Am Ende soll jeder Jenaer Bürger in der Lage sein, eine dieser Klimakomfortinseln innerhalb von fünf Minuten zu Fuß zu erreichen. Der sogenannte Taschenpark, in dem Sie sich gerade befinden, ist ein von der Sparkasse und der Stadt gemeinsam finanziertes Projekt. Diese kleinen Parks sind in erster Linie als Rückzugsorte für Stadtbummel an heißen Tagen konzipiert und bieten Erholung vom städtischen Umfeld. Sie spielen eine entscheidende Rolle bei der Abschwächung des städtischen Wärmeinseleffekts, indem sie die Oberflächentemperaturen senken, die Umgebungsluft kühlen und die Luftqualität verbessern. Diese Maßnahmen schaffen ein angenehmeres Mikroklima und tragen dazu bei, das Risiko von hitzebedingtem Stress bei den Bewohnern zu verringern.
+
+Über die unmittelbaren Vorteile hinaus führt die Einrichtung dieser Pocket-Parks auch zu einem verbesserten Wasser- und Abflussmanagement. Grünflächen tragen dazu bei, Regenwasser zurückzuhalten und zu filtern und tragen so zu nachhaltigen Wasserpraktiken bei. Darüber hinaus tragen sie zur Verbesserung der Artenvielfalt bei, indem sie Lebensräume und Nahrungsquellen für verschiedene Tier-, Insekten- und Pflanzenarten bieten. Die Fassadenbegrünung in diesen Parks dient dem Schutz der Gebäude vor übermäßiger Wärmeaufnahme. Kletterpflanzen reflektieren mit ihrem Blattwerk Strahlung effektiv in verschiedene Richtungen und verhindern so eine übermäßige Erwärmung der Strukturen. Der Baum in der Mitte und die umliegenden Gebäude spenden Schatten. Außerdem ist geplant, an dieser Stelle einen Trinkwasserbrunnen zu errichten. Die Stadt Jena hat rund 500 Standorte auf ihr Potenzial als Klimakomfortinseln untersucht. Von diesen Spots sind rund 120 vielversprechend, obwohl bisher nur wenige realisiert wurden.
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig5b_Pocketpark2.jpg" alt="Informationstafel in einem Pocket-Park im Stadtzentrum von Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 8: Informationstafel in einem Pocket-Park im Stadtzentrum von Jena. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+## Paradiespark
+
+
+<div class="figure">
+<img src="figures/EC2U_CW_Fig6b_Saale2.jpg" alt="Ein Aussichtspunkt im Paradiespark an der Saale im Stadtzentrum von Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 9: Ein Aussichtspunkt im Paradiespark an der Saale im Stadtzentrum von Jena. Foto &copy; Svenja Hoffmann</p>
+</div>
+
+
+Am letzten Halt unseres [EC2U](https://ec2u.eu/) Climate Walk befinden wir uns im Paradiespark, dem größten zusammenhängenden städtischen Grün Flächen in Jena. Parks und Wasserflächen spielen eine entscheidende Rolle bei der Bekämpfung des städtischen Wärmeinseleffekts. In dicht bebauten Gebieten Jenas, in denen Grün- und Blauflächen begrenzt sind, kommt es kaum zu einer intrinsischen Kaltluftbildung, abgesehen von Gebieten entlang der Saale und größeren innerstädtischen Grünflächen wie dem [Botanischen Garten](https://www.botanischergarten.uni-jena.de/). Tagsüber üben Vegetation und Wasserflächen durch Verdunstung und Schatten einen kühlenden Effekt auf das Stadtklima aus, wodurch die Umgebungstemperatur effektiv gesenkt und der städtische Wärmeinseleffekt abgemildert wird. Das Phänomen der „städtischen Parkbrise“ erleichtert den Luftaustausch und trägt zur Abkühlung angrenzender Wohngebiete bei, was zu Temperatursenkungen von 1,5 bis 4,5°C führt.
+
+Das Ausmaß dieses Kühleffekts hängt jedoch stark von der Größe der Grünfläche und der umgebenden Gebäudestruktur ab. Der entlastende Nutzen für die umliegende Bebauung ist aufgrund baulicher Barrieren, wie zum Beispiel Bahndämmen neben dem Paradiespark, relativ begrenzt. Dies führt dazu, dass sich kalte Luft innerhalb des Parkgeländes staut, lokal kühlere Zonen bildet und dort festgehalten wird. Die lokalklimatischen Vorteile dieser Grünflächen kommen vor allem den Parknutzern zugute und machen den Paradiespark zu einem der beliebtesten Gebiete in Jena Freizeitaktivitäten, insbesondere an heißen Tagen.
+
+
+
+
+
+## Abschluss
+
+Der Zweck dieses Spaziergangs bestand darin, Ihnen ein umfassendes Verständnis des Stadtklimas, seiner besonderen Merkmale und der damit verbundenen Auswirkungen zu vermitteln. Am Beispiel von Jena wollten wir aufzeigen, wie sich Städte an die Auswirkungen des Klimawandels auf städtische Strukturen anpassen und diese abmildern, und gleichzeitig die Herausforderungen hervorheben, die mit diesen Bemühungen verbunden sind. Generell empfehlen wir Ihnen dringend, die Stadt weiter zu erkunden und ermutigen Sie dazu Achten Sie auf Ihre Umgebung. Orte wie der [Botanische Garten](https://www.botanischergarten.uni-jena.de/) und universitäre Einrichtungen bieten oft öffentlich zugängliche Grünflächen, die zur Klimaanpassung beitragen. Darüber hinaus bietet eine Wanderung in den umliegenden Hügeln nicht nur eine atemberaubende Aussicht, sondern auch Einblicke in die Beziehung der Stadt zu ihrer natürlichen Umgebung.
+
+Am Ende des Spaziergangs ermutigen wir Sie, über Ihre eigene Stadt und ihre Initiativen zur Klimaanpassung und -minderung nachzudenken. Überlegen Sie, welche Schritte unternommen werden, um den Herausforderungen des Klimawandels zu begegnen, und wie Ihre Stadt nachhaltige Praktiken und den Erhalt von Grünflächen fördert. Wenn Sie diese Bemühungen verstehen, können Sie zum gemeinsamen Ziel beitragen, widerstandsfähigere und umweltbewusstere städtische Umgebungen zu schaffen.
+
+
+
+
+## Bildquellen und Links
+
+- Der Klimaspaziergang ist [in Komoot verfügbar](https://www.komoot.de/tour/1132986536?ref=wtd&share_token=axibD4gM9P4rjrpTbM3jUlYfcUMy2FB3c378tpQo4UInnSrY0F).
+- Featured map: Komoot / OpenStreetMap contributors
+- [ThINK GmbH / Kurmutz et al. 2012](https://www.jenkas.de/sites/default/files/2020-08/JenKAS-Handbuch_einer_klimawandelgerechten_Stadtentwicklung_Web.pdf), Seiten 21 and 34.
+- Alle weiteren Fotos und Karten: Svenja Hoffmann
