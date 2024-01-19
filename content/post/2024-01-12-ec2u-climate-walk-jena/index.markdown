@@ -8,7 +8,7 @@ categories: ["EC2U", "outreach"]
 tags: ["EC2U", "climate change", "urban heat island", "sustainable cities and communities", "GPS", "field trip"]
 subtitle: 'A self-guided walking tour on urban heat islands and climate adaptation'
 summary: 'The Climate Walk is a self-guided tour through the city of Jena, offering insights into urban climate and adaptation strategies...'
-lastmod: "2024-01-12"
+lastmod: "2024-01-19"
 featured: no
 image:
   caption: ''
@@ -142,14 +142,21 @@ Beyond the immediate benefits, the establishment of these pocket parks also lead
 
 
 <div class="figure">
-<img src="figures/EC2U_CW_Fig6b_Saale2.jpg" alt="A lookout point in Paradise park next to the Saale river in Jena's city centre. Photograph &amp;copy; Svenja Hoffmann" width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 9: A lookout point in Paradise park next to the Saale river in Jena's city centre. Photograph &copy; Svenja Hoffmann</p>
+<img src="figures/Paradiespark.jpeg" alt="In Paradise park, close to the Saale river in Jena's city centre. Photograph &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 9: In Paradise park, close to the Saale river in Jena's city centre. Photograph &copy; Svenja Hoffmann</p>
 </div>
+
 
 
 At the final stop of our [EC2U](https://ec2u.eu/) Climate Walk, we find ourselves in Paradies Park, which is the largest continuous urban green space in Jena. Parks and water areas play a crucial role in combating the urban heat island effect. In densely built areas of Jena, where green and blue spaces are limited, intrinsic cold air formation is scarce, apart from areas along the Saale River and larger inner-city green spaces like the [Botanical Garden](https://www.botanischergarten.uni-jena.de/). During the daytime, vegetation and water areas exert a cooling effect on the urban climate through evaporation and shade, effectively lowering the ambient temperature and mitigating the urban heat island effect. The phenomenon of the "urban park breeze" facilitates the exchange of air and contributes to cooling in adjacent residential areas, resulting in temperature reductions ranging from 1.5 to 4.5°C.
 
 However, the extent of this cooling effect heavily depends on the size of the green space and the surrounding building structure. The benefits for the surrounding buildings in terms of relief are relatively limited due to structural barriers, such as railway embankments next to Paradies park. As a result, cold air tends to accumulate within the park area, forming locally cooler zones and being trapped there.The local climatic benefits of these green spaces are particularly enjoyed by park users, making Paradies Park one of the most popular areas in Jena for recreational activities, especially during hot days.
+
+
+<div class="figure">
+<img src="figures/Saale.jpeg" alt="The Saale river in Jena's city centre. Photograph &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-11"></span>Figure 10: The Saale river in Jena's city centre. Photograph &copy; Svenja Hoffmann</p>
+</div>
 
 ## Wrap-up
 

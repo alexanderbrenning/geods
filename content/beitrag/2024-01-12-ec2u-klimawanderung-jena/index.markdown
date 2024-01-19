@@ -8,7 +8,7 @@ categories: ["EC2U", "Outreach"]
 tags: ["EC2U", "Klimawandel", "städtische Wärmeinsel", "nachhaltige Städte und Gemeinden", "GPS", "Exkursion"]
 subtitle: 'Ein Spaziergang über städtische Wärmeinseln und Klimaanpassung'
 summary: 'Der EC2U-Klimaspaziergang ist eine selbständig durchgeführte Stadttour durch Jena, die Einblicke in Stadtklima und Klimaanpassung gibt...'
-lastmod: "2024-01-12"
+lastmod: "2024-01-19"
 featured: no
 image:
   caption: ''
@@ -141,9 +141,10 @@ Das Konzept der **Klimakomfortinseln** wurde im Rahmen des Modellprojekts "Grün
 
 
 <div class="figure">
-<img src="figures/EC2U_CW_Fig6b_Saale2.jpg" alt="Ein Aussichtspunkt im Paradiespark an der Saale im Stadtzentrum von Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 9: Ein Aussichtspunkt im Paradiespark an der Saale im Stadtzentrum von Jena. Foto &copy; Svenja Hoffmann</p>
+<img src="figures/Paradiespark.jpeg" alt="Im Paradiespark, in unmittelbarer Nähe zur Saale im Stadtzentrum von Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 9: Im Paradiespark, in unmittelbarer Nähe zur Saale im Stadtzentrum von Jena. Foto &copy; Svenja Hoffmann</p>
 </div>
+
 
 
 Am letzten Halt unseres [EC2U](https://ec2u.eu/) Climate Walk befinden wir uns im Paradiespark, dem größten zusammenhängenden städtischen Grün Flächen in Jena. Parks und Wasserflächen spielen eine entscheidende Rolle bei der Bekämpfung des städtischen Wärmeinseleffekts. In dicht bebauten Gebieten Jenas, in denen Grün- und Blauflächen begrenzt sind, kommt es kaum zu einer intrinsischen Kaltluftbildung, abgesehen von Gebieten entlang der Saale und größeren innerstädtischen Grünflächen wie dem [Botanischen Garten](https://www.botanischergarten.uni-jena.de/). Tagsüber üben Vegetation und Wasserflächen durch Verdunstung und Schatten einen kühlenden Effekt auf das Stadtklima aus, wodurch die Umgebungstemperatur effektiv gesenkt und der städtische Wärmeinseleffekt abgemildert wird. Das Phänomen der „städtischen Parkbrise“ erleichtert den Luftaustausch und trägt zur Abkühlung angrenzender Wohngebiete bei, was zu Temperatursenkungen von 1,5 bis 4,5°C führt.
@@ -151,6 +152,11 @@ Am letzten Halt unseres [EC2U](https://ec2u.eu/) Climate Walk befinden wir uns i
 Das Ausmaß dieses Kühleffekts hängt jedoch stark von der Größe der Grünfläche und der umgebenden Gebäudestruktur ab. Der entlastende Nutzen für die umliegende Bebauung ist aufgrund baulicher Barrieren, wie zum Beispiel Bahndämmen neben dem Paradiespark, relativ begrenzt. Dies führt dazu, dass sich kalte Luft innerhalb des Parkgeländes staut, lokal kühlere Zonen bildet und dort festgehalten wird. Die lokalklimatischen Vorteile dieser Grünflächen kommen vor allem den Parknutzern zugute und machen den Paradiespark zu einem der beliebtesten Gebiete in Jena Freizeitaktivitäten, insbesondere an heißen Tagen.
 
 
+
+<div class="figure">
+<img src="figures/Saale.jpeg" alt="Die Saale im Zentrum von Jena. Foto &amp;copy; Svenja Hoffmann" width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-11"></span>Figure 10: Die Saale im Zentrum von Jena. Foto &copy; Svenja Hoffmann</p>
+</div>
 
 
 
