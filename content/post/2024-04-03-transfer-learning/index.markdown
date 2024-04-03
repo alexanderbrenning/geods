@@ -40,7 +40,7 @@ When using UATL to do natural hazard assessment, it can fully take advantage of 
 
 
 <div class="figure">
-<img src="figures/fig1.png" alt="The general framework of Unsupervised active--transfer learning (UATL)." width="70%" />
+<img src="figures/Figure1.png" alt="The general framework of Unsupervised active--transfer learning (UATL)." width="70%" />
 <p class="caption"><span id="fig:unnamed-chunk-1"></span>Figure 1: The general framework of Unsupervised active--transfer learning (UATL).</p>
 </div>
 
@@ -73,14 +73,14 @@ UATL can be applied to natural hazard assessments. Here we will have a brief loo
 The source area is located in the western Aceh province of Sumatra, and the target area is in the southern Palu province of Sulawesi, both in Indonesia (Figure 2). Landslides in both study areas occur frequently and may be triggered by seismic activity as well as heavy rainfall or their combined effect. The red polygons are the landslide inventories for the target area (Palu) and the source area (Reuleut).
 
 <div class="figure">
-<img src="figures/fig2.jpg" alt="Locations of the study areas in Indonesia and their landslide inventories." width="70%" />
+<img src="figures/Figure2.jpg" alt="Locations of the study areas in Indonesia and their landslide inventories." width="70%" />
 <p class="caption"><span id="fig:unnamed-chunk-2"></span>Figure 2: Locations of the study areas in Indonesia and their landslide inventories.</p>
 </div>
 
 For evaluating the performance of UATL, the partial AUROC is adopted (Figure 3). The partial AUROC ingrates the ROC curve only within a restricted domain, which allows us to assess the model’s ability to predict landslide occurrence while correctly classifying most non-landslide sites as stable (Brenning, 2012). Three benchmarks are used, which include only using active learning (AL benchmark), only using the transferred model (CBR benchmark), and the model trained by the target area itself (Target benchmark).
 
 <div class="figure">
-<img src="figures/fig3.png" alt="Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points." width="70%" />
+<img src="figures/Figure3.jpg" alt="Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points." width="70%" />
 <p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 3: Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points.</p>
 </div>
 
@@ -100,7 +100,7 @@ UATL reduced 80% of the efforts of building the training data compared to only u
 In addition, we showed the areas that are most likely to be landslides in the landslide map that was obtained with adaptive UATL using only 235 landslide and non-landslide points (Figure 4). Almost all landslides were covered by areas categorized as being very likely to present a landslide, which was consistent with the numerical performance indicators obtained above (Figure 3).
 
 <div class="figure">
-<img src="figures/fig4.png" alt="Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points." width="70%" />
+<img src="figures/Figure4.jpg" alt="Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points." width="70%" />
 <p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 4: Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points.</p>
 </div>
 

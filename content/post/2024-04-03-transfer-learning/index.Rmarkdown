@@ -44,7 +44,7 @@ When using UATL to do natural hazard assessment, it can fully take advantage of 
 
 
 ```{r out.width='70%', fig.cap="The general framework of Unsupervised active--transfer learning (UATL)."}
-knitr::include_graphics("figures/fig1.png")
+knitr::include_graphics("figures/Figure1.png")
 ```
 
 
@@ -76,13 +76,13 @@ UATL can be applied to natural hazard assessments. Here we will have a brief loo
 The source area is located in the western Aceh province of Sumatra, and the target area is in the southern Palu province of Sulawesi, both in Indonesia (Figure 2). Landslides in both study areas occur frequently and may be triggered by seismic activity as well as heavy rainfall or their combined effect. The red polygons are the landslide inventories for the target area (Palu) and the source area (Reuleut).
 
 ```{r out.width='70%', fig.cap="Locations of the study areas in Indonesia and their landslide inventories."}
-knitr::include_graphics("figures/fig2.jpg")
+knitr::include_graphics("figures/Figure2.jpg")
 ```
 
 For evaluating the performance of UATL, the partial AUROC is adopted (Figure 3). The partial AUROC ingrates the ROC curve only within a restricted domain, which allows us to assess the model’s ability to predict landslide occurrence while correctly classifying most non-landslide sites as stable (Brenning, 2012). Three benchmarks are used, which include only using active learning (AL benchmark), only using the transferred model (CBR benchmark), and the model trained by the target area itself (Target benchmark).
 
 ```{r out.width='70%', fig.cap="Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points."}
-knitr::include_graphics("figures/fig3.png")
+knitr::include_graphics("figures/Figure3.jpg")
 ```
 
 
@@ -101,7 +101,7 @@ UATL reduced 80% of the efforts of building the training data compared to only u
 In addition, we showed the areas that are most likely to be landslides in the landslide map that was obtained with adaptive UATL using only 235 landslide and non-landslide points (Figure 4). Almost all landslides were covered by areas categorized as being very likely to present a landslide, which was consistent with the numerical performance indicators obtained above (Figure 3).
 
 ```{r out.width='70%', fig.cap="Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points."}
-knitr::include_graphics("figures/fig4.png")
+knitr::include_graphics("figures/Figure4.jpg")
 ```
 
 ## Conclusion
