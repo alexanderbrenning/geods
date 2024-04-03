@@ -1,0 +1,125 @@
+---
+title: "Active-transfer learning for natural hazard assessment"
+author: Zhihao Wang
+authors: ["Zhihao Wang"]
+date: '2024-04-03'
+slug: transfer-learning
+categories: ["machine learning", "natural hazards"]
+tags: ["machine learning", "spatial prediction", "transfer learning", "active learning", "landslides"]
+subtitle: 'Combining transferred knowledge with optimal local data acquisition'
+summary: 'Machine-learning methods for natural hazards assessment are data hungry --- in her PhD, Zhihao Wang developed an active--transfer learning strategy that combines transferred prior knowledge with optimal local data acquisition...'
+lastmod: "2024-04-03"
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+
+*Guest post by Dr. Zhihao Wang, PhD 2023, now [postdoc at UC Davis](https://pasternack.ucdavis.edu/people/postdocs)*
+
+When training machine-learning models for natural hazard assessment, we still rely on hundreds (even thousands) of labeled instances, which are very difficult, time-consuming, or expensive to obtain.
+
+For building the training dataset at little cost, two ideas, data minimization and existing datasets, have been attracting increased attention. In terms of data minimization, active learning (AL) (Settles, 2010) is to choose the data ("informative" data) that the model is curious about as the training data for achieving high accuracy using as few labeled instances as possible. [Wang and Brenning (2021)](https://doi.org/10.3390/rs13132588) compared different active learning strategies in landslide detection assessments and confirmed the good performance of active learning. For using existing datasets as the training data, transfer learning [(Pan and Yang, 2010)](https://doi.org/10.1109/Tkde.2009.191) is to extract information from existing datasets to help a learning algorithm achieve a good performance in a new target area. [Wang et al. (2022)](https://doi.org/10.5194/gmd-15-8765-2022) used different transfer learning techniques in landslide susceptibility assessment and found that the similarity of environment and data characteristics are key factors for successful model transfers. However, active learning and transfer learning have disadvantages in terms of model stability and precise understanding of the governing factors in the target area, respectively.
+
+My recent contribution [(Wang and Brenning, 2023)](https://doi.org/10.1016/j.cageo.2023.105457) proposes novel a natural hazards framework that addresses these issues:
+
+{{% callout note %}}
+
+**Unsupervised active--transfer learning** (**UATL**) combines active and transfer learning to make sure the model is stable and obtain a more precise understanding of the governing factors in the target area at little cost (Figure 1).
+
+{{% /callout %}}
+
+
+When using UATL to do natural hazard assessment, it can fully take advantage of the existing datasets from geographically distant (source areas) and a small amount of data from the target area to achieve excellent predictive performances and more precise relationships between the response and predictors in the target area.
+
+
+
+<div class="figure">
+<img src="figures/fig1.png" alt="The general framework of Unsupervised active--transfer learning (UATL)." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-1"></span>Figure 1: The general framework of Unsupervised active--transfer learning (UATL).</p>
+</div>
+
+
+## How it works
+
+UATL is a human-in-the-loop framework for natural hazard assessments. First, it applies the case-based reasoning (CBR) transfer learning method to compare the similarity of characteristics (e.g., environmental characteristics) between source and target areas, and the source area with the highest similarity is used as the training set to building a natural hazard model (CBR model).
+
+{{% callout note %}}
+
+**Case-based reasoning** is a transfer-learning method, translating the geographical knowledge on the suitability of source areas for model training into mathematical knowledge to obtain similar regions for training a model [(Wang et al., 2022)](https://doi.org/10.5194/gmd-15-8765-2022).
+
+{{% /callout %}}
+
+Next, UATL combines the CBR model with the active learning framework to obtain "informative" training data from the target area in a human-in-the-loop manner. Unlike the active learning framework, where the initial training set is randomly selected by the human, this process not only further saves the cost of creating the training set but also ensures the quality of the initial training set.
+
+{{% callout note %}}
+
+**Active learning** is a subfield of machine learning, that uses query strategies to obtain relevant responses (sampling from unlabeled data) by asking about the past (Settles, 2010).
+
+{{% /callout %}}
+
+Finally, when certain selection criteria are met (e.g., time of selection), UATL stops selecting "informative" instances from the target area.
+
+UATL can be applied to natural hazard assessments. Here we will have a brief look at open-source landslide inventories that can be found in [Tanyas et al. (2021)](https://doi.org/10.3389/feart.2021.700546). In the paper, I also demonstrate the performance of UATL in the landslide detection assessment (Wang and Brenning, 2023).
+
+
+## Case Study: the open-source landslide inventories of Indonesia
+
+The source area is located in the western Aceh province of Sumatra, and the target area is in the southern Palu province of Sulawesi, both in Indonesia (Figure 2). Landslides in both study areas occur frequently and may be triggered by seismic activity as well as heavy rainfall or their combined effect. The red polygons are the landslide inventories for the target area (Palu) and the source area (Reuleut).
+
+<div class="figure">
+<img src="figures/fig2.jpg" alt="Locations of the study areas in Indonesia and their landslide inventories." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-2"></span>Figure 2: Locations of the study areas in Indonesia and their landslide inventories.</p>
+</div>
+
+For evaluating the performance of UATL, the partial AUROC is adopted (Figure 3). The partial AUROC ingrates the ROC curve only within a restricted domain, which allows us to assess the model’s ability to predict landslide occurrence while correctly classifying most non-landslide sites as stable (Brenning, 2012). Three benchmarks are used, which include only using active learning (AL benchmark), only using the transferred model (CBR benchmark), and the model trained by the target area itself (Target benchmark).
+
+<div class="figure">
+<img src="figures/fig3.png" alt="Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 3: Partial AUROCs obtained by AL benchmark, CBR benchmark, target benchmark, and UATL based on 235, 310, and 435 training points.</p>
+</div>
+
+
+This is what we learn from the partial AUROCs obtained by different methods:
+
+
+
+{{% callout note %}}
+
+The predictive accuracy obtained by UATL was only 2% lower than that obtained by the target benchmark in a study area of 229 km² in Indonesia.
+
+UATL reduced 80% of the efforts of building the training data compared to only using the active learning framework.
+
+{{% /callout %}}
+
+In addition, we showed the areas that are most likely to be landslides in the landslide map that was obtained with adaptive UATL using only 235 landslide and non-landslide points (Figure 4). Almost all landslides were covered by areas categorized as being very likely to present a landslide, which was consistent with the numerical performance indicators obtained above (Figure 3).
+
+<div class="figure">
+<img src="figures/fig4.png" alt="Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 4: Landslide map showing only predictions in the “very high” category as mapped landslides. The map is based on adaptive UATL with 235 training points.</p>
+</div>
+
+## Conclusion
+
+By taking advantage of the existing, older dataset from a geographically distant, but similar source area, UATL is effectively able to use a small number of "informative" data points from the target area for sufficiently achieving excellent predictive performances with a little help from the "human in the loop". Moreover, due to its availability as a reference for modeling other natural hazards, UATL has the potential to become a generic framework for modeling natural hazards.
+
+### References
+
+Brenning, A. (2012): Improved spatial analysis and prediction of landslide susceptibility: Practical recommendations. *Landslides and Engineered Slopes, Protecting Society through Improved Understanding*, edited by: Eberhardt, E., Froese, C., Turner, AK, and Leroueil, S., Taylor & Francis, Banff, Alberta, Canada, 789--795.
+
+Pan, S. J. and Yang, Q. A. (2010): A survey on transfer learning, *IEEE Transactions on Knowledge and Data Engineering*, 22, 1345--1359, [DOI: 10.1109/Tkde.2009.191](https://doi.org/10.1109/Tkde.2009.191).
+
+Settles, B. (2010): *Active learning literature survey*, University of Wisconsin, Computer Sciences Technical Report.
+
+Tanyas, H., Kirschbaum, D., Gorum, T., van Westen, C.J., Lombardo, L. (2021): New insight into post-seismic landslide evolution processes in the tropics. *Frontiers in Earth Science*, 9, 551, [DOI: 10.3389/feart.2021.700546](https://doi.org/10.3389/feart.2021.700546).
+
+Wang, Z & Brenning, A. (2021): Active-learning approaches for landslide mapping using support vector machines. *Remote Sensing*, 13(13), 2588. [DOI: 10.3390/rs13132588](https://doi.org/10.3390/rs13132588).
+
+Wang, Z., Goetz, J., Brenning, A. (2022): Transfer learning for landslide susceptibility modeling using domain adaptation and case-based reasoning. *Geoscientific Model Development*, 15(23), 8765--8784. [DOI: 10.5194/gmd-15-8765-2022](https://doi.org/10.5194/gmd-15-8765-2022).
+
+Wang, Z. H. and Brenning, A. (2023): Unsupervised active-transfer learning for automated landslide mapping, *Computers & Geosciences*, 181, ARTN 105457, [DOI: 10.1016/j.cageo.2023.105457](https://doi.org/10.1016/j.cageo.2023.105457).
