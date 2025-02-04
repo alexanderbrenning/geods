@@ -3,7 +3,7 @@ title: "Announcing the New RSAGA Release"
 author: "Alexander Brenning"
 authors: ["Alexander Brenning"]
 date: '2025-02-03'
-slug: nitrate
+slug: rsaga-update
 categories: ["R", "GIS", "geocomputing"]
 tags: ["R package", "SAGA", "GIS", "terrain analysis", "geomorphometry", "geocomputation", "open-source software"]
 subtitle: 'Now Compatible with SAGA GIS 9.7.2'
