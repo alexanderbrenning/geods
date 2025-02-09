@@ -8,7 +8,7 @@ categories: ["R", "GIS", "geocomputing"]
 tags: ["R package", "SAGA", "GIS", "terrain analysis", "geomorphometry", "geocomputation", "open-source software"]
 subtitle: 'Now Compatible with SAGA GIS 9.7.2'
 summary: 'A new version of RSAGA is available, the R package that provides an interface to SAGA GIS for geospatial analysis, digital terrain analysis, and geocomputing...'
-lastmod: "2025-02-04"
+lastmod: "2025-02-09"
 featured: no
 image:
   caption: ''
@@ -70,3 +70,7 @@ Happy mapping and modeling!
 ## References
 
 Brenning, A., Bangs, D., Becker, M., Schratz, P., & Polakowski, F. (2025). *RSAGA: SAGA Geoprocessing and Terrain Analysis*. R package version 1.4.2. Retrieved from https://CRAN.R-project.org/package=RSAGA  
+
+
+<img src="https://vg09.met.vgwort.de/na/aa0f5334bb0a445fa3e7b20ef60634a9" width="1" height="1" alt="">
+
