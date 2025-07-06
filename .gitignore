@@ -8,3 +8,5 @@ Thumbs.db
 .hugo_build.lock
 /public/
 /resources/
+content/beitrag/*/data/geofabrik*
+content/beitrag/*/data/dpindex*.tif
