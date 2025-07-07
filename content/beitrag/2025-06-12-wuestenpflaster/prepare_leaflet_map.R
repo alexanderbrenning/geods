@@ -190,8 +190,8 @@ pal <- colorNumeric("YlOrRd", domain = c(0.7, 1.0), na.color = "transparent")
 zoom_bbox <- st_bbox(namibia_outline)
 
 m <- leaflet() %>%
-  addRasterImage(hill, colors = gray.colors(256), opacity = 0.7, project = FALSE, group = "Hillshade") %>%
-  addRasterImage(dppi_filtered, colors = pal, opacity = 0.6, project = FALSE, group = "DPPI") %>%
+  addRasterImage(hill_web, colors = gray.colors(256), opacity = 0.7, project = FALSE, group = "Hillshade") %>%
+  addRasterImage(dppi_web, colors = pal, opacity = 0.6, project = FALSE, group = "DPPI") %>%
   addProviderTiles("CartoDB.PositronOnlyLabels", group = "Labels") %>%
   addPolylines(data = roads,    color = "black",    weight = 1, group = "Roads & Rail") %>%
   addPolylines(data = railways, color = "darkred",  weight = 1, dashArray = "3", group = "Roads & Rail") %>%
