@@ -88,7 +88,7 @@ Diese Flächen decken fast **89%** aller ariden Regionen weltweit ab, erlauben a
 
 Diese Analyse ist **`r .blue("explorativ")`** und vorläufig und basiert auf globalen Datensätzen mittlerer Auflösung. Sie zeigt aber, wie bereits einfache GIS-Methoden nützlich sein können. Es bleibt jedoch noch viel zu tun!
 
-In Zukunft werden wir uns dem Fallbeispiel **`r .blue("Namibia")`** zuwenden. Unsere globale Modellierung dient dabei als Ausgangspunkt, um uns auf relevante Regionen zu konzentrieren.
+In Zukunft werden wir uns dem Fallbeispiel **`r .blue("Namibia")`** zuwenden. Unsere globale Modellierung dient dabei als Ausgangspunkt, um uns auf relevante Regionen zu konzentrieren. Hier eine <a href="https://geods.netlify.app/beitrag/wuestenpflaster/dppimap.html" target="_blank">interaktive Karte</a>.
 
 
 ```{r out.width='50%', fig.cap='Potenzielle Verbreitung von Wüstenpflaster in Namibia. Quelle: Brenning et al. (2025).'}
@@ -111,70 +111,4 @@ Im Rahmen eines durch die **`r .blue("Deutsche Forschungsgemeinschaft (DFG)")`**
 Brenning, A., Güldner, L., Schepanski, K., Dietze, M. & Fuchs, M. (2025). *Geomorphic Distribution Modeling of Desert Pavements: Towards a Global Assessment*. Geomorphometry 2025, Perugia, Italien. [https://doi.org/10.5281/zenodo.15014982](https://doi.org/10.5281/zenodo.15014982)
 
 <img src="https://vg09.met.vgwort.de/na/4d56017a97ef426aa2e3e3ec431f2baa" width="1" height="1" alt="">
-
-
-## Interaktive Karte
-
-
-```{r dppimap, echo=FALSE, message=FALSE, warning=FALSE, out.width='100%'}
-library(terra)
-library(sf)
-namibia_file <- "data/namibia.rds"
-namibia_outline <- readRDS(namibia_file)
-dppi_file <- "data/dppi.rds"
-ras_masked <- readRDS(dppi_file)
-hill_file <- "data/hillshade.rds"
-hill <- readRDS(hill_file)
-roads_file <- "data/roads.rds"
-roads <- readRDS(roads_file)
-railways_file <- "data/railways.rds"
-railways <- readRDS(railways_file)
-rivers_file <- "data/rivers.rds"
-rivers <- readRDS(rivers_file)
-places_file <- "data/places.rds"
-places <- readRDS(places_file)
-places <- places[!is.na(places$name), ]
-places <- places[is.na(places$capital) | places$capital %in% c("yes", "admin"), ]
-dppi_filtered <- classify(ras_masked, cbind(-Inf, 0.7, NA))
-
-roads_web    <- st_transform(roads, 3857)
-railways_web <- st_transform(railways, 3857)
-rivers_web   <- st_transform(rivers, 3857)
-hill_web <- project(hill, "EPSG:3857")
-places_web <- st_transform(places, 3857)
-
-dppi_web <- project(dppi_filtered, "EPSG:3857")
-
-pal <- colorNumeric("YlOrRd", domain = c(0.7, 1.0), na.color = "transparent")
-
-
-leaflet() %>%
-  addProviderTiles("CartoDB.PositronOnlyLabels", group = "Labels") %>%
-  
-  # Hillshade base layer (semi-transparent)
-  addRasterImage(hill_web, colors = gray.colors(256), opacity = 0.7, project = FALSE, group = "Hillshade") %>%
-  
-  # DPPI raster layer (semi-transparent)
-  addRasterImage(dppi_web, colors = pal, opacity = 0.8, project = FALSE, group = "DPPI") %>%
-  
-  # Vector overlays
-  addPolylines(data = roads,    color = "black",    weight = 1, group = "Roads") %>%
-  addPolylines(data = railways, color = "darkred",  weight = 1, dashArray = "3", group = "Railways") %>%
-  addPolylines(data = rivers,   color = "blue",     weight = 1, group = "Rivers") %>%
-  addPolygons(data = namibia_outline, fill = FALSE, color = "black", weight = 2, group = "Namibia Border") %>%
-  addCircleMarkers(data = places, radius = 2, color = "black",
-                   label = ~name, labelOptions = labelOptions(textsize = "12px"),
-                   group = "Towns") %>%
-  
-  # Legend
-  addLegend(pal = pal, values = values(dppi_filtered, na.rm = TRUE),
-            title = "DPPI", position = "bottomright") %>%
-  
-  # Layer control
-  addLayersControl(
-    overlayGroups = c("DPPI", "Hillshade", "Roads", "Railways", "Rivers", "Towns", "Namibia Border", "Labels"),
-    options = layersControlOptions(collapsed = FALSE)
-  )
-```
-
 

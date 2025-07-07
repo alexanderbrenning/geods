@@ -152,6 +152,30 @@ places_web <- st_transform(places, 3857)
 
 
 library(leaflet)
+# install.packages("rnaturalearth")
+# install.packages("rnaturalearthdata")  # needed for physical layers
+library(rnaturalearth)
+library(sf)
+
+borders_file <- "data/borders.rds"
+if (file.exists(borders_file)) {
+  borders <- readRDS(borders_file)
+} else {
+  borders <- ne_download(scale = 110, type = "admin_0_boundary_lines_land", category = "cultural", returnclass = "sf")
+  saveRDS(borders, file = borders_file)
+}
+
+coastlines_file <- "data/coastlines.rds"
+if (file.exists(coastlines_file)) {
+  coastlines <- readRDS(coastlines_file)
+} else {
+  # Coastlines
+  coastlines <- ne_download(scale = 110, type = "coastline", category = "physical", returnclass = "sf")
+  saveRDS(coastlines, file = coastlines_file)
+}
+
+
+
 
 # Set DPPI < 0.70 to NA
 dppi_filtered <- classify(ras_masked, cbind(-Inf, 0.7, NA))
@@ -162,24 +186,55 @@ dppi_web <- project(dppi_filtered, "EPSG:3857")
 # Define a color palette
 pal <- colorNumeric("YlOrRd", domain = c(0.7, 1.0), na.color = "transparent")
 
-leaflet() %>%
+# Get bounding box
+zoom_bbox <- st_bbox(namibia_outline)
+
+m <- leaflet() %>%
+  addRasterImage(hill, colors = gray.colors(256), opacity = 0.7, project = FALSE, group = "Hillshade") %>%
+  addRasterImage(dppi_filtered, colors = pal, opacity = 0.6, project = FALSE, group = "DPPI") %>%
   addProviderTiles("CartoDB.PositronOnlyLabels", group = "Labels") %>%
-  addRasterImage(hill_web, colors = gray.colors(256), opacity = 0.7, project = FALSE, group = "Hillshade") %>%
-  addRasterImage(dppi_web, colors = pal, opacity = 0.8, project = FALSE, group = "DPPI") %>%
-  addPolylines(data = roads,    color = "black",    weight = 1, group = "Roads") %>%
-  addPolylines(data = railways, color = "darkred",  weight = 1, dashArray = "3", group = "Railways") %>%
+  addPolylines(data = roads,    color = "black",    weight = 1, group = "Roads & Rail") %>%
+  addPolylines(data = railways, color = "darkred",  weight = 1, dashArray = "3", group = "Roads & Rail") %>%
   addPolylines(data = rivers,   color = "blue",     weight = 1, group = "Rivers") %>%
+  addPolylines(data = coastlines, color = "black", weight = 1, group = "Coastlines") %>%
+  addPolylines(data = borders, color = "gray30", weight = 1, dashArray = "4", group = "Country Borders") %>%
   addPolygons(data = namibia_outline, fill = FALSE, color = "black", weight = 2, group = "Namibia Border") %>%
   addCircleMarkers(data = places, radius = 2, color = "black",
                    label = ~name, labelOptions = labelOptions(textsize = "12px"),
                    group = "Towns") %>%
+  # addControl("Waiting for your location...", position = "topright") %>%
+  htmlwidgets::onRender("
+    function(el, x) {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var lat = position.coords.latitude;
+          var lon = position.coords.longitude;
+          var map = this;
+          var leafletMap = HTMLWidgets.find('.leaflet').getMap();
+          // leafletMap.setView([lat, lon], 10);
+          L.marker([lat, lon]).addTo(leafletMap)
+            .bindPopup('You are here').openPopup();
+        });
+      } else {
+        alert('Geolocation is not supported by this browser.');
+      }
+    }
+  ") %>%
   addLegend(pal = pal, values = values(dppi_filtered, na.rm = TRUE),
             title = "DPPI", position = "bottomright") %>%
   addLayersControl(
-    overlayGroups = c("DPPI", "Hillshade", "Roads", "Railways", "Rivers", "Towns", "Namibia Border", "Labels"),
+    overlayGroups = c("DPPI", "Hillshade", "Roads & Rail", "Rivers", "Towns"),
     options = layersControlOptions(collapsed = FALSE)
-  )
+  ) %>%
+  fitBounds(lng1 = zoom_bbox["xmin"], lat1 = zoom_bbox["ymin"],
+            lng2 = zoom_bbox["xmax"], lat2 = zoom_bbox["ymax"]) %>%
+  setView(lng = 18.0, lat = -22.5, zoom = 6)
 
+m
+
+library(htmlwidgets)
+# Save to a self-contained HTML file
+saveWidget(m, file = "dppimap.html", selfcontained = TRUE)
 
 
 
