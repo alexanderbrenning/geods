@@ -7,7 +7,7 @@ slug: advent
 categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
-summary: 'Day by day, 24 concepts that every geographer should know about geographic information...'
+summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
 lastmod: "`r Sys.Date()`"
 featured: no
 image:
