@@ -1,0 +1,52 @@
+---
+title: "Mein Geoinformatik-Adventskalender"
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
+date: '2025-12-01'
+slug: advent
+categories: ["GIS"]
+tags: ["GIS"]
+subtitle: 'Täglich aktualisiert'
+summary: '24 Konzepte der Geoinformatik, die alle Geograph:innnen kennen sollten...'
+lastmod: "`r Sys.Date()`"
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r setup, include=FALSE}
+library("knitr")
+library("xaringanExtra")
+
+knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(
+  font_family = "inherit")
+```
+
+```{r}
+.color <- function(x, col) {
+  paste0('<span style="color:', col, '">', x, '</span>')
+}
+
+.blue <- function(x) .color(x, col = "blue")
+.red <- function(x) .color(x, col = "red")
+
+```
+
+## 1. Dezember: Was ist Geoinformatik?
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/giscience.png")
+```
+
+Die **`r .blue("Geoinformatik")`** ist die Wissenschaft von der Erfassung, Verwaltung, Analyse und Visualisierung räumlicher Daten.
+
+Sie kombiniert Methoden der Informatik, Geographie und Statistik, um ortsbezogene Phänomene messbar und modellierbar zu machen und geographische Fragen in Forschung und Anwendung zu beantworten.
+
+Ob Verkehrsfluss, Artenverbreitung oder Klimawandel – wo der Ort eine Rolle spielt, ist Geoinformatik nicht weit. 🌍
+

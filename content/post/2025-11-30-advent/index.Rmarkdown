@@ -1,0 +1,52 @@
+---
+title: "My GIScience Advent Calendar"
+author: "Alexander Brenning"
+authors: ["Alexander Brenning"]
+date: '2025-12-01'
+slug: advent
+categories: ["GIS"]
+tags: ["GIS"]
+subtitle: 'Updated on a daily basis'
+summary: 'Day by day, 24 concepts that every geographer should know about geographic information...'
+lastmod: "`r Sys.Date()`"
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r setup, include=FALSE}
+library("knitr")
+library("xaringanExtra")
+
+knitr::opts_chunk$set(echo = FALSE)
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(
+  font_family = "inherit")
+```
+
+```{r}
+.color <- function(x, col) {
+  paste0('<span style="color:', col, '">', x, '</span>')
+}
+
+.blue <- function(x) .color(x, col = "blue")
+.red <- function(x) .color(x, col = "red")
+
+```
+
+
+## Dec. 1: Geographic Information Science
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/giscience.png")
+```
+
+**`r .blue("Geographic Information Science (GIScience)")`** is the science of acquiring, managing, analyzing, and visualizing geospatial data.
+
+It combines computer science, geography, and statistics to make location-based phenomena measurable and modelable, and to solve geographical problems in research and applied contexts.
+
+From traffic patterns to species distribution and climate change – wherever place matters, GIScience is there. 🌍
