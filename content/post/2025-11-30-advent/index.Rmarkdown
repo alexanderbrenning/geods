@@ -2,7 +2,7 @@
 title: "My GIScience Advent Calendar"
 author: "Alexander Brenning"
 authors: ["Alexander Brenning"]
-date: '2025-12-01'
+date: '2025-11-30'
 slug: advent
 categories: ["GIS"]
 tags: ["GIS"]
