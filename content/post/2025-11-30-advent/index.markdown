@@ -34,3 +34,6 @@ projects: []
 It combines computer science, geography, and statistics to make location-based phenomena measurable and modelable, and to solve geographical problems in research and applied contexts.
 
 From traffic patterns to species distribution and climate change – wherever place matters, GIScience is there. 🌍
+
+
+<img src="http://vg09.met.vgwort.de/na/93198bf7237842bd8d5ac9f172a26812" width="1" height="1" alt="">
