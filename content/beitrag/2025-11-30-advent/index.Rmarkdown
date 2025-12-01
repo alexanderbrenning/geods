@@ -38,6 +38,66 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+
+<!---
+
+## 3. Dezember Positionsbestimmung mit GPS/GNSS
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps2.png")
+```
+
+Das **`r .blue("Global Positioning System (GPS)")`** ist Teil der Familie der Globalen Navigationssatellitensysteme (GNSS).
+Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messen und daraus Entfernungen berechnen.
+
+📍 Das Ergebnis: präzise Koordinaten – meist genauer als ein paar Meter. Dein Handy weiß also ziemlich genau, wo du bist.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps_jena.jpg")
+```
+
+✨ In unserem Studiengang [B.Sc. Geographie](https://www.chemgeo.uni-jena.de/210/geographie) führen wir die Studierenden in die mobile Datenerhebung (*Mobile Mapping*) mit GNSS-Tablets ein.
+
+🧭 In der Forschung verwenden wir dagegen hochgenaue GNSS-Vermessungsgeräte - etwa in Chile bei der Bestimmung von Bewegungsraten von Blockgletschern.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps_rgl.jpg")
+```
+
+```{r out.width='70%', fig.cap='Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.'}
+knitr::include_graphics("figures/gps_rgl_creep.jpg")
+```
+
+👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
+
+
+---
+
+-->
+
+
+## 2. Dezember: Geocodierung
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/geocoding.png")
+```
+
+📍 **`r .blue("Adress-Geocodierung")`** übersetzt Textadressen in geografische Koordinaten.
+
+Sie nutzt Referenzdatenbanken, die Adressen mit räumlichen Positionen verknüpfen.
+
+🌍 So wird *„Leutragraben 1, Jena“* zu einem Punkt mit Breiten- und Längengrad – und kann auf einer Karte dargestellt oder analysiert werden. In diesem Falle führt euch die Koordinate direkt zum [Jentower](https://de.wikipedia.org/wiki/Jentower) im Zentrum Jenas, wo sich mein Büro befindet.
+
+Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen von Computern, Ortsbezeichnungen wie *„Napoleonstein“*, oder sogar unstrukturierte Texte. Hier ein Beispiel mit [Polizeiberichten](https://geods.netlify.app/beitrag/polizeiberichte/) aus Jena.
+
+```{r out.width='50%', fig.cap='Geocodierte Polizeiberichte.'}
+knitr::include_graphics("figures/geocoding_jena.png")
+```
+
+Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.
+
+---
+
 ## 1. Dezember: Was ist Geoinformatik?
 
 ```{r out.width='50%'}

@@ -38,6 +38,63 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+<!---
+
+## Dec. 3: Positioning with GPS/GNSS
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps2.png")
+```
+
+The **`r .blue("Global Positioning System (GPS)")`** is part of the family of Global Navigation Satellite Systems (GNSS).
+Such systems determine positions by measuring signals from multiple satellites and deriving distances from them.
+
+📍 The result: precise coordinates — usually accurate to within a few meters. Your phone therefore knows your location quite well.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps_jena.jpg")
+```
+
+✨ In our [B.Sc. Geography](https://www.chemgeo.uni-jena.de/210/geographie) program, students are introduced to mobile data acquisition (*mobile mapping*) using GNSS tablets.
+
+🧭 In research, by contrast, we employ high-precision GNSS surveying instruments — for example in Chile, where we determine movement rates of rock glaciers.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gps_rgl.jpg")
+```
+
+```{r out.width='70%', fig.cap='Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.'}
+knitr::include_graphics("figures/gps_rgl_creep.jpg")
+```
+
+👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
+
+---
+
+-->
+
+
+## Dec. 2: Geocoding
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/geocoding.png")
+```
+
+📍 **`r .blue("Address Geocoding")`** converts textual addresses into geographic coordinates.
+
+It relies on reference databases that associate addresses with spatial locations.
+
+🌍 Thus, *“Leutragraben 1, Jena”* becomes a point with latitude and longitude that can be mapped or further analyzed. In this case, the coordinate leads you directly to the [Jentower](https://en.wikipedia.org/wiki/JenTower) in the center of Jena, where my office is located.
+
+Other place references can likewise be transformed into coordinates — for example, computer IP addresses, named locations such as *“Napoleonstein”*, or even unstructured text. Here's the example of geocoded [police reports](https://geods.netlify.app/beitrag/polizeiberichte/).
+
+```{r out.width='50%', fig.cap='Geocoded police reports in Jena.'}
+knitr::include_graphics("figures/geocoding_jena.png")
+```
+
+By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.
+
+---
 
 ## Dec. 1: Geographic Information Science
 
