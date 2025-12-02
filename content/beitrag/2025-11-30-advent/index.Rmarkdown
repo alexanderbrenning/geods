@@ -7,7 +7,7 @@ slug: advent
 categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
-summary: '24 Konzepte der Geoinformatik, die alle Geograph:innnen kennen sollten...'
+summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
 lastmod: "`r Sys.Date()`"
 featured: no
 image:
@@ -39,7 +39,6 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
-<!---
 
 ## 3. Dezember Positionsbestimmung mit GPS/GNSS
 
@@ -72,8 +71,6 @@ knitr::include_graphics("figures/gps_rgl_creep.jpg")
 
 
 ---
-
--->
 
 
 ## 2. Dezember: Geocodierung

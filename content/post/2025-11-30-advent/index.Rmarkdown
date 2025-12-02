@@ -38,7 +38,6 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
-<!---
 
 ## Dec. 3: Positioning with GPS/GNSS
 
@@ -70,8 +69,6 @@ knitr::include_graphics("figures/gps_rgl_creep.jpg")
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
 
 ---
-
--->
 
 
 ## Dec. 2: Geocoding

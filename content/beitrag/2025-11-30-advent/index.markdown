@@ -7,8 +7,8 @@ slug: advent
 categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
-summary: '24 Konzepte der Geoinformatik, die alle Geograph:innnen kennen sollten...'
-lastmod: "2025-12-01"
+summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
+lastmod: "2025-12-02"
 featured: no
 image:
   caption: ''
@@ -25,7 +25,6 @@ projects: []
 
 
 
-<!---
 
 ## 3. Dezember Positionsbestimmung mit GPS/GNSS
 
@@ -46,15 +45,13 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption">(\#fig:unnamed-chunk-5)Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
 
 
 ---
-
--->
 
 
 ## 2. Dezember: Geocodierung
@@ -71,7 +68,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 1: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 2: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.
