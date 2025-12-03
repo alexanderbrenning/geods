@@ -39,8 +39,30 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 4. Dezember: Raster- und Vektordaten
 
-## 3. Dezember Positionsbestimmung mit GPS/GNSS
+🌍 Geodaten werden meist als **Raster- oder Vektordaten** gespeichert. Diese beiden Datenmodelle sind die Grundbausteine von GIS-Datenbanken. ✨
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/raster_vector.png")
+```
+
+**`r .blue("Raster")`** bestehen aus regelmäßig angeordneten Zellen, die jedem Ort einen Wert zuweisen – ideal für kontinuierliche Phänomene wie Temperatur 🌡.
+
+**`r .blue("Vektordaten")`** beschreiben Objekte durch Punkte, Linien oder Flächen – perfekt für Straßen, Flüsse oder Grundstücke.
+
+Thüringen hat ein fantastisches Programm **`r .blue("Offene Geodaten")`**. Ich habe mir es mal mit Hilfe eines R-Skripts näher angeschaut: Von den über 1600 offenen Datensätzen sind 82 % Vektordatensätze! Viele sind allerdings kleine kommunale Datensätze wie Bebauungspläne, andere, wie die Erosionsgefährdung, decken das ganze Land ab. 🌳
+
+Hier etwa die erosionsgefährdeten Flächen bei Jena im [Thüringer Kartenviewer](https://thueringenviewer.thueringen.de/) als Polygon-Vektordaten ((c) GDI-Th):
+
+```{r out.width='70%'}
+knitr::include_graphics("figures/erosion_jena.png")
+```
+
+
+---
+
+## 3. Dezember: Positionsbestimmung mit GPS/GNSS
 
 ```{r out.width='50%'}
 knitr::include_graphics("figures/gps2.png")

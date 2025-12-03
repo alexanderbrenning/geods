@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-02"
+lastmod: "2025-12-03"
 featured: no
 image:
   caption: ''
@@ -25,8 +25,26 @@ projects: []
 
 
 
+## 4. Dezember: Raster- und Vektordaten
 
-## 3. Dezember Positionsbestimmung mit GPS/GNSS
+🌍 Geodaten werden meist als **Raster- oder Vektordaten** gespeichert. Diese beiden Datenmodelle sind die Grundbausteine von GIS-Datenbanken. ✨
+
+<img src="figures/raster_vector.png" width="50%" />
+
+**<span style="color:blue">Raster</span>** bestehen aus regelmäßig angeordneten Zellen, die jedem Ort einen Wert zuweisen – ideal für kontinuierliche Phänomene wie Temperatur 🌡.
+
+**<span style="color:blue">Vektordaten</span>** beschreiben Objekte durch Punkte, Linien oder Flächen – perfekt für Straßen, Flüsse oder Grundstücke.
+
+Thüringen hat ein fantastisches Programm **<span style="color:blue">Offene Geodaten</span>**. Ich habe mir es mal mit Hilfe eines R-Skripts näher angeschaut: Von den über 1600 offenen Datensätzen sind 82 % Vektordatensätze! Viele sind allerdings kleine kommunale Datensätze wie Bebauungspläne, andere, wie die Erosionsgefährdung, decken das ganze Land ab. 🌳
+
+Hier etwa die erosionsgefährdeten Flächen bei Jena im [Thüringer Kartenviewer](https://thueringenviewer.thueringen.de/) als Polygon-Vektordaten ((c) GDI-Th):
+
+<img src="figures/erosion_jena.png" width="70%" />
+
+
+---
+
+## 3. Dezember: Positionsbestimmung mit GPS/GNSS
 
 <img src="figures/gps2.png" width="50%" />
 
@@ -45,7 +63,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -68,7 +86,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 2: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 2: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.

@@ -39,6 +39,30 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+
+## Dec. 4: Raster and Vector Data
+
+🌍 Geodata are usually stored as **raster or vector data**. These two data models form the fundamental building blocks of GIS databases. ✨
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/raster_vector.png")
+```
+
+**`r .blue("Raster")`** consist of regularly arranged cells that store a value for each location – ideal for continuous phenomena such as air temperature 🌡️.
+
+**`r .blue("Vector data")`** represent objects through points, lines, or polygons – perfect for roads, rivers, or parcels.
+
+Thuringia runs a fantastic **`r .blue("Open Geodata")`** initiative. I took a closer look using an R script: out of more than 1,600 open datasets, **82% are vector datasets**! Many are small municipal datasets such as zoning plans, while others, like erosion susceptibility, cover the entire state 🌳.
+
+Here, for example, are the erosion-prone areas near Jena in the [map viewer](https://thueringenviewer.thueringen.de/), shown as polygon vector data ((c) GDI-Th):
+
+```{r out.width='70%'}
+knitr::include_graphics("figures/erosion_jena.png")
+```
+
+---
+
 ## Dec. 3: Positioning with GPS/GNSS
 
 ```{r out.width='50%'}
