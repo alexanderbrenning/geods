@@ -39,7 +39,32 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## Dec. 5: Interpolation
 
+🌈 **`r .blue("Interpolation")`** estimates values at locations where no direct measurements exist.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/Robo-Ausweisung.png")
+```
+
+📍 From data measured at monitoring sites, a continuous field is computed – for example, air temperature or pollutant concentration.
+Methods such as inverse distance weighting or geostatistical **`r .blue("kriging")`** use spatial neighborhood relationships to create smooth surfaces.
+The result: maps that close gaps in our knowledge. 🌍
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/regression_kriging.png")
+```
+
+✨ In the [GIScience group](https://www.chemgeo.uni-jena.de/en/30778/giscience-group), we currently apply advanced kriging approaches to estimate **`r .blue("nitrate concentrations")`** in groundwater across Germany.
+[Our method](https://geods.netlify.app/post/nitrate/) also incorporates auxiliary data — such as hydrogeology and land cover — to statistically evaluate evidence for or against nitrate contamination.
+This is essential for evidence-based environmental decision making!
+
+```{r out.width='70%', fig.cap='Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.'}
+knitr::include_graphics("figures/tgrk.png")
+```
+
+
+---
 
 ## Dec. 4: Raster and Vector Data
 

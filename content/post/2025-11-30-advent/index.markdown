@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
 summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
-lastmod: "2025-12-03"
+lastmod: "2025-12-04"
 featured: no
 image:
   caption: ''
@@ -25,7 +25,29 @@ projects: []
 
 
 
+## Dec. 5: Interpolation
 
+🌈 **<span style="color:blue">Interpolation</span>** estimates values at locations where no direct measurements exist.
+
+<img src="figures/Robo-Ausweisung.png" width="50%" />
+
+📍 From data measured at monitoring sites, a continuous field is computed – for example, air temperature or pollutant concentration.
+Methods such as inverse distance weighting or geostatistical **<span style="color:blue">kriging</span>** use spatial neighborhood relationships to create smooth surfaces.
+The result: maps that close gaps in our knowledge. 🌍
+
+<img src="figures/regression_kriging.png" width="50%" />
+
+✨ In the [GIScience group](https://www.chemgeo.uni-jena.de/en/30778/giscience-group), we currently apply advanced kriging approaches to estimate **<span style="color:blue">nitrate concentrations</span>** in groundwater across Germany.
+[Our method](https://geods.netlify.app/post/nitrate/) also incorporates auxiliary data — such as hydrogeology and land cover — to statistically evaluate evidence for or against nitrate contamination.
+This is essential for evidence-based environmental decision making!
+
+<div class="figure">
+<img src="figures/tgrk.png" alt="Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 1: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
+</div>
+
+
+---
 
 ## Dec. 4: Raster and Vector Data
 
@@ -64,7 +86,7 @@ Such systems determine positions by measuring signals from multiple satellites a
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 1: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 2: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
@@ -86,7 +108,7 @@ Other place references can likewise be transformed into coordinates — for exam
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocoded police reports in Jena." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 2: Geocoded police reports in Jena.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Geocoded police reports in Jena.</p>
 </div>
 
 By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.

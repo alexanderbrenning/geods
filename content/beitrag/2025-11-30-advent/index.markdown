@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-03"
+lastmod: "2025-12-04"
 featured: no
 image:
   caption: ''
@@ -24,6 +24,28 @@ projects: []
 
 
 
+## 5. Dezember: Interpolation
+
+🌈 **<span style="color:blue">Interpolation</span>** schätzt Werte an Orten, an denen keine Messung vorliegt.
+
+<img src="figures/Robo-Ausweisung.png" width="50%" />
+
+📍 Aus Messwerten an Punkten wird ein kontinuierliches Feld berechnet – etwa Lufttemperatur oder Schadstoffkonzentration.
+Methoden wie Inverse Distanzgewichtung oder das geostatistische <span style="color:blue">Kriging</span>-Verfahren nutzen räumliche Nachbarschaftsbeziehungen, um glatte Oberflächen zu erzeugen.
+Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
+
+<img src="figures/regression_kriging.png" width="50%" />
+
+✨ Aktuell nutzen wir am 
+[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) in [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) fortgeschrittene Kriging-Verfahren, um <span style="color:blue">Nitratkonzentrationen</span> im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
+
+<div class="figure">
+<img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
+<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 1: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+</div>
+
+
+---
 
 ## 4. Dezember: Raster- und Vektordaten
 
@@ -63,7 +85,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 2: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -86,7 +108,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 2: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.

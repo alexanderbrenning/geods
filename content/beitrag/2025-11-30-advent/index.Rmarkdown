@@ -38,6 +38,31 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+## 5. Dezember: Interpolation
+
+🌈 **`r .blue("Interpolation")`** schätzt Werte an Orten, an denen keine Messung vorliegt.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/Robo-Ausweisung.png")
+```
+
+📍 Aus Messwerten an Punkten wird ein kontinuierliches Feld berechnet – etwa Lufttemperatur oder Schadstoffkonzentration.
+Methoden wie Inverse Distanzgewichtung oder das geostatistische `r .blue("Kriging")`-Verfahren nutzen räumliche Nachbarschaftsbeziehungen, um glatte Oberflächen zu erzeugen.
+Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/regression_kriging.png")
+```
+
+✨ Aktuell nutzen wir am 
+[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) in [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) fortgeschrittene Kriging-Verfahren, um `r .blue("Nitratkonzentrationen")` im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
+
+```{r out.width='50%', fig.cap='Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.'}
+knitr::include_graphics("figures/tgrk.png")
+```
+
+
+---
 
 ## 4. Dezember: Raster- und Vektordaten
 
