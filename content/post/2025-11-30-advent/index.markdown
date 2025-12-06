@@ -25,6 +25,28 @@ projects: []
 
 
 
+## December 6: Drones (UAV – Unmanned Aerial Vehicles)
+
+🚁 Drones capture geospatial data from above – usually with cameras, LiDAR, or multispectral sensors 🎨.
+
+<img src="figures/drone2.png" width="50%" />
+
+They produce high-resolution orthophotos and 3D models for environmental monitoring 🌿, land-use mapping 🏙️, and disaster assessment 🌋.
+
+Their advantages: flexible operation and centimeter-level accuracy.
+Their downsides: limited flight time and strict legal regulations ⚖️.
+
+And honestly – one of the coolest things you can do with drones is observing adorable little penguins 🐧.
+Here are some images [from a recent publication](https://doi.org/10.1016/j.ecolind.2024.113011) by <span style="color:blue">Christian Pfeifer</span> ([ThINK GmbH](https://www.think-jena.de/); funded by the [German Environment Agency](https://www.umweltbundesamt.de/)), a PhD student in my group, who’s currently out on another Antarctic expedition ❄️🚀
+
+<div class="figure">
+<img src="figures/Pfeifer2025penguins.jpeg" alt="Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators." width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
+</div>
+
+
+---
+
 ## Dec. 5: Interpolation
 
 🌈 **<span style="color:blue">Interpolation</span>** estimates values at locations where no direct measurements exist.
@@ -43,7 +65,7 @@ This is essential for evidence-based environmental decision making!
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 1: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
+<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 2: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
 </div>
 
 
@@ -86,7 +108,7 @@ Such systems determine positions by measuring signals from multiple satellites a
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 2: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
@@ -108,7 +130,7 @@ Other place references can likewise be transformed into coordinates — for exam
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocoded police reports in Jena." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Geocoded police reports in Jena.</p>
+<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 4: Geocoded police reports in Jena.</p>
 </div>
 
 By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.

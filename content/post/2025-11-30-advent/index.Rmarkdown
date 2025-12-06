@@ -39,6 +39,29 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## December 6: Drones (UAV – Unmanned Aerial Vehicles)
+
+🚁 Drones capture geospatial data from above – usually with cameras, LiDAR, or multispectral sensors 🎨.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/drone2.png")
+```
+
+They produce high-resolution orthophotos and 3D models for environmental monitoring 🌿, land-use mapping 🏙️, and disaster assessment 🌋.
+
+Their advantages: flexible operation and centimeter-level accuracy.
+Their downsides: limited flight time and strict legal regulations ⚖️.
+
+And honestly – one of the coolest things you can do with drones is observing adorable little penguins 🐧.
+Here are some images [from a recent publication](https://doi.org/10.1016/j.ecolind.2024.113011) by `r .blue("Christian Pfeifer")` ([ThINK GmbH](https://www.think-jena.de/); funded by the [German Environment Agency](https://www.umweltbundesamt.de/)), a PhD student in my group, who’s currently out on another Antarctic expedition ❄️🚀
+
+```{r out.width='100%', fig.cap='Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.'}
+knitr::include_graphics("figures/Pfeifer2025penguins.jpeg")
+```
+
+
+---
+
 ## Dec. 5: Interpolation
 
 🌈 **`r .blue("Interpolation")`** estimates values at locations where no direct measurements exist.

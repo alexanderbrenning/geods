@@ -38,6 +38,29 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+
+## 6. Dezember: Drohnen (UAV – Unmanned Aerial Vehicles)
+
+🚁 Drohnen erfassen Geodaten aus der Luft – meist mit Kameras, LiDAR oder Multispektralsensoren 🎨.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/drone2.png")
+```
+
+Sie liefern hochaufgelöste Orthofotos und 3D-Modelle für Umweltmonitoring 🌿, Landnutzung 🏙 oder Katastrophenerfassung 🌋.
+
+Ihr Vorteil: flexible Einsätze und Zentimeterpräzision – ihr Nachteil: begrenzte Flugzeit und rechtliche Auflagen ⚖️.
+
+Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtung von süßen kleinen Pinguinen 🐧. Hier Bilder [aus einer Publikation](https://doi.org/10.1016/j.ecolind.2024.113011) von `r .blue("Christian Pfeifer")` ([ThINK GmbH](https://www.think-jena.de/), Finanzierung [Umweltbundesamt](https://www.umweltbundesamt.de/), Doktorand in meiner Gruppe), der gerade wieder auf Expedition ist... ❄️🚀
+
+```{r out.width='100%', fig.cap='Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, '}
+knitr::include_graphics("figures/Pfeifer2025penguins.jpeg")
+```
+
+
+
+---
+
 ## 5. Dezember: Interpolation
 
 🌈 **`r .blue("Interpolation")`** schätzt Werte an Orten, an denen keine Messung vorliegt.
@@ -55,7 +78,7 @@ knitr::include_graphics("figures/regression_kriging.png")
 ```
 
 ✨ Aktuell nutzen wir am 
-[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) in [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) fortgeschrittene Kriging-Verfahren, um `r .blue("Nitratkonzentrationen")` im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
+[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) im [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) (Finanzierung [Umweltbundesamt](https://www.umweltbundesamt.de/)) fortgeschrittene Kriging-Verfahren, um `r .blue("Nitratkonzentrationen")` im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
 
 ```{r out.width='50%', fig.cap='Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.'}
 knitr::include_graphics("figures/tgrk.png")

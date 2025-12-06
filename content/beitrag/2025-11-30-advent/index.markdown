@@ -24,6 +24,28 @@ projects: []
 
 
 
+
+## 6. Dezember: Drohnen (UAV – Unmanned Aerial Vehicles)
+
+🚁 Drohnen erfassen Geodaten aus der Luft – meist mit Kameras, LiDAR oder Multispektralsensoren 🎨.
+
+<img src="figures/drone2.png" width="50%" />
+
+Sie liefern hochaufgelöste Orthofotos und 3D-Modelle für Umweltmonitoring 🌿, Landnutzung 🏙 oder Katastrophenerfassung 🌋.
+
+Ihr Vorteil: flexible Einsätze und Zentimeterpräzision – ihr Nachteil: begrenzte Flugzeit und rechtliche Auflagen ⚖️.
+
+Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtung von süßen kleinen Pinguinen 🐧. Hier Bilder [aus einer Publikation](https://doi.org/10.1016/j.ecolind.2024.113011) von <span style="color:blue">Christian Pfeifer</span> ([ThINK GmbH](https://www.think-jena.de/), Finanzierung [Umweltbundesamt](https://www.umweltbundesamt.de/), Doktorand in meiner Gruppe), der gerade wieder auf Expedition ist... ❄️🚀
+
+<div class="figure">
+<img src="figures/Pfeifer2025penguins.jpeg" alt="Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, " width="100%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
+</div>
+
+
+
+---
+
 ## 5. Dezember: Interpolation
 
 🌈 **<span style="color:blue">Interpolation</span>** schätzt Werte an Orten, an denen keine Messung vorliegt.
@@ -37,11 +59,11 @@ Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
 <img src="figures/regression_kriging.png" width="50%" />
 
 ✨ Aktuell nutzen wir am 
-[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) in [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) fortgeschrittene Kriging-Verfahren, um <span style="color:blue">Nitratkonzentrationen</span> im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
+[Lehrstuhl für Geoinformatik](https://www.chemgeo.uni-jena.de/30778/professur-fuer-geoinformatik) im [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) (Finanzierung [Umweltbundesamt](https://www.umweltbundesamt.de/)) fortgeschrittene Kriging-Verfahren, um <span style="color:blue">Nitratkonzentrationen</span> im Grundwasser bundesweit zu ermitteln. [Unser Verfahren](https://geods.netlify.app/beitrag/nitrate/) bezieht auch Zusatzinformationen – Hydrogeologie und Landbedeckung – mit ein, um Argumente für und gegen eine Nitratbelastung statistisch fundiert abzuwägen. Das ist essenziell, um evidenzbasiert Entscheidungen zu treffen!
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 1: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 2: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
 </div>
 
 
@@ -85,7 +107,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 2: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -108,7 +130,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 4: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.
