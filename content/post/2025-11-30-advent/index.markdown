@@ -51,7 +51,7 @@ Unfortunately, [the 10-minute catchment of Jena’s fire brigades doesn’t cove
 <p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 3: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
 </div>
 
-
+---
 
 ## December 6: Drones (UAV – Unmanned Aerial Vehicles)
 
