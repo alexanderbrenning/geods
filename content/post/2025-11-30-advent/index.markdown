@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
 summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
-lastmod: "2025-12-04"
+lastmod: "2025-12-07"
 featured: no
 image:
   caption: ''
@@ -22,6 +22,34 @@ projects: []
 
 
 
+
+
+
+
+## December 7: Catchment Areas
+
+<img src="figures/catchment.png" width="50%" />
+
+A **<span style="color:blue">catchment area</span>** describes the region from which a location “draws its influence” – in GIScience, often the result of a **<span style="color:blue">network analysis</span>**.
+
+<div class="figure">
+<img src="figures/catchment_firestations.jpg" alt="Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz." width="50%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.</p>
+</div>
+
+It can be used to calculate which street segments belong to a fire station 🚒 or from which regions the members of [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) come ⚽ — or, in the words of the fans: “Hier regiert der FCC!” (“The FCC rules here!”). 🌍
+
+Unfortunately, [the 10-minute catchment of Jena’s fire brigades doesn’t cover the entire city area](https://www.otz.de/lokales/jena/article410477795/gutachter-alarm-die-feuerwehr-kommt-nicht-schnell-genug-in-jena.html) — and today [the opponent’s goal was within the FCC attackers’ catchment only once](https://www.mdr.de/sport/fussball_rl/spielbericht-regionalliga-nordost-mdr-sport-im-osten-fcc-fc-carl-zeiss-jena-sv-babelsberg-svb-100.html)...
+
+<div class="figure">
+<img src="figures/catchment_fcc.jpg" alt="The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine." width="50%" />
+<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 2: The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.</p>
+</div>
+
+<div class="figure">
+<img src="figures/fcc.png" alt="The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!" width="50%" />
+<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 3: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
+</div>
 
 
 
@@ -41,7 +69,7 @@ Here are some images [from a recent publication](https://doi.org/10.1016/j.ecoli
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators." width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 4: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
 </div>
 
 
@@ -65,7 +93,7 @@ This is essential for evidence-based environmental decision making!
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 2: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 5: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
 </div>
 
 
@@ -108,7 +136,7 @@ Such systems determine positions by measuring signals from multiple satellites a
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-16"></span>Figure 6: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
@@ -130,7 +158,7 @@ Other place references can likewise be transformed into coordinates — for exam
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocoded police reports in Jena." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 4: Geocoded police reports in Jena.</p>
+<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 7: Geocoded police reports in Jena.</p>
 </div>
 
 By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.

@@ -39,6 +39,36 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 7. Dezember: Einzugsgebiete
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/catchment.png")
+```
+
+Ein **`r .blue("Einzugsgebiet")`** beschreibt den Bereich, aus dem ein Standort „seinen Einfluss zieht“ – in der Geoinformatik oft das Ergebnis einer `r .blue("Netzwerkanalyse")`.
+
+
+```{r out.width='50%', fig.cap='Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.'}
+knitr::include_graphics("figures/catchment_firestations.jpg")
+```
+
+So lässt sich etwa berechnen, welche Straßenabschnitte zu einer Feuerwache gehören 🚒 oder aus welchen Regionen die Mitglieder des [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) stammen ⚽ Oder mit den Worten der Fans: „Hier regiert der FCC!“. 🌍
+
+Leider [deckt das 10-Minuten-Einzugsgebiet der Jenaer Feuerwehren nicht das ganze Stadtgebiet ab](https://www.otz.de/lokales/jena/article410477795/gutachter-alarm-die-feuerwehr-kommt-nicht-schnell-genug-in-jena.html) - und heute [lag das gegnerische Tor nur einmal im Einzugsgebiet der FCC-Angreifer](https://www.mdr.de/sport/fussball_rl/spielbericht-regionalliga-nordost-mdr-sport-im-osten-fcc-fc-carl-zeiss-jena-sv-babelsberg-svb-100.html)...
+
+
+```{r out.width='50%', fig.cap='Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.'}
+knitr::include_graphics("figures/catchment_fcc.jpg")
+```
+
+
+```{r out.width='50%', fig.cap='Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!'}
+knitr::include_graphics("figures/fcc.png")
+```
+
+
+
+
 ## 6. Dezember: Drohnen (UAV – Unmanned Aerial Vehicles)
 
 🚁 Drohnen erfassen Geodaten aus der Luft – meist mit Kameras, LiDAR oder Multispektralsensoren 🎨.

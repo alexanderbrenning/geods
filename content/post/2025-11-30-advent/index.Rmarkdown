@@ -39,6 +39,33 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+## December 7: Catchment Areas
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/catchment.png")
+```
+
+A **`r .blue("catchment area")`** describes the region from which a location “draws its influence” – in GIScience, often the result of a **`r .blue("network analysis")`**.
+
+```{r out.width='50%', fig.cap='Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.'}
+knitr::include_graphics("figures/catchment_firestations.jpg")
+```
+
+It can be used to calculate which street segments belong to a fire station 🚒 or from which regions the members of [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) come ⚽ — or, in the words of the fans: “Hier regiert der FCC!” (“The FCC rules here!”). 🌍
+
+Unfortunately, [the 10-minute catchment of Jena’s fire brigades doesn’t cover the entire city area](https://www.otz.de/lokales/jena/article410477795/gutachter-alarm-die-feuerwehr-kommt-nicht-schnell-genug-in-jena.html) — and today [the opponent’s goal was within the FCC attackers’ catchment only once](https://www.mdr.de/sport/fussball_rl/spielbericht-regionalliga-nordost-mdr-sport-im-osten-fcc-fc-carl-zeiss-jena-sv-babelsberg-svb-100.html)...
+
+```{r out.width='50%', fig.cap='The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.'}
+knitr::include_graphics("figures/catchment_fcc.jpg")
+```
+
+```{r out.width='50%', fig.cap='The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!'}
+knitr::include_graphics("figures/fcc.png")
+```
+
+
+
 ## December 6: Drones (UAV – Unmanned Aerial Vehicles)
 
 🚁 Drones capture geospatial data from above – usually with cameras, LiDAR, or multispectral sensors 🎨.
