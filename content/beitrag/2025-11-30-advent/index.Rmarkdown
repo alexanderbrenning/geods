@@ -39,6 +39,29 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 8. Dezember: QGIS
+
+**[`r .blue("QGIS")`](https://qgis.org/)** ist eine freie und quelloffene GIS-Software – ein Geographisches Informationssystem.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/qgis.png")
+```
+
+Sie ermöglicht das Erstellen, Analysieren und Visualisieren räumlicher Daten – von einfachen Karten bis zu komplexen Geoverarbeitungs-Workflows.
+Dank zahlreicher Erweiterungen deckt QGIS nahezu alle Bereiche moderner Geodatenanalyse ab: von Reliefanalyse über Netzwerkanalyse bis hin zu 3D-Visualisierung.
+
+Wir nutzen QGIS intensiv in der Lehre – vor allem im `r .blue("B.Sc. Geographie")` – und auch die Stadtverwaltung von [Jena](https://rathaus.jena.de/de/team-geoinformation) setzt es ein.
+
+```{r out.width='60%', fig.cap='QGIS in der Lehre. Foto: (c) S. Hese.'}
+knitr::include_graphics("figures/teaching_qgis.jpg")
+```
+
+Dass QGIS frei verfügbar ist, macht es nicht nur zu einem Werkzeug für Forschung und Verwaltung,
+sondern auch zu einem Symbol für offene Wissenschaft und globale Zusammenarbeit 🌍.
+
+
+---
+
 ## 7. Dezember: Einzugsgebiete
 
 ```{r out.width='50%'}

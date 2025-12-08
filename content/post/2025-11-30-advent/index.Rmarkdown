@@ -39,6 +39,27 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## December 8: QGIS
+
+**[`r .blue("QGIS")`](https://qgis.org/)** is a free and open-source GIS application — a Geographic Information System.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/qgis.png")
+```
+
+It allows users to create, analyze, and visualize geospatial data — from simple maps to complex #geoprocessing workflows.
+Thanks to a wide range of plugins, QGIS covers nearly all aspects of modern #geospatial analysis: from terrain and network analysis to 3D visualization.
+
+We make extensive use of QGIS in teaching — especially in the `r .blue("B.Sc. Geography")` program — and it is also employed by the [City of Jena](https://rathaus.jena.de/de/team-geoinformation).
+
+```{r out.width='60%', fig.cap='QGIS in teaching. Photo: (c) S. Hese.'}
+knitr::include_graphics("figures/teaching_qgis.jpg")
+```
+
+Because QGIS is freely available, it serves not only as a tool for research and public administration,
+but also as a symbol of open science and global collaboration 🌍.
+
+---
 
 ## December 7: Catchment Areas
 

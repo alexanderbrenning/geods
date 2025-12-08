@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
 summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
-lastmod: "2025-12-07"
+lastmod: "2025-12-08"
 featured: no
 image:
   caption: ''
@@ -25,6 +25,26 @@ projects: []
 
 
 
+## December 8: QGIS
+
+**[<span style="color:blue">QGIS</span>](https://qgis.org/)** is a free and open-source GIS application — a Geographic Information System.
+
+<img src="figures/qgis.png" width="50%" />
+
+It allows users to create, analyze, and visualize geospatial data — from simple maps to complex #geoprocessing workflows.
+Thanks to a wide range of plugins, QGIS covers nearly all aspects of modern #geospatial analysis: from terrain and network analysis to 3D visualization.
+
+We make extensive use of QGIS in teaching — especially in the <span style="color:blue">B.Sc. Geography</span> program — and it is also employed by the [City of Jena](https://rathaus.jena.de/de/team-geoinformation).
+
+<div class="figure">
+<img src="figures/teaching_qgis.jpg" alt="QGIS in teaching. Photo: S. Hese." width="60%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: QGIS in teaching. Photo: S. Hese.</p>
+</div>
+
+Because QGIS is freely available, it serves not only as a tool for research and public administration,
+but also as a symbol of open science and global collaboration 🌍.
+
+---
 
 ## December 7: Catchment Areas
 
@@ -34,7 +54,7 @@ A **<span style="color:blue">catchment area</span>** describes the region from w
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 2: Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.</p>
 </div>
 
 It can be used to calculate which street segments belong to a fire station 🚒 or from which regions the members of [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) come ⚽ — or, in the words of the fans: “Hier regiert der FCC!” (“The FCC rules here!”). 🌍
@@ -43,12 +63,12 @@ Unfortunately, [the 10-minute catchment of Jena’s fire brigades doesn’t cove
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-4"></span>Figure 2: The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 3: The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.</p>
 </div>
 
 <div class="figure">
 <img src="figures/fcc.png" alt="The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 3: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 4: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
 </div>
 
 ---
@@ -69,7 +89,7 @@ Here are some images [from a recent publication](https://doi.org/10.1016/j.ecoli
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators." width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 4: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
+<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 5: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
 </div>
 
 
@@ -93,7 +113,7 @@ This is essential for evidence-based environmental decision making!
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 5: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 6: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
 </div>
 
 
@@ -136,7 +156,7 @@ Such systems determine positions by measuring signals from multiple satellites a
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-16"></span>Figure 6: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 7: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
@@ -158,7 +178,7 @@ Other place references can likewise be transformed into coordinates — for exam
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocoded police reports in Jena." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 7: Geocoded police reports in Jena.</p>
+<p class="caption"><span id="fig:unnamed-chunk-20"></span>Figure 8: Geocoded police reports in Jena.</p>
 </div>
 
 By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.
