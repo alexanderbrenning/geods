@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-08"
+lastmod: "2025-12-09"
 featured: no
 image:
   caption: ''
@@ -25,6 +25,33 @@ projects: []
 
 
 
+## 9. Dezember: Big Geospatial Data
+
+💾 In der modernen Erdbeobachtung entstehen täglich gigantische Datenmengen — nicht nur Bilder, sondern auch multispektrale Scans, Datenströme aus Sensornetzen, raumzeitliche Data Cubes und daraus abgeleitete Simulationsergebnisse.
+
+<img src="figures/big_geodata.png" width="50%" />
+
+Eine einzelne Satellitenkonstellation wie [Planet Labs](https://de.wikipedia.org/wiki/Planet_Labs)’ „Dove“-Flotte kann mit mehreren hundert kleinen Satelliten die gesamte Landoberfläche der Erde nahezu täglich erfassen. 
+Das ergibt Datenvolumina im Terabyte-Bereich pro Satellit pro Tag — Tag für Tag, Jahr für Jahr.
+
+🌍 Warum das relevant ist:
+
+- Für <span style="color:blue">Umwelt- und Klimaforschung</span> erlauben solche Daten, Landnutzungsänderungen, Vegetationsdynamik oder Urbanisierung nahezu in Echtzeit zu beobachten.
+- Für <span style="color:blue">Katastrophenschutz und Risikobewertung</span> liefern sie schnelle Informationen — z. B. über Überschwemmungen, Waldbrände oder Erdrutsche.
+- Für <span style="color:blue">Mobilität und Raumplanung</span>: Verkehrsmuster, Landnutzung, Siedlungsentwicklung – alles wird durch Geodaten abbildbar.
+
+
+<img src="figures/bigdata_esdl.png" width="50%" />
+
+🔧 Doch **<span style="color:blue">„Big Data“</span> bringt auch Herausforderungen:
+
+- <span style="color:blue">Speicherbedarf und Rechenleistung</span> steigen rasant — Daten müssen effizient verarbeitet und archiviert werden.
+- <span style="color:blue">Interpretationsbedarf</span>: Große Datenmengen ohne Kontext bringen wenig — man braucht gute Metadaten und saubere Analyseprozesse.
+- <span style="color:blue">Recht, Ethik und Datenschutz</span>: Wer besitzt die Daten? Wer darf sie auswerten? Wie schützt man Privatsphäre, wenn man z.B. Gesundheits- oder Landnutzungsinformationen verarbeitet?
+
+
+---
+
 ## 8. Dezember: QGIS
 
 **[<span style="color:blue">QGIS</span>](https://qgis.org/)** ist eine freie und quelloffene GIS-Software – ein Geographisches Informationssystem.
@@ -38,7 +65,7 @@ Wir nutzen QGIS intensiv in der Lehre – vor allem im <span style="color:blue">
 
 <div class="figure">
 <img src="figures/teaching_qgis.jpg" alt="QGIS in der Lehre. Foto: (c) S. Hese." width="60%" />
-<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: QGIS in der Lehre. Foto: (c) S. Hese.</p>
+<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 1: QGIS in der Lehre. Foto: (c) S. Hese.</p>
 </div>
 
 Dass QGIS frei verfügbar ist, macht es nicht nur zu einem Werkzeug für Forschung und Verwaltung,
@@ -56,7 +83,7 @@ Ein **<span style="color:blue">Einzugsgebiet</span>** beschreibt den Bereich, au
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 2: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 2: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
 </div>
 
 So lässt sich etwa berechnen, welche Straßenabschnitte zu einer Feuerwache gehören 🚒 oder aus welchen Regionen die Mitglieder des [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) stammen ⚽ Oder mit den Worten der Fans: „Hier regiert der FCC!“. 🌍
@@ -66,13 +93,13 @@ Leider [deckt das 10-Minuten-Einzugsgebiet der Jenaer Feuerwehren nicht das ganz
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-6"></span>Figure 3: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-8"></span>Figure 3: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
 </div>
 
 
 <div class="figure">
 <img src="figures/fcc.png" alt="Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 4: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
+<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 4: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
 </div>
 
 
@@ -92,7 +119,7 @@ Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtun
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, " width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 5: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
+<p class="caption"><span id="fig:unnamed-chunk-11"></span>Figure 5: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
 </div>
 
 
@@ -116,7 +143,7 @@ Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 6: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 6: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
 </div>
 
 
@@ -160,7 +187,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 7: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-20"></span>Figure 7: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -183,7 +210,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-20"></span>Figure 8: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-22"></span>Figure 8: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.

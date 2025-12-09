@@ -39,6 +39,37 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 9. Dezember: Big Geospatial Data
+
+💾 In der modernen Erdbeobachtung entstehen täglich gigantische Datenmengen — nicht nur Bilder, sondern auch multispektrale Scans, Datenströme aus Sensornetzen, raumzeitliche Data Cubes und daraus abgeleitete Simulationsergebnisse.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/big_geodata.png")
+```
+
+Eine einzelne Satellitenkonstellation wie [Planet Labs](https://de.wikipedia.org/wiki/Planet_Labs)’ „Dove“-Flotte kann mit mehreren hundert kleinen Satelliten die gesamte Landoberfläche der Erde nahezu täglich erfassen. 
+Das ergibt Datenvolumina im Terabyte-Bereich pro Satellit pro Tag — Tag für Tag, Jahr für Jahr.
+
+🌍 Warum das relevant ist:
+
+- Für `r .blue("Umwelt- und Klimaforschung")` erlauben solche Daten, Landnutzungsänderungen, Vegetationsdynamik oder Urbanisierung nahezu in Echtzeit zu beobachten.
+- Für `r .blue("Katastrophenschutz und Risikobewertung")` liefern sie schnelle Informationen — z. B. über Überschwemmungen, Waldbrände oder Erdrutsche.
+- Für `r .blue("Mobilität und Raumplanung")`: Verkehrsmuster, Landnutzung, Siedlungsentwicklung – alles wird durch Geodaten abbildbar.
+
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/bigdata_esdl.png")
+```
+
+🔧 Doch **`r .blue("„Big Data“")` bringt auch Herausforderungen:
+
+- `r .blue("Speicherbedarf und Rechenleistung")` steigen rasant — Daten müssen effizient verarbeitet und archiviert werden.
+- `r .blue("Interpretationsbedarf")`: Große Datenmengen ohne Kontext bringen wenig — man braucht gute Metadaten und saubere Analyseprozesse.
+- `r .blue("Recht, Ethik und Datenschutz")`: Wer besitzt die Daten? Wer darf sie auswerten? Wie schützt man Privatsphäre, wenn man z.B. Gesundheits- oder Landnutzungsinformationen verarbeitet?
+
+
+---
+
 ## 8. Dezember: QGIS
 
 **[`r .blue("QGIS")`](https://qgis.org/)** ist eine freie und quelloffene GIS-Software – ein Geographisches Informationssystem.

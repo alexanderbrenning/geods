@@ -39,6 +39,35 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## December 9: Big Geospatial Data
+
+💾 Modern Earth observation generates enormous volumes of data every day — not only images, but also multispectral scans, sensor network streams, spatiotemporal data cubes, and derived simulation outputs.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/big_geodata.png")
+```
+
+A single satellite constellation such as [Planet Labs](https://en.wikipedia.org/wiki/Planet_Labs)’ *Dove* fleet, with several hundred small satellites, can image the entire land surface of the Earth almost daily — producing terabytes of data **per satellite per day**, day after day, year after year.
+
+🌍 **Why it matters:**
+
+- For `r .blue("environmental and climate research")`, such data make it possible to monitor land-use change, vegetation dynamics, and urbanization almost in real time.
+- For `r .blue("disaster management and risk assessment")`, they provide rapid information on floods, wildfires, or landslides.
+- For `r .blue("mobility and spatial planning")`: traffic patterns, land use, settlement development — all can be represented and analyzed through geospatial data.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/bigdata_esdl.png")
+```
+
+🔧 But **`r .blue("Big Data")`** also brings challenges:
+
+- `r .blue("Storage and computing demands")` grow rapidly — data must be processed and archived efficiently.
+- `r .blue("Interpretation")`: large datasets without context offer little value — good metadata and sound analytical design are essential.
+- `r .blue("Law, ethics, and privacy")`: Who owns the data? Who can analyze it? How can privacy be protected when dealing with sensitive information such as health or land use?
+
+
+---
+
 ## December 8: QGIS
 
 **[`r .blue("QGIS")`](https://qgis.org/)** is a free and open-source GIS application — a Geographic Information System.
