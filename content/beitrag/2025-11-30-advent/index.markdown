@@ -68,7 +68,7 @@ Viele Freiwillige tragen Gebäude, Straßen oder Landnutzungen ein, sodass offen
 
 <img src="figures/mapathon.png" width="50%" />
 
-Beim **`[Mapathon von EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/)** treffen sich Studierende, um genau das zu tun: gemeinsam Regionen zu kartieren, in denen Kartenlücken bestehen – oft für humanitäre oder ökologische Zwecke 🤝.
+Beim [Mapathon von EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/) treffen sich Studierende, um genau das zu tun: gemeinsam Regionen zu kartieren, in denen Kartenlücken bestehen – oft für humanitäre oder ökologische Zwecke 🤝.
 
 
 

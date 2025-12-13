@@ -68,7 +68,7 @@ Thousands of volunteers digitize buildings, roads, and land use, creating open a
 
 <img src="figures/mapathon.png" width="50%" />
 
-At the **`[Mapathon organized by EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/)`**, students meet to do exactly that: collaboratively map regions with incomplete coverage—for humanitarian or environmental purposes 🤝.
+At the [Mapathon organized by EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/), students meet to do exactly that: collaboratively map regions with incomplete coverage—for humanitarian or environmental purposes 🤝.
 
 ---
 
