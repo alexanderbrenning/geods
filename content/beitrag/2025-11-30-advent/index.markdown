@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-09"
+lastmod: "2025-12-13"
 featured: no
 image:
   caption: ''
@@ -23,6 +23,72 @@ projects: []
 
 
 
+
+
+## 13. Dezember: WGS84 – Das Koordinatensystem der Welt
+
+🌍 Fast alle GPS-Koordinaten und Webkarten beruhen auf einem gemeinsamen Bezugssystem: **<span style="color:blue">WGS84</span>**, das <span style="color:blue">„World Geodetic System 1984“</span>.
+Es repräsentiert die Erde als mathematisches Ellipsoid mit Mittelpunkt im Erdmittelpunkt.
+
+<img src="figures/wgs84.png" width="50%" />
+
+WGS84 erleichtert den Datenaustausch zwischen Ländern, Technologien und Web-Diensten erheblich.
+
+📐 Im europäischen Raum nutzt man oft stattdessen **<span style="color:blue">ETRS89</span>**, das sich fest am europäischen Kontinentalblock orientiert 🌍📍. Der (scheinbare) Lageunterschied zwischen den beiden Systemen beträgt unter 1 m.
+
+🧭 Man sollte die beiden Systeme also nicht durcheinander bringen, wenn man Hangbewegungen erkennen oder Grundstücke vermessen möchte! Bei unserer Messung von Bewegungsraten von Blockgletschern haben wir natürlich aufgepasst:
+
+<div class="figure">
+<img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
+<p class="caption"><span id="fig:unnamed-chunk-3"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+</div>
+
+
+---
+
+## 12. Dezember: Der ökologische Trugschluss
+
+Der **`.blue("ökologische Trugschluss")`** tritt auf, wenn man von Zusammenhängen auf aggregierter Ebene (z. B. Gemeinden, Kreise) fälschlich auf Individuen schließt. 📊
+
+<img src="figures/ecological_fallacy.png" width="50%" />
+
+**Beispiel:** Regionen mit vielen Universitäten weisen häufig höhere Kriminalitätsraten auf 🏙️🎓.
+Das bedeutet nicht, dass gebildete Menschen oder gar Studierende häufiger straffällig werden –
+vielmehr sind Universitätsstädte größer und weisen andere Risikofaktoren auf. Und ein Teil der Straftaten wird ohnehin von Auswärtigen begangen!
+
+👉 In der <span style="color:blue">räumlichen Analyse</span> ist das besonders relevant: Viele Geodaten liegen nur aggregiert vor.
+Wer solche Daten ohne Vorsicht interpretiert, riskiert einen Fehlschluss. 🗺️
+
+---
+
+## 11. Dezember: Crowdsourcing und Mapathons
+
+🌍 Beim **<span style="color:blue">Crowdsourcing</span>** werden Geodaten gemeinschaftlich erhoben – etwa auf Plattformen wie **<span style="color:blue">OpenStreetMap</span>**.
+Viele Freiwillige tragen Gebäude, Straßen oder Landnutzungen ein, sodass offene und aktuelle Karten entstehen, die weltweit genutzt werden.
+
+<img src="figures/mapathon.png" width="50%" />
+
+Beim **`[Mapathon von EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/)** treffen sich Studierende, um genau das zu tun: gemeinsam Regionen zu kartieren, in denen Kartenlücken bestehen – oft für humanitäre oder ökologische Zwecke 🤝.
+
+
+
+---
+
+## 10. Dezember – Geo-AI
+
+**<span style="color:blue">Geo-AI</span>** steht für Methoden der <span style="color:blue">künstlichen Intelligenz</span>, die auf die spezifischen Eigenschaften geographischer Daten zugeschnitten sind - insbesondere räumliche Abhängigkeit und Nähe.
+
+<img src="figures/geo_ai.png" width="50%" />
+
+Damit können räumliche Muster automatisch erkannt, Prozesse modelliert oder Veränderungen vorhergesagt werden – etwa die Folgen von Wetterextremen.
+
+Im [GENAI-X-Projekt](https://www.genai-x.uni-jena.de/) arbeiten wir daran, <span style="color:blue">generalisierbare KI-Modelle für Umweltprozesse</span> zu entwickeln.
+Ziel ist es, KI robuster gegenüber sich wandelnden Umweltbedingungen zu machen und sie so für zukünftige Klimabedingungen oder datenarme Regionen fit zu machen.
+
+Geo-AI ist also kein Ersatz für wissenschaftliches Denken, sondern eine Erweiterung unseres Werkzeugkastens – wir müssen sie verantwortungsvoll einsetzen und sie verlässlich und erklärbar machen 🌍.
+
+
+---
 
 
 ## 9. Dezember: Big Geospatial Data
@@ -65,7 +131,7 @@ Wir nutzen QGIS intensiv in der Lehre – vor allem im <span style="color:blue">
 
 <div class="figure">
 <img src="figures/teaching_qgis.jpg" alt="QGIS in der Lehre. Foto: (c) S. Hese." width="60%" />
-<p class="caption"><span id="fig:unnamed-chunk-5"></span>Figure 1: QGIS in der Lehre. Foto: (c) S. Hese.</p>
+<p class="caption"><span id="fig:unnamed-chunk-10"></span>Figure 2: QGIS in der Lehre. Foto: (c) S. Hese.</p>
 </div>
 
 Dass QGIS frei verfügbar ist, macht es nicht nur zu einem Werkzeug für Forschung und Verwaltung,
@@ -83,7 +149,7 @@ Ein **<span style="color:blue">Einzugsgebiet</span>** beschreibt den Bereich, au
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-7"></span>Figure 2: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-12"></span>Figure 3: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
 </div>
 
 So lässt sich etwa berechnen, welche Straßenabschnitte zu einer Feuerwache gehören 🚒 oder aus welchen Regionen die Mitglieder des [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) stammen ⚽ Oder mit den Worten der Fans: „Hier regiert der FCC!“. 🌍
@@ -93,13 +159,13 @@ Leider [deckt das 10-Minuten-Einzugsgebiet der Jenaer Feuerwehren nicht das ganz
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-8"></span>Figure 3: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-13"></span>Figure 4: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
 </div>
 
 
 <div class="figure">
 <img src="figures/fcc.png" alt="Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-9"></span>Figure 4: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
+<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 5: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
 </div>
 
 
@@ -119,7 +185,7 @@ Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtun
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, " width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-11"></span>Figure 5: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
+<p class="caption"><span id="fig:unnamed-chunk-16"></span>Figure 6: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
 </div>
 
 
@@ -143,7 +209,7 @@ Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 6: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+<p class="caption"><span id="fig:unnamed-chunk-19"></span>Figure 7: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
 </div>
 
 
@@ -187,7 +253,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-20"></span>Figure 7: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-25"></span>Figure 8: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -210,7 +276,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-22"></span>Figure 8: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 9: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.

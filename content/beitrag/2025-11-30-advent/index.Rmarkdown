@@ -39,6 +39,79 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 13. Dezember: WGS84 – Das Koordinatensystem der Welt
+
+🌍 Fast alle GPS-Koordinaten und Webkarten beruhen auf einem gemeinsamen Bezugssystem: **`r .blue("WGS84")`**, das `r .blue("„World Geodetic System 1984“")`.
+Es repräsentiert die Erde als mathematisches Ellipsoid mit Mittelpunkt im Erdmittelpunkt.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/wgs84.png")
+```
+
+WGS84 erleichtert den Datenaustausch zwischen Ländern, Technologien und Web-Diensten erheblich.
+
+📐 Im europäischen Raum nutzt man oft stattdessen **`r .blue("ETRS89")`**, das sich fest am europäischen Kontinentalblock orientiert 🌍📍. Der (scheinbare) Lageunterschied zwischen den beiden Systemen beträgt unter 1 m.
+
+🧭 Man sollte die beiden Systeme also nicht durcheinander bringen, wenn man Hangbewegungen erkennen oder Grundstücke vermessen möchte! Bei unserer Messung von Bewegungsraten von Blockgletschern haben wir natürlich aufgepasst:
+
+```{r out.width='70%', fig.cap='Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.'}
+knitr::include_graphics("figures/gps_rgl_creep.jpg")
+```
+
+
+---
+
+## 12. Dezember: Der ökologische Trugschluss
+
+Der **`.blue("ökologische Trugschluss")`** tritt auf, wenn man von Zusammenhängen auf aggregierter Ebene (z. B. Gemeinden, Kreise) fälschlich auf Individuen schließt. 📊
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/ecological_fallacy.png")
+```
+
+**Beispiel:** Regionen mit vielen Universitäten weisen häufig höhere Kriminalitätsraten auf 🏙️🎓.
+Das bedeutet nicht, dass gebildete Menschen oder gar Studierende häufiger straffällig werden –
+vielmehr sind Universitätsstädte größer und weisen andere Risikofaktoren auf. Und ein Teil der Straftaten wird ohnehin von Auswärtigen begangen!
+
+👉 In der `r .blue("räumlichen Analyse")` ist das besonders relevant: Viele Geodaten liegen nur aggregiert vor.
+Wer solche Daten ohne Vorsicht interpretiert, riskiert einen Fehlschluss. 🗺️
+
+---
+
+## 11. Dezember: Crowdsourcing und Mapathons
+
+🌍 Beim **`r .blue("Crowdsourcing")`** werden Geodaten gemeinschaftlich erhoben – etwa auf Plattformen wie **`r .blue("OpenStreetMap")`**.
+Viele Freiwillige tragen Gebäude, Straßen oder Landnutzungen ein, sodass offene und aktuelle Karten entstehen, die weltweit genutzt werden.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/mapathon.png")
+```
+
+Beim **`[Mapathon von EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/)** treffen sich Studierende, um genau das zu tun: gemeinsam Regionen zu kartieren, in denen Kartenlücken bestehen – oft für humanitäre oder ökologische Zwecke 🤝.
+
+
+
+---
+
+## 10. Dezember – Geo-AI
+
+**`r .blue("Geo-AI")`** steht für Methoden der `r .blue("künstlichen Intelligenz")`, die auf die spezifischen Eigenschaften geographischer Daten zugeschnitten sind - insbesondere räumliche Abhängigkeit und Nähe.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/geo_ai.png")
+```
+
+Damit können räumliche Muster automatisch erkannt, Prozesse modelliert oder Veränderungen vorhergesagt werden – etwa die Folgen von Wetterextremen.
+
+Im [GENAI-X-Projekt](https://www.genai-x.uni-jena.de/) arbeiten wir daran, `r .blue("generalisierbare KI-Modelle für Umweltprozesse")` zu entwickeln.
+Ziel ist es, KI robuster gegenüber sich wandelnden Umweltbedingungen zu machen und sie so für zukünftige Klimabedingungen oder datenarme Regionen fit zu machen.
+
+Geo-AI ist also kein Ersatz für wissenschaftliches Denken, sondern eine Erweiterung unseres Werkzeugkastens – wir müssen sie verantwortungsvoll einsetzen und sie verlässlich und erklärbar machen 🌍.
+
+
+---
+
+
 ## 9. Dezember: Big Geospatial Data
 
 💾 In der modernen Erdbeobachtung entstehen täglich gigantische Datenmengen — nicht nur Bilder, sondern auch multispektrale Scans, Datenströme aus Sensornetzen, raumzeitliche Data Cubes und daraus abgeleitete Simulationsergebnisse.

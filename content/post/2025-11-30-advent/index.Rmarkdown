@@ -38,6 +38,74 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+## December 13: WGS84 – The Coordinate System of the World
+
+🌍 Nearly all GPS coordinates and web maps are based on a common reference system: **`r .blue("WGS84")`**, the `r .blue("World Geodetic System 1984")`.
+It represents the Earth as a mathematical ellipsoid centered on the Earth’s core.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/wgs84.png")
+```
+
+WGS84 greatly facilitates data exchange between countries, technologies, and web services.
+
+📐 In Europe, **`r .blue("ETRS89")`** is often used instead. It is fixed to the European continental plate 🌍📍.
+The (apparent) positional difference between the two systems is less than one meter.
+
+🧭 The two systems shouldn’t be mixed up when detecting slope movements or surveying land parcels!
+When measuring the movement rates of rock glaciers, for example, we made sure to use consistent reference systems:
+
+```{r out.width='70%', fig.cap='Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.'}
+knitr::include_graphics("figures/gps_rgl_creep.jpg")
+```
+
+---
+
+## December 12: The Ecological Fallacy
+
+The **`.blue("ecological fallacy")`** occurs when relationships observed at an aggregated level (e.g., municipalities or districts) are mistakenly assumed to apply to individuals. 📊
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/ecological_fallacy.png")
+```
+
+**Example:** Regions with many universities often show higher crime rates 🏙️🎓.
+This does *not* mean that educated people—or students—commit more crimes.
+University towns are larger and have different risk factors. Moreover, who says that the recorded crimes are committed by the local residents?
+
+👉 In `r .blue("spatial analysis")`, this is especially relevant: many geospatial datasets are only available in aggregated form.
+Interpreting such data carelessly risks a false conclusion. 🗺️
+
+---
+
+## December 11: Crowdsourcing and Mapathons
+
+🌍 In **`r .blue("crowdsourcing")`**, geospatial data are collected collaboratively—often through platforms such as **`r .blue("OpenStreetMap")`**.
+Thousands of volunteers digitize buildings, roads, and land use, creating open and up-to-date maps used worldwide.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/mapathon.png")
+```
+
+At the **`[Mapathon organized by EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW/)`**, students meet to do exactly that: collaboratively map regions with incomplete coverage—for humanitarian or environmental purposes 🤝.
+
+---
+
+## December 10: Geo-AI
+
+**`r .blue("Geo-AI")`** refers to methods of `r .blue("artificial intelligence")` that are tailored to the specific characteristics of geographic data—particularly spatial dependence and proximity.
+
+knitr::include_graphics("figures/geo_ai.png")
+
+Such methods can automatically detect spatial patterns, model processes, and predict changes—such as the impacts of extreme weather events.
+
+Within the [GENAI-X Project](https://www.genai-x.uni-jena.de/), we are developing **`r .blue("generalizable AI models for environmental processes")`**.
+The goal is to make AI more robust under changing environmental conditions and to adapt it to future climates and data-sparse regions.
+
+Geo-AI is not a replacement for scientific reasoning but an extension of our analytical toolkit—we must apply it responsibly and ensure it remains reliable and explainable 🌍.
+
+
+---
 
 ## December 9: Big Geospatial Data
 
