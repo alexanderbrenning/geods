@@ -38,6 +38,42 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+## 14. Dezember: Metadaten & FAIR-Prinzipien
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/fair.png")
+```
+
+**`r .blue("Metadaten")`** sind `r .blue("„Daten über Daten“")`.
+Sie beschreiben z. B., wer einen Datensatz erstellt hat, wann, wie, in welcher Auflösung, für welchen Zweck – und unter welcher Lizenz er genutzt werden darf. Ohne Metadaten sind Geodaten wertlos!
+
+Die **`r .blue("FAIR-Prinzipien")`** fassen gute Datenpraxis zusammen:
+Daten sollten *`r .blue("Findable (auffindbar)")`*, *`r .blue("Accessible (zugänglich)")`*, *`r .blue("Interoperable (austauschbar)")`*, und *`r .blue("Reusable (wiederverwendbar)")`* sein.
+Sie sind zentral für Reproduzierbarkeit, Langzeitnutzung und den Austausch von Geodaten in Forschung, Wirtschaft und Verwaltung.
+
+👉 Zu FAIRen Geodaten können wir alle beitragen: Wir veröffentlichen, wenn möglich, auch Code & Daten zu unseren Analysen. Unser damaliger Doktorand Patrick Schratz gewann sogar den `r .blue("FAIRest Dataset Award")`. 🧭
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/fair_patrick.png")
+```
+
+```{r}
+#| layout-ncol: 2
+#| fig-cap: false
+#| out-width: "48%"
+#| fig-show: "hold"
+knitr::include_graphics(c(
+"figures/fair_code.png",
+"figures/fair_data.png"
+))
+```
+
+<!---
+🔖 Hashtags:
+#Metadaten #FAIRprinciples #OpenScience #Geoinformatik #GIScience #ReproducibleResearch #GeoAdvent #DataQuality
+-->
+
+---
 
 ## 13. Dezember: WGS84 – Das Koordinatensystem der Welt
 
@@ -63,7 +99,7 @@ knitr::include_graphics("figures/gps_rgl_creep.jpg")
 
 ## 12. Dezember: Der ökologische Trugschluss
 
-Der **`.blue("ökologische Trugschluss")`** tritt auf, wenn man von Zusammenhängen auf aggregierter Ebene (z. B. Gemeinden, Kreise) fälschlich auf Individuen schließt. 📊
+Der **`r .blue("ökologische Trugschluss")`** tritt auf, wenn man von Zusammenhängen auf aggregierter Ebene (z. B. Gemeinden, Kreise) fälschlich auf Individuen schließt. 📊
 
 ```{r out.width='50%'}
 knitr::include_graphics("figures/ecological_fallacy.png")

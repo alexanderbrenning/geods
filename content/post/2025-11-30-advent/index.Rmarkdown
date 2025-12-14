@@ -38,6 +38,41 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+
+## December 14: Metadata & FAIR Principles
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/fair.png")
+```
+
+**`r .blue("Metadata")`** are `r .blue("“data about data”")`.
+They describe, for example, who created a dataset, when and how it was produced, at what resolution, for which purpose — and under which license it may be used.
+Without metadata, geospatial data are essentially worthless.
+
+The **`r .blue("FAIR principles")`** summarize good data practices:
+data should be *`r .blue("Findable")`*, *`r .blue("Accessible")`*, *`r .blue("Interoperable")`*, and *`r .blue("Reusable")`*.
+They are central to reproducibility, long-term usability, and the exchange of geospatial data in research, industry, and public administration.
+
+👉 We can all contribute to FAIR geodata: whenever possible, we also publish the code and data underlying our analyses.
+Our former PhD student Patrick Schratz even won the **`r .blue("FAIRest Dataset Award")`** 🧭.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/fair_patrick.png")
+```
+
+```{r}
+#| layout-ncol: 2
+#| fig-cap: false
+#| out-width: "48%"
+#| fig-show: "hold"
+knitr::include_graphics(c(
+"figures/fair_code.png",
+"figures/fair_data.png"
+))
+```
+
+---
+
 ## December 13: WGS84 – The Coordinate System of the World
 
 🌍 Nearly all GPS coordinates and web maps are based on a common reference system: **`r .blue("WGS84")`**, the `r .blue("World Geodetic System 1984")`.
@@ -63,7 +98,7 @@ knitr::include_graphics("figures/gps_rgl_creep.jpg")
 
 ## December 12: The Ecological Fallacy
 
-The **`.blue("ecological fallacy")`** occurs when relationships observed at an aggregated level (e.g., municipalities or districts) are mistakenly assumed to apply to individuals. 📊
+The **`r .blue("ecological fallacy")`** occurs when relationships observed at an aggregated level (e.g., municipalities or districts) are mistakenly assumed to apply to individuals. 📊
 
 ```{r out.width='50%'}
 knitr::include_graphics("figures/ecological_fallacy.png")
