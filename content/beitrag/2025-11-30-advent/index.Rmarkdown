@@ -38,6 +38,26 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+
+## 15. Dezember: MAUP – Wenn Grenzen Ergebnisse verändern
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/maup.png")
+```
+
+⚠️ Das **`r .blue("Modifiable Areal Unit Problem (MAUP)")`** beschreibt ein zentrales Problem der räumlichen Analyse:
+Statistische Ergebnisse hängen davon ab, wie räumliche Einheiten zugeschnitten sind. 📐
+
+📊 Eine Analyse kann zu unterschiedlichen Korrelationen führen – je nachdem, ob man nach Gemeinden, Landkreisen oder Rasterzellen auswertet (`r .blue("Skaleneffekt")`) oder wie genau die Gebiete abgegrenzt sind (`r .blue("Zonierungseffekt")`). 🌍
+
+MAUP spielt eine große Rolle bei Themen wie Krankheitsinzidenzen 🦠, Wahlanalysen 🗳️, oder der Analyse von Satellitenbildern.
+Die Daten ändern sich nicht – aber unsere Interpretation schon.
+
+👉 Deshalb gilt in der Geoinformatik:
+Räumliche Analyse-Ergebnisse sind immer auch ein Produkt der gewählten räumlichen Einheiten.
+
+---
+
 ## 14. Dezember: Metadaten & FAIR-Prinzipien
 
 ```{r out.width='50%'}
@@ -59,7 +79,6 @@ knitr::include_graphics("figures/fair_patrick.png")
 
 ```{r}
 #| layout-ncol: 2
-#| fig-cap: false
 #| out-width: "48%"
 #| fig-show: "hold"
 knitr::include_graphics(c(
@@ -68,10 +87,6 @@ knitr::include_graphics(c(
 ))
 ```
 
-<!---
-🔖 Hashtags:
-#Metadaten #FAIRprinciples #OpenScience #Geoinformatik #GIScience #ReproducibleResearch #GeoAdvent #DataQuality
--->
 
 ---
 

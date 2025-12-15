@@ -38,6 +38,24 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+## December 15: MAUP – When Boundaries Change Results
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/maup.png")
+```
+
+⚠️ The **`r .blue("Modifiable Areal Unit Problem (MAUP)")`** describes a fundamental issue in spatial analysis:
+statistical results depend on how spatial units are defined. 📐
+
+📊 The same analysis can lead to different correlations depending on whether data are aggregated by municipalities, districts, or raster cells (`r .blue("scale effect")`), or on how exactly the boundaries of those units are drawn (`r .blue("zoning effect")`). 🌍
+
+MAUP plays a major role in topics such as disease incidence 🦠, election analyses 🗳️, or the analysis of satellite imagery.
+The data do not change — but our interpretation does.
+
+👉 Therefore, a key principle in geoinformatics applies:
+results of spatial analyses are always, at least in part, a product of the chosen spatial units.
+
+---
 
 ## December 14: Metadata & FAIR Principles
 
@@ -62,7 +80,6 @@ knitr::include_graphics("figures/fair_patrick.png")
 
 ```{r}
 #| layout-ncol: 2
-#| fig-cap: false
 #| out-width: "48%"
 #| fig-show: "hold"
 knitr::include_graphics(c(
