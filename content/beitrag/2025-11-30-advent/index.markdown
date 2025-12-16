@@ -33,7 +33,7 @@ projects: []
 
 Treiber sind u.a. Navigation 🧭, Erdbeobachtung 🛰️, Geodatenanalyse 📊, Drohnen 🚁, Umwelt- und Verkehrssensorik 🌱🚦 SmartCity und digitale Planung (BIM).
 
-So überrascht es nicht, dass der Finanz-Podcast [„Alles auf Aktien“](https://www.welt.de/podcasts/alles-auf-aktien/) auf meine Anregung hin heute dieses Thema aufgegriffen hat 🎙️.
+So überrascht es nicht, dass der Finanz-Podcast [„Alles auf Aktien“](https://www.welt.de/podcasts/alles-auf-aktien/article6940c830ee38f909a4fbb35f/planet-labs-palantir-blacksky-galaktische-gewinne-mit-geodaten.html) auf meine Anregung hin heute dieses Thema aufgegriffen hat 🎙️.
 Denn hinter Karten, Apps und Satelliten steckt eine hochinnovative Industrie mit echtem gesellschaftlichem Nutzen *und* wirtschaftlichem Potenzial.
 
 👉 **Geoinformatik ist mehr als ein Studienschwerpunkt – sie ist eine Zukunftsbranche.**
@@ -41,9 +41,7 @@ Denn hinter Karten, Apps und Satelliten steckt eine hochinnovative Industrie mit
 <img src="figures/markets2.png" width="50%" />
 
 
-<!---
-#Geoinformatik #Zukunftsbranche #GeoEconomy #SpatialData #AllesAufAktien #GeoAdvent #Digitalisierung
--->
+
 
 
 ---

@@ -35,7 +35,7 @@ projects: []
 
 Key drivers include navigation 🧭, Earth observation 🛰️, geospatial analytics 📊, drones 🚁, environmental and traffic sensing 🌱🚦, smart cities, and digital planning (BIM).
 
-It is therefore no surprise that the finance podcast [“Alles auf Aktien”](https://www.welt.de/podcasts/alles-auf-aktien/) picked up this topic today following my suggestion 🎙️.
+It is therefore no surprise that the finance podcast [“Alles auf Aktien”](https://www.welt.de/podcasts/alles-auf-aktien/article6940c830ee38f909a4fbb35f/planet-labs-palantir-blacksky-galaktische-gewinne-mit-geodaten.html) picked up this topic today following my suggestion 🎙️.
 Behind maps, apps, and satellites lies a highly innovative industry with real societal impact *and* strong economic potential.
 
 👉 **GIScience is more than a study focus — it is a future-oriented industry.**
