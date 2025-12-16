@@ -39,6 +39,33 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 16. Dezember: Gewinner-Branche Geoinformatik
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/markets1.png")
+```
+
+📈 Die **`r .blue("Geoinformatik-Branche")`** wächst rasant: [Marktstudien](https://www.fortunebusinessinsights.com/de/geospatial-analytics-markt-102219) prognostizieren `r .blue("11-14 % Umsatzwachstum pro Jahr")` – weltweit und auch in Deutschland. 🌍
+
+Treiber sind u.a. Navigation 🧭, Erdbeobachtung 🛰️, Geodatenanalyse 📊, Drohnen 🚁, Umwelt- und Verkehrssensorik 🌱🚦 SmartCity und digitale Planung (BIM).
+
+So überrascht es nicht, dass der Finanz-Podcast [„Alles auf Aktien“](https://www.welt.de/podcasts/alles-auf-aktien/) auf meine Anregung hin heute dieses Thema aufgegriffen hat 🎙️.
+Denn hinter Karten, Apps und Satelliten steckt eine hochinnovative Industrie mit echtem gesellschaftlichem Nutzen *und* wirtschaftlichem Potenzial.
+
+👉 **Geoinformatik ist mehr als ein Studienschwerpunkt – sie ist eine Zukunftsbranche.**
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/markets2.png")
+```
+
+
+<!---
+#Geoinformatik #Zukunftsbranche #GeoEconomy #SpatialData #AllesAufAktien #GeoAdvent #Digitalisierung
+-->
+
+
+---
+
 ## 15. Dezember: MAUP – Wenn Grenzen Ergebnisse verändern
 
 ```{r out.width='50%'}

@@ -38,6 +38,31 @@ xaringanExtra::style_panelset_tabs(
 
 ```
 
+
+
+
+## December 16: Geospatial Analytics – A Winning Industry
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/markets1.png")
+```
+
+📈 The **`r .blue("geomatics industry")`** is growing rapidly: [market studies](https://www.fortunebusinessinsights.com/de/geospatial-analytics-markt-102219) forecast `r .blue("11–14% annual revenue growth")` — worldwide and also in Germany 🌍.
+
+Key drivers include navigation 🧭, Earth observation 🛰️, geospatial analytics 📊, drones 🚁, environmental and traffic sensing 🌱🚦, smart cities, and digital planning (BIM).
+
+It is therefore no surprise that the finance podcast [“Alles auf Aktien”](https://www.welt.de/podcasts/alles-auf-aktien/) picked up this topic today following my suggestion 🎙️.
+Behind maps, apps, and satellites lies a highly innovative industry with real societal impact *and* strong economic potential.
+
+👉 **GIScience is more than a study focus — it is a future-oriented industry.**
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/markets2.png")
+```
+
+
+---
+
 ## December 15: MAUP – When Boundaries Change Results
 
 ```{r out.width='50%'}
