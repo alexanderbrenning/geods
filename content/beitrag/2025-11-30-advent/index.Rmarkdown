@@ -39,6 +39,39 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+## 17. Dezember: Participatory GIS
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/pgis.png")
+```
+
+
+🚲🗺 Ein frühes Beispiel für **`r .blue("Participatory GIS")`** in Jena: das `.blue("Radforum Jena")`.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/radforum_jena.png")
+```
+
+🤝 Schon 2022 konnten Bürger:innen dort Probleme, Gefahrenstellen und Ideen für den Radverkehr direkt auf Karten verorten – von fehlenden Radwegen bis zu kritischen Kreuzungen.
+Lokales Alltagswissen wurde so zu nutzbaren Geodaten.
+
+Genau das ist der Kern von Participatory GIS (PGIS):
+Geoinformatik wird genutzt, um Bürgerwissen systematisch in Karten, Analysen und Planungsprozesse einzubinden – digital und transparent.
+
+Heute ist dieser Ansatz ein fester Bestandteil der **`r .blue("Smart-City-Strategie Jenas")`** 🌍💡.
+Über partizipative Karten und Online-Beteiligungsformate können Bürger:innen aktiv an der Stadtentwicklung mitwirken – etwa zu Mobilität 🚲, Stadtgrün 🌳, Barrierefreiheit ♿ oder Quartieren 🏘️.
+
+👉 Karten sind nicht nur Analysewerkzeuge – sie sind Dialogräume zwischen Stadtgesellschaft und Entscheidungsträgern.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/smartcity_jena.png")
+```
+
+
+
+---
+
 ## 16. Dezember: Gewinner-Branche Geoinformatik
 
 ```{r out.width='50%'}
