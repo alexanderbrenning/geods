@@ -30,7 +30,7 @@ projects: []
 
 <img src="figures/pgis.png" width="50%" />
 
-🚲🗺 An early example of **<span style="color:blue">Participatory GIS</span>** in Jena is the `.blue("Radforum Jena")`.
+🚲🗺 An early example of **<span style="color:blue">Participatory GIS</span>** in Jena is the <span style="color:blue">Radforum Jena</span>.
 
 <img src="figures/radforum_jena.png" width="50%" />
 

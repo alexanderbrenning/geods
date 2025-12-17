@@ -46,7 +46,7 @@ xaringanExtra::style_panelset_tabs(
 knitr::include_graphics("figures/pgis.png")
 ```
 
-🚲🗺 An early example of **`r .blue("Participatory GIS")`** in Jena is the `.blue("Radforum Jena")`.
+🚲🗺 An early example of **`r .blue("Participatory GIS")`** in Jena is the `r .blue("Radforum Jena")`.
 
 ```{r out.width='50%'}
 knitr::include_graphics("figures/radforum_jena.png")

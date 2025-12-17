@@ -47,7 +47,7 @@ knitr::include_graphics("figures/pgis.png")
 ```
 
 
-🚲🗺 Ein frühes Beispiel für **`r .blue("Participatory GIS")`** in Jena: das `.blue("Radforum Jena")`.
+🚲🗺 Ein frühes Beispiel für **`r .blue("Participatory GIS")`** in Jena: das `r .blue("Radforum Jena")`.
 
 ```{r out.width='50%'}
 knitr::include_graphics("figures/radforum_jena.png")
