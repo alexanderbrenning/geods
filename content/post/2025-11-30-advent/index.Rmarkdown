@@ -39,6 +39,28 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## December 18: Geospatial Data Infrastructure (GDI) – The Backbone of Geoinformatics
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gdi.png")
+```
+
+A **`r .blue("Geospatial Data Infrastructure (GDI)")`** is not a single system, but an organized interplay of
+geospatial data, metadata, standards, services, and institutions.
+
+**Its goal:** geospatial data and web services should be `r .blue("findable, accessible, interoperable, and usable")` — across organizational boundaries.
+
+At the European level, this is regulated by the **`r .blue("INSPIRE Directive")`**.
+It obliges public authorities to provide their geospatial data in standardized ways — for example on topics such as the environment, transport, land use, or administrative units.
+
+Thanks to GDI and INSPIRE, data from municipalities, federal states, national authorities, and the EU can be integrated —
+for instance for environmental reporting 🌱, spatial planning 🏗️, or crisis management 🚨. Here is an example from the [Thuringian Geoportal](https://geoportal.thueringen.de/).
+
+👉 Without geospatial data infrastructures, there would be many maps —
+but **no functional and reliable geospatial data landscape**.
+
+
+---
 
 ## December 17: Participatory GIS
 

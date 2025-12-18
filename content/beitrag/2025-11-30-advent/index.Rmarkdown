@@ -39,6 +39,32 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 18. Dezember:  Geodateninfrastruktur (GDI) – Das Rückgrat der Geoinformatik
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/gdi.png")
+```
+
+Eine **`r .blue("Geodateninfrastruktur (GDI)")`** ist kein einzelnes System, sondern ein organisiertes Zusammenspiel aus
+Geodaten, Metadaten, Standards, Diensten und Institutionen.
+
+**Ihr Ziel:** Geodaten und Webdienste sollen `r .blue("auffindbar, zugänglich, kombinierbar und nutzbar")` sein, und zwar über Organisationsgrenzen hinweg.
+
+Auf europäischer Ebene wird das durch die **`r .blue("INSPIRE-Richtlinie")`** geregelt.
+Sie verpflichtet Behörden, ihre Geodaten standardisiert bereitzustellen – etwa zu Themen wie Umwelt, Verkehr, Landnutzung oder Verwaltungseinheiten.
+
+Dank GDI und INSPIRE können Daten von Kommunen, Ländern, Bund und EU zusammengeführt werden –
+z. B. für Umweltberichte 🌱, Raumplanung 🏗️ oder Krisenmanagement 🚨. Hier ein Beispiel aus dem [Geoportal Thüringen](https://geoportal.thueringen.de/).
+
+👉 Ohne Geodateninfrastrukturen gäbe es zwar viele Karten –
+aber **keine funktionierende, verlässliche Geodatenlandschaft**.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/geoportal_th.png")
+```
+
+
+---
 
 ## 17. Dezember: Participatory GIS
 
