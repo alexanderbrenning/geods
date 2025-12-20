@@ -39,6 +39,52 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## December 20: Spatial Autocorrelation
+
+📍🔗 **`r .blue("Spatial autocorrelation")`** describes a core principle of GIScience:
+values observed at locations close to each other are often more similar than values observed far apart.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/autocorr2.png")
+```
+
+Why is this so important?
+Without spatial autocorrelation, `r .blue("interpolating point measurements into continuous surfaces")` would not be possible.
+Only because neighboring observations are related can we derive continuous maps from a limited number of measurement points 📊🗺️.
+
+This is essential for `r .blue("spatially assessing environmental pollution")` — for example **`r .blue("nitrate in groundwater")`** 💧.
+In the [ReGeNi project](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf), funded by the [German Environment Agency](https://www.umweltbundesamt.de/), we apply exactly this principle to derive spatially consistent maps of nitrate contamination from point measurements and to make uncertainties transparent. See also [my blog post related to this topic](https://geods.netlify.app/post/nitrate/).
+
+👉 In short:
+**Spatial autocorrelation is the statistical foundation that allows maps to be more than just colorful patterns.**
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/nitrate.png")
+```
+
+
+---
+
+## December 19: Digital Twin
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/digitaltwin.png")
+```
+
+
+🏙️🧠 **`r .blue("Digital twins")`** are virtual representations of real-world systems.
+They integrate `r .blue("geospatial data, sensor data, models, and simulations")` to realistically represent processes in cities or the environment — and to explore “what-if” scenarios.
+
+A digital twin is more than a 3D city model:
+it can simulate traffic flows 🚗, estimate heat development 🌡️,
+predict flooding 🌊, or test the effects of planning measures — *before* they are implemented.
+
+Especially in the context of `r .blue("smart cities")` and `r .blue("environmental forecasting")`, digital twins are becoming increasingly important.
+
+
+---
+
+
 ## December 18: Geospatial Data Infrastructure (GDI) – The Backbone of Geoinformatics
 
 ```{r out.width='50%'}

@@ -39,6 +39,52 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+## 20. Dezember: Räumliche Autokorrelation
+
+📍🔗 **`r .blue("Räumliche Autokorrelation")`** beschreibt ein zentrales Prinzip der Geoinformatik:
+Werte an räumlich nahen Orten ähneln sich oft stärker als Werte an weit entfernten Orten.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/autocorr2.png")
+```
+
+Warum das so wichtig ist?
+Ohne räumliche Autokorrelation wäre eine `r .blue("Interpolation von Punktmessungen in die Fläche")` nicht möglich.
+Nur weil benachbarte Messwerte zusammenhängen, können wir aus wenigen Messpunkten kontinuierliche Karten berechnen 📊🗺️.
+
+Das ist essenziell, um `r .blue("Umweltbelastungen flächendeckend abzuschätzen")` – etwa bei **`r .blue("Nitrat im Grundwasser")`** 💧.
+Im vom [Umweltbundesamt](https://www.umweltbundesamt.de/) geförderten [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) nutzen wir genau dieses Prinzip, um aus Punktmessungen räumlich konsistente Karten der Nitratbelastung abzuleiten und Unsicherheiten transparent zu machen. Siehe auch [meinen Blog-Beitrag hierzu](https://geods.netlify.app/beitrag/nitrate/).
+
+👉 Kurz gesagt:
+**Räumliche Autokorrelation ist die statistische Grundlage dafür, dass Karten mehr sein können als bunte Muster.**
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/nitrate.png")
+```
+
+
+---
+
+
+## 19. Dezember: Digitale Zwillinge (Digital Twins)**
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/digitaltwin.png")
+```
+
+🏙️🧠 **`r .blue("Digitale Zwillinge")`** sind virtuelle Abbilder realer Systeme.
+Sie koppeln `.blue("Geodaten, Sensordaten, Modelle und Simulationen")`, um Prozesse in Städten oder der Umwelt realitätsnah abzubilden – und „Was-wäre-wenn?“-Fragen zu beantworten.
+
+Ein digitaler Zwilling ist mehr als eine 3D-Stadt:
+Er kann Verkehrsflüsse simulieren 🚗, Hitzeentwicklung abschätzen 🌡️,
+Überflutungen prognostizieren 🌊 oder die Wirkung von Planungsmaßnahmen testen – *bevor* sie umgesetzt werden.
+
+Gerade im Kontext von `r .blue("Smart Cities")` und `r .blue("Umweltprognosen")` gewinnen digitale Zwillinge stark an Bedeutung.
+
+
+---
+
 ## 18. Dezember:  Geodateninfrastruktur (GDI) – Das Rückgrat der Geoinformatik
 
 ```{r out.width='50%'}

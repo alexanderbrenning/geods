@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-18"
+lastmod: "2025-12-20"
 featured: no
 image:
   caption: ''
@@ -24,6 +24,46 @@ projects: []
 
 
 
+
+
+## 20. Dezember: Räumliche Autokorrelation
+
+📍🔗 **<span style="color:blue">Räumliche Autokorrelation</span>** beschreibt ein zentrales Prinzip der Geoinformatik:
+Werte an räumlich nahen Orten ähneln sich oft stärker als Werte an weit entfernten Orten.
+
+<img src="figures/autocorr2.png" width="50%" />
+
+Warum das so wichtig ist?
+Ohne räumliche Autokorrelation wäre eine <span style="color:blue">Interpolation von Punktmessungen in die Fläche</span> nicht möglich.
+Nur weil benachbarte Messwerte zusammenhängen, können wir aus wenigen Messpunkten kontinuierliche Karten berechnen 📊🗺️.
+
+Das ist essenziell, um <span style="color:blue">Umweltbelastungen flächendeckend abzuschätzen</span> – etwa bei **<span style="color:blue">Nitrat im Grundwasser</span>** 💧.
+Im vom [Umweltbundesamt](https://www.umweltbundesamt.de/) geförderten [ReGeNi-Projekt](https://www.umweltbundesamt.de/sites/default/files/medien/2875/dokumente/20241121_projektsteckbrief_regeni.pdf) nutzen wir genau dieses Prinzip, um aus Punktmessungen räumlich konsistente Karten der Nitratbelastung abzuleiten und Unsicherheiten transparent zu machen. Siehe auch [meinen Blog-Beitrag hierzu](https://geods.netlify.app/beitrag/nitrate/).
+
+👉 Kurz gesagt:
+**Räumliche Autokorrelation ist die statistische Grundlage dafür, dass Karten mehr sein können als bunte Muster.**
+
+<img src="figures/nitrate.png" width="50%" />
+
+
+---
+
+
+## 19. Dezember: Digitale Zwillinge (Digital Twins)**
+
+<img src="figures/digitaltwin.png" width="50%" />
+
+🏙️🧠 **<span style="color:blue">Digitale Zwillinge</span>** sind virtuelle Abbilder realer Systeme.
+Sie koppeln `.blue("Geodaten, Sensordaten, Modelle und Simulationen")`, um Prozesse in Städten oder der Umwelt realitätsnah abzubilden – und „Was-wäre-wenn?“-Fragen zu beantworten.
+
+Ein digitaler Zwilling ist mehr als eine 3D-Stadt:
+Er kann Verkehrsflüsse simulieren 🚗, Hitzeentwicklung abschätzen 🌡️,
+Überflutungen prognostizieren 🌊 oder die Wirkung von Planungsmaßnahmen testen – *bevor* sie umgesetzt werden.
+
+Gerade im Kontext von <span style="color:blue">Smart Cities</span> und <span style="color:blue">Umweltprognosen</span> gewinnen digitale Zwillinge stark an Bedeutung.
+
+
+---
 
 ## 18. Dezember:  Geodateninfrastruktur (GDI) – Das Rückgrat der Geoinformatik
 
@@ -147,7 +187,7 @@ WGS84 erleichtert den Datenaustausch zwischen Ländern, Technologien und Web-Die
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-14"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-17"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 
@@ -238,7 +278,7 @@ Wir nutzen QGIS intensiv in der Lehre – vor allem im <span style="color:blue">
 
 <div class="figure">
 <img src="figures/teaching_qgis.jpg" alt="QGIS in der Lehre. Foto: (c) S. Hese." width="60%" />
-<p class="caption"><span id="fig:unnamed-chunk-21"></span>Figure 2: QGIS in der Lehre. Foto: (c) S. Hese.</p>
+<p class="caption"><span id="fig:unnamed-chunk-24"></span>Figure 2: QGIS in der Lehre. Foto: (c) S. Hese.</p>
 </div>
 
 Dass QGIS frei verfügbar ist, macht es nicht nur zu einem Werkzeug für Forschung und Verwaltung,
@@ -256,7 +296,7 @@ Ein **<span style="color:blue">Einzugsgebiet</span>** beschreibt den Bereich, au
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-23"></span>Figure 3: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-26"></span>Figure 3: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
 </div>
 
 So lässt sich etwa berechnen, welche Straßenabschnitte zu einer Feuerwache gehören 🚒 oder aus welchen Regionen die Mitglieder des [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) stammen ⚽ Oder mit den Worten der Fans: „Hier regiert der FCC!“. 🌍
@@ -266,13 +306,13 @@ Leider [deckt das 10-Minuten-Einzugsgebiet der Jenaer Feuerwehren nicht das ganz
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-24"></span>Figure 4: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 4: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
 </div>
 
 
 <div class="figure">
 <img src="figures/fcc.png" alt="Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-25"></span>Figure 5: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
+<p class="caption"><span id="fig:unnamed-chunk-28"></span>Figure 5: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
 </div>
 
 
@@ -292,7 +332,7 @@ Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtun
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, " width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 6: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
+<p class="caption"><span id="fig:unnamed-chunk-30"></span>Figure 6: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
 </div>
 
 
@@ -316,7 +356,7 @@ Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-30"></span>Figure 7: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+<p class="caption"><span id="fig:unnamed-chunk-33"></span>Figure 7: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
 </div>
 
 
@@ -360,7 +400,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-36"></span>Figure 8: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-39"></span>Figure 8: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -383,7 +423,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-38"></span>Figure 9: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-41"></span>Figure 9: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.
