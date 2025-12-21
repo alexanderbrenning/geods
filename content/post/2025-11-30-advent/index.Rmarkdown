@@ -295,7 +295,9 @@ At the [Mapathon organized by EGEA Jena](https://www.instagram.com/p/DR_4fgMiBTW
 
 **`r .blue("Geo-AI")`** refers to methods of `r .blue("artificial intelligence")` that are tailored to the specific characteristics of geographic data—particularly spatial dependence and proximity.
 
+```{r out.width='50%'}
 knitr::include_graphics("figures/geo_ai.png")
+```
 
 Such methods can automatically detect spatial patterns, model processes, and predict changes—such as the impacts of extreme weather events.
 
