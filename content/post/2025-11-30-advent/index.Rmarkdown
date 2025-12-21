@@ -39,6 +39,32 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+
+## December 21: Volunteered Geographic Information (VGI)
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/vgi.png")
+```
+
+🌍🤝 **`r .blue("Volunteered Geographic Information (VGI)")`** refers to geospatial data that are `r .blue("voluntarily created and shared by users")`.
+People map their environment themselves — using smartphones, GPS, or local knowledge.
+
+The most prominent example is [OpenStreetMap](https://www.openstreetmap.org/):
+thousands of volunteers worldwide map streets, buildings, bike lanes, or points of interest — often more up to date than official datasets 🚲🏘️.
+
+VGI is closely related to `r .blue("crowdsourcing")`, but conceptually goes a step further:
+data collection is not controlled by institutions, but by civil society itself.
+
+👉 Opportunities: high timeliness, global coverage, democratic data creation.
+
+⚠️ Challenges: data quality, spatial biases, and social inequalities.
+
+In short:
+**VGI shows that geospatial data are not only measured — they are also created collaboratively.**
+
+---
+
 ## December 20: Spatial Autocorrelation
 
 📍🔗 **`r .blue("Spatial autocorrelation")`** describes a core principle of GIScience:

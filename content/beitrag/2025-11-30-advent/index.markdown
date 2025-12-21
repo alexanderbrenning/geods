@@ -26,6 +26,29 @@ projects: []
 
 
 
+## 21. Dezember: Volunteered Geographic Information (VGI)
+
+<img src="figures/vgi.png" width="50%" />
+
+🌍🤝 **<span style="color:blue">Volunteered Geographic Information (VGI)</span>** bezeichnet Geodaten, die <span style="color:blue">freiwillig von Nutzer:innen</span> erzeugt und geteilt werden.
+Menschen kartieren ihre Umwelt selbst – mit Smartphone, GPS oder lokalem Wissen.
+
+Das bekannteste Beispiel ist [OpenStreetMap](https://www.openstreetmap.org/):
+Tausende Freiwillige erfassen weltweit Straßen, Gebäude, Radwege oder POIs – oft aktueller als offizielle Datensätze 🚲🏘️.
+
+VGI ist eng verwandt mit <span style="color:blue">Crowdsourcing</span>, geht aber konzeptionell weiter:
+Nicht Institutionen steuern die Datenerhebung, sondern die Zivilgesellschaft selbst.
+
+👉 Chancen: hohe Aktualität, globale Abdeckung, demokratische Datenerzeugung.
+
+⚠️ Herausforderungen: Datenqualität, räumliche Verzerrungen und soziale Ungleichgewichte.
+
+Kurz gesagt:
+**VGI zeigt, dass Geodaten nicht nur gemessen, sondern auch gemeinsam gemacht werden.**
+
+
+---
+
 ## 20. Dezember: Räumliche Autokorrelation
 
 📍🔗 **<span style="color:blue">Räumliche Autokorrelation</span>** beschreibt ein zentrales Prinzip der Geoinformatik:
@@ -187,7 +210,7 @@ WGS84 erleichtert den Datenaustausch zwischen Ländern, Technologien und Web-Die
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-17"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 1: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 
@@ -278,7 +301,7 @@ Wir nutzen QGIS intensiv in der Lehre – vor allem im <span style="color:blue">
 
 <div class="figure">
 <img src="figures/teaching_qgis.jpg" alt="QGIS in der Lehre. Foto: (c) S. Hese." width="60%" />
-<p class="caption"><span id="fig:unnamed-chunk-24"></span>Figure 2: QGIS in der Lehre. Foto: (c) S. Hese.</p>
+<p class="caption"><span id="fig:unnamed-chunk-25"></span>Figure 2: QGIS in der Lehre. Foto: (c) S. Hese.</p>
 </div>
 
 Dass QGIS frei verfügbar ist, macht es nicht nur zu einem Werkzeug für Forschung und Verwaltung,
@@ -296,7 +319,7 @@ Ein **<span style="color:blue">Einzugsgebiet</span>** beschreibt den Bereich, au
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-26"></span>Figure 3: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 3: Eintreffzeiten der Feuerwehren im Stadtgebiet von Jena. (c) Stadt Jena / antwortING / otz.</p>
 </div>
 
 So lässt sich etwa berechnen, welche Straßenabschnitte zu einer Feuerwache gehören 🚒 oder aus welchen Regionen die Mitglieder des [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) stammen ⚽ Oder mit den Worten der Fans: „Hier regiert der FCC!“. 🌍
@@ -306,13 +329,13 @@ Leider [deckt das 10-Minuten-Einzugsgebiet der Jenaer Feuerwehren nicht das ganz
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 4: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-28"></span>Figure 4: Das Einzugsgebiet des FC Carl Zeiss Jena aus Sicht der Verteilung seiner Mitglieder. (c) Thüringer Allgemeine.</p>
 </div>
 
 
 <div class="figure">
 <img src="figures/fcc.png" alt="Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-28"></span>Figure 5: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
+<p class="caption"><span id="fig:unnamed-chunk-29"></span>Figure 5: Die Südkurve im Ernst-Abbe-Sportfeld. Ihr Einzugsgebiet? Wo auch immer der FCC spielt!</p>
 </div>
 
 
@@ -332,7 +355,7 @@ Ungefähr die coolste Sache, die man mit Drohnen machen kann, ist die Beobachtun
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, " width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-30"></span>Figure 6: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
+<p class="caption"><span id="fig:unnamed-chunk-31"></span>Figure 6: Drohnenaufnahmen von Adélie- und Gentoo-Pinguinkolonien auf Ardley Island, Antarktis. Pfeifer et al. (2025) in Ecological Indicators, </p>
 </div>
 
 
@@ -356,7 +379,7 @@ Das Ergebnis: Karten, die Lücken im Wissen sichtbar schließen. 🌍
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-33"></span>Figure 7: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
+<p class="caption"><span id="fig:unnamed-chunk-34"></span>Figure 7: Geostatistisch interpolierte Überschreitungswahrscheinlichkeiten für einen Nitratschwellenwert von 50 mg/l in einer nicht identifizierten Pilotregion.</p>
 </div>
 
 
@@ -400,7 +423,7 @@ Solche Systeme bestimmen Positionen, indem sie Signale mehrerer Satelliten messe
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-39"></span>Figure 8: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-40"></span>Figure 8: Bewegungsraten eines Blockgletschers in den chilenischen Anden. (c) X. Bodin.</p>
 </div>
 
 👉 GPS ist übrigens das amerikanische GNSS – Wusstest du, dass die Europäische Union mit [Galileo](https://de.wikipedia.org/wiki/Galileo_(Satellitennavigation)) ein eigenes GNSS betreibt?
@@ -423,7 +446,7 @@ Auch andere Ortsangaben kann man in Koordinaten umwandeln – z.B. IP-Adressen v
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocodierte Polizeiberichte." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-41"></span>Figure 9: Geocodierte Polizeiberichte.</p>
+<p class="caption"><span id="fig:unnamed-chunk-42"></span>Figure 9: Geocodierte Polizeiberichte.</p>
 </div>
 
 Übrigens: Ein Kollege hier in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) vom [DLR-Institut für Datenwissenschaften](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), ist ein führender Experte für Geoparsing, also die Geocodierung unstrukturierter Texte.
