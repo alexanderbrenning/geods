@@ -39,6 +39,29 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+## 22. Dezember: Aggregierung & Disaggregierung
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/disaggr.png")
+```
+
+📦📊 **`r .blue("Aggregierung")`** fasst räumliche Daten auf größere Einheiten zusammen –
+z.B. Einkommen 💶 oder Gesundheitsdaten 👥 auf Ebene von Gemeinden oder Stadtteilen.
+
+🔍📍 Eine Anwendung ist das `r .blue("Geomarketing")`: Hier werden gut verfügbare aggregierte demographische und sozioökonomische Daten häufig **`r .blue("disaggregiert")`**,
+um Kaufkraft 💳, Nachfrage 🛒 oder Präferenzen 🎯 auf Straßen- oder Blockebene abzuschätzen.
+
+Dabei gilt:
+➡️ Die feinen Muster entstehen nicht durch Messung, sondern durch `r .blue("räumliche statistische Modelle")`,
+z.B. unter Nutzung von Landnutzung 🏘, Gebäudedaten 🧱 oder Bevölkerungsdichte 📈.
+
+⚠️ Wichtig:
+Disaggregierte Ergebnisse sind *Schätzungen*, keine Beobachtungen –
+und sensibel gegenüber Annahmen, Maßstab 📐 und Zonierung 🗺️.
+
+---
+
+
 
 ## 21. Dezember: Volunteered Geographic Information (VGI)
 

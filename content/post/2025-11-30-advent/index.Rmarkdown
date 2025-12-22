@@ -40,6 +40,28 @@ xaringanExtra::style_panelset_tabs(
 
 
 
+## December 22: Aggregation & Disaggregation
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/disaggr.png")
+```
+
+📦📊 **`r .blue("Aggregation")`** combines spatial data into larger units —
+for example income 💶 or health data 👥 at the level of municipalities or neighborhoods.
+
+🔍📍 One application is `r .blue("geomarketing")`: here, readily available aggregated demographic and socioeconomic data are often **`r .blue("disaggregated")`**
+to estimate purchasing power 💳, demand 🛒, or preferences 🎯 at the street or block level.
+
+The key point is:
+➡️ fine-scale patterns are not measured directly, but derived using `r .blue("spatial statistical models")`,
+for example incorporating land use 🏘️, building data 🧱, or population density 📈.
+
+⚠️ Important:
+Disaggregated results are *estimates*, not observations —
+and they are sensitive to assumptions, scale 📐, and zoning 🗺️.
+
+---
+
 
 ## December 21: Volunteered Geographic Information (VGI)
 
