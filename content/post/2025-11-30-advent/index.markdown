@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
 summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
-lastmod: "2025-12-22"
+lastmod: "2025-12-23"
 featured: no
 image:
   caption: ''
@@ -25,6 +25,77 @@ projects: []
 
 
 
+<!---
+
+
+## 🎄 December 24: What Does GIScience Give Us?
+
+<img src="figures/globe.png" width="50%" />
+
+🎁🌍 **What does geographic information science actually give us — beyond maps?**
+
+It gives us **orientation** 🧭
+
+* → in cities, landscapes, data, and decisions.
+
+It gives us **understanding** 🧠
+
+* → of spatial patterns, relationships, and uncertainties.
+
+It gives us **tools** 🛠️
+
+* to analyze environmental problems 🌱,
+* to better plan cities and environments 🏙️,
+* and to assess risks 🌊🔥.
+
+And perhaps most importantly:
+
+{{% callout note %}}
+
+GIScience gives us the ability to **use complex spatial information collectively, transparently, and responsibly** 🤝.
+
+{{% /callout %}}
+
+👉 In a world full of data, that is a true gift.
+
+**Merry Christmas 🎄
+and thank you for following this Geoinformatics Advent Calendar.**
+
+
+---
+
+
+-->
+
+## December 23: Multi-Criteria Site Selection
+
+📍🧩 **Where is a “suitable” location?**
+In GIScience, this question is addressed using <span style="color:blue">multi-criteria site suitability analyses</span>.
+
+Here, multiple spatial criteria are combined — e.g.:
+
+* accessibility 🚗
+* population density 👥
+* environmental constraints 🌱
+* distance to settlements 🏘️
+
+Technically, this is implemented through <span style="color:blue">overlay analyses</span>:
+raster or vector layers are overlaid and, if necessary, weighted to derive a <span style="color:blue">suitability map</span> 📊🗺️.
+
+<img src="figures/overlay.png" width="50%" />
+
+Such methods are used, for example, in
+
+* selecting locations for new business sites 🛒,
+* infrastructure planning 🏗️,
+* or highly sensitive decisions such as identifying a repository site for radioactive waste ☢️.
+
+👉 Important:
+The result is not “the truth,” but a **transparent and traceable decision basis** —
+dependent on the choice of criteria, their weighting, and societal priorities.
+
+
+---
 
 ## December 22: Aggregation & Disaggregation
 
@@ -227,7 +298,7 @@ When measuring the movement rates of rock glaciers, for example, we made sure to
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-18"></span>Figure 1: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-20"></span>Figure 1: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 ---
@@ -312,7 +383,7 @@ We make extensive use of QGIS in teaching — especially in the <span style="col
 
 <div class="figure">
 <img src="figures/teaching_qgis.jpg" alt="QGIS in teaching. Photo: (c) S. Hese." width="60%" />
-<p class="caption"><span id="fig:unnamed-chunk-25"></span>Figure 2: QGIS in teaching. Photo: (c) S. Hese.</p>
+<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 2: QGIS in teaching. Photo: (c) S. Hese.</p>
 </div>
 
 Because QGIS is freely available, it serves not only as a tool for research and public administration,
@@ -328,7 +399,7 @@ A **<span style="color:blue">catchment area</span>** describes the region from w
 
 <div class="figure">
 <img src="figures/catchment_firestations.jpg" alt="Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-27"></span>Figure 3: Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.</p>
+<p class="caption"><span id="fig:unnamed-chunk-29"></span>Figure 3: Arrival times of fire brigades in the city of Jena. (c) City of Jena / antwortING / otz.</p>
 </div>
 
 It can be used to calculate which street segments belong to a fire station 🚒 or from which regions the members of [FC Carl Zeiss Jena](https://www.fc-carlzeiss-jena.de/) come ⚽ — or, in the words of the fans: “Hier regiert der FCC!” (“The FCC rules here!”). 🌍
@@ -337,12 +408,12 @@ Unfortunately, [the 10-minute catchment of Jena’s fire brigades doesn’t cove
 
 <div class="figure">
 <img src="figures/catchment_fcc.jpg" alt="The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-28"></span>Figure 4: The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.</p>
+<p class="caption"><span id="fig:unnamed-chunk-30"></span>Figure 4: The catchment area of FC Carl Zeiss Jena based on the spatial distribution of its members. (c) Thüringer Allgemeine.</p>
 </div>
 
 <div class="figure">
 <img src="figures/fcc.png" alt="The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!" width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-29"></span>Figure 5: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
+<p class="caption"><span id="fig:unnamed-chunk-31"></span>Figure 5: The “Südkurve” (South Stand) at the Ernst Abbe Stadium. Their catchment area? Wherever FC Carl Zeiss Jena is playing!</p>
 </div>
 
 ---
@@ -363,7 +434,7 @@ Here are some images [from a recent publication](https://doi.org/10.1016/j.ecoli
 
 <div class="figure">
 <img src="figures/Pfeifer2025penguins.jpeg" alt="Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators." width="100%" />
-<p class="caption"><span id="fig:unnamed-chunk-31"></span>Figure 6: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
+<p class="caption"><span id="fig:unnamed-chunk-33"></span>Figure 6: Drone imagery of Adélie and Gentoo penguin colonies on Ardley Island, Antarctica. Pfeifer et al. (2025) in Ecological Indicators.</p>
 </div>
 
 
@@ -387,7 +458,7 @@ This is essential for evidence-based environmental decision making!
 
 <div class="figure">
 <img src="figures/tgrk.png" alt="Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-34"></span>Figure 7: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
+<p class="caption"><span id="fig:unnamed-chunk-36"></span>Figure 7: Geostatistical interpolation of exceedance probabilities for a nitrate threshold of 50 mg/l in an undisclosed pilot area.</p>
 </div>
 
 
@@ -430,7 +501,7 @@ Such systems determine positions by measuring signals from multiple satellites a
 
 <div class="figure">
 <img src="figures/gps_rgl_creep.jpg" alt="Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin." width="70%" />
-<p class="caption"><span id="fig:unnamed-chunk-40"></span>Figure 8: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
+<p class="caption"><span id="fig:unnamed-chunk-42"></span>Figure 8: Movement rates of a rock glacier in the Chilean Andes. (c) X. Bodin.</p>
 </div>
 
 👉 By the way, GPS is the U.S. GNSS — did you know that the European Union operates its own system, [Galileo](https://en.wikipedia.org/wiki/Galileo_(satellite_navigation))?
@@ -452,7 +523,7 @@ Other place references can likewise be transformed into coordinates — for exam
 
 <div class="figure">
 <img src="figures/geocoding_jena.png" alt="Geocoded police reports in Jena." width="50%" />
-<p class="caption"><span id="fig:unnamed-chunk-42"></span>Figure 9: Geocoded police reports in Jena.</p>
+<p class="caption"><span id="fig:unnamed-chunk-44"></span>Figure 9: Geocoded police reports in Jena.</p>
 </div>
 
 By the way, a colleague here in Jena, [Dr. Xuke Hu](https://scholar.google.com/citations?hl=en&user=xCj17L0AAAAJ&view_op=list_works&sortby=pubdate) at the [DLR Institute of Data Science](https://www.dlr.de/en/dw/about-us/departments/dmo?page=3), is a leading expert in geoparsing, or geocoding of unstructured texts.

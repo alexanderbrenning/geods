@@ -39,6 +39,84 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
+
+<!---
+
+## 🎄 24. Dezember: Was schenkt uns die Geoinformatik?
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/globe.png")
+```
+
+🎁🌍 **Was gibt uns die Geoinformatik eigentlich – jenseits von Karten?**
+
+Sie schenkt uns **Orientierung** 🧭
+
+* → in Städten, Landschaften, Daten und Entscheidungen.
+
+Sie schenkt uns **Verständnis** 🧠
+
+* → für räumliche Muster, Zusammenhänge und Unsicherheiten.
+
+Sie schenkt uns **Werkzeuge** 🛠️
+
+* um Umweltprobleme zu analysieren 🌱,
+* Städte und Umwelt besser zu planen 🏙️,
+* und Risiken zu bewerten 🌊🔥.
+
+Und vielleicht am wichtigsten:
+
+{{% callout note %}}
+
+Geoinformatik schenkt uns die Fähigkeit, **komplexe räumliche Informationen gemeinsam, transparent und verantwortungsvoll zu nutzen** 🤝.
+
+{{% /callout %}}
+
+👉 In einer Welt voller Daten ist das ein echtes Geschenk.
+
+**Frohe Weihnachten 🎄
+und danke fürs Mitlesen dieses Geoinformatik-Adventskalenders.**
+
+
+---
+
+
+-->
+
+
+## 23. Dezember: Multikriterielle Standortanalyse
+
+📍🧩 **Wo ist ein „gut geeigneter“ Standort?**
+In der Geoinformatik wird diese Frage mit **`r .blue("multikriteriellen Standortanalysen")`** beantwortet.
+
+Dabei werden **mehrere räumliche Kriterien** kombiniert – z. B.
+
+* Erreichbarkeit 🚗
+* Bevölkerungsdichte 👥
+* Umweltauflagen 🌱
+* Abstand zu Siedlungen 🏘️
+
+Technisch geschieht das über `r .blue("Overlay-Analysen")`:
+Raster- oder Vektorebenen werden überlagert und ggf. gewichtet, um daraus eine `r .blue("Eignungskarte")` abzuleiten 📊🗺️.
+
+```{r out.width='50%'}
+knitr::include_graphics("figures/overlay.png")
+```
+
+Solche Verfahren kommen z. B. zum Einsatz bei
+
+* der Standortwahl neuer Geschäftsfilialen 🛒,
+* der Planung von Infrastruktur 🏗️,
+* oder bei hochsensiblen Fragen wie der Suche nach einem Endlagerstandort für radioaktive Abfälle ☢️.
+
+👉 Wichtig:
+Das Ergebnis ist nicht die „Wahrheit“, sondern eine **transparente, nachvollziehbare Entscheidungsgrundlage** –
+abhängig von Kriterienwahl, Gewichtung und gesellschaftlichen Prioritäten.
+
+
+---
+
+
 ## 22. Dezember: Aggregierung & Disaggregierung
 
 ```{r out.width='50%'}
