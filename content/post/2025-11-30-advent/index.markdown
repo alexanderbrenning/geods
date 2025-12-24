@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Updated on a daily basis'
 summary: 'Day by day, 24 concepts from geographic information science that every geographer should know...'
-lastmod: "2025-12-23"
+lastmod: "2025-12-24"
 featured: no
 image:
   caption: ''
@@ -25,8 +25,6 @@ projects: []
 
 
 
-<!---
-
 
 ## 🎄 December 24: What Does GIScience Give Us?
 
@@ -36,16 +34,16 @@ projects: []
 
 It gives us **orientation** 🧭
 
-* → in cities, landscapes, data, and decisions.
+* in cities, landscapes, data, and decisions.
 
 It gives us **understanding** 🧠
 
-* → of spatial patterns, relationships, and uncertainties.
+* of spatial patterns, relationships, and uncertainties.
 
 It gives us **tools** 🛠️
 
 * to analyze environmental problems 🌱,
-* to better plan cities and environments 🏙️,
+* to better plan cities & the environment 🏙️,
 * and to assess risks 🌊🔥.
 
 And perhaps most importantly:
@@ -59,13 +57,11 @@ GIScience gives us the ability to **use complex spatial information collectively
 👉 In a world full of data, that is a true gift.
 
 **Merry Christmas 🎄
-and thank you for following this Geoinformatics Advent Calendar.**
+and thank you for following this GIScience Advent Calendar.**
 
 
 ---
 
-
--->
 
 ## December 23: Multi-Criteria Site Selection
 

@@ -40,8 +40,6 @@ xaringanExtra::style_panelset_tabs(
 
 
 
-<!---
-
 ## 🎄 24. Dezember: Was schenkt uns die Geoinformatik?
 
 ```{r out.width='50%'}
@@ -52,11 +50,11 @@ knitr::include_graphics("figures/globe.png")
 
 Sie schenkt uns **Orientierung** 🧭
 
-* → in Städten, Landschaften, Daten und Entscheidungen.
+* in Städten, Landschaften, Daten und Entscheidungen.
 
 Sie schenkt uns **Verständnis** 🧠
 
-* → für räumliche Muster, Zusammenhänge und Unsicherheiten.
+* für räumliche Muster, Zusammenhänge und Unsicherheiten.
 
 Sie schenkt uns **Werkzeuge** 🛠️
 
@@ -79,9 +77,6 @@ und danke fürs Mitlesen dieses Geoinformatik-Adventskalenders.**
 
 
 ---
-
-
--->
 
 
 ## 23. Dezember: Multikriterielle Standortanalyse

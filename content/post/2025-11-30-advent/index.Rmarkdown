@@ -39,8 +39,6 @@ xaringanExtra::style_panelset_tabs(
 ```
 
 
-<!---
-
 
 ## 🎄 December 24: What Does GIScience Give Us?
 
@@ -52,16 +50,16 @@ knitr::include_graphics("figures/globe.png")
 
 It gives us **orientation** 🧭
 
-* → in cities, landscapes, data, and decisions.
+* in cities, landscapes, data, and decisions.
 
 It gives us **understanding** 🧠
 
-* → of spatial patterns, relationships, and uncertainties.
+* of spatial patterns, relationships, and uncertainties.
 
 It gives us **tools** 🛠️
 
 * to analyze environmental problems 🌱,
-* to better plan cities and environments 🏙️,
+* to better plan cities & the environment 🏙️,
 * and to assess risks 🌊🔥.
 
 And perhaps most importantly:
@@ -75,13 +73,11 @@ GIScience gives us the ability to **use complex spatial information collectively
 👉 In a world full of data, that is a true gift.
 
 **Merry Christmas 🎄
-and thank you for following this Geoinformatics Advent Calendar.**
+and thank you for following this GIScience Advent Calendar.**
 
 
 ---
 
-
--->
 
 ## December 23: Multi-Criteria Site Selection
 

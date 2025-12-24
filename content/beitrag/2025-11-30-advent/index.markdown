@@ -8,7 +8,7 @@ categories: ["GIS"]
 tags: ["GIS"]
 subtitle: 'Täglich aktualisiert'
 summary: '24 Konzepte der Geoinformatik, die alle Geograph:innen kennen sollten...'
-lastmod: "2025-12-23"
+lastmod: "2025-12-24"
 featured: no
 image:
   caption: ''
@@ -26,8 +26,6 @@ projects: []
 
 
 
-<!---
-
 ## 🎄 24. Dezember: Was schenkt uns die Geoinformatik?
 
 <img src="figures/globe.png" width="50%" />
@@ -36,11 +34,11 @@ projects: []
 
 Sie schenkt uns **Orientierung** 🧭
 
-* → in Städten, Landschaften, Daten und Entscheidungen.
+* in Städten, Landschaften, Daten und Entscheidungen.
 
 Sie schenkt uns **Verständnis** 🧠
 
-* → für räumliche Muster, Zusammenhänge und Unsicherheiten.
+* für räumliche Muster, Zusammenhänge und Unsicherheiten.
 
 Sie schenkt uns **Werkzeuge** 🛠️
 
@@ -63,9 +61,6 @@ und danke fürs Mitlesen dieses Geoinformatik-Adventskalenders.**
 
 
 ---
-
-
--->
 
 
 ## 23. Dezember: Multikriterielle Standortanalyse
